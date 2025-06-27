@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - QL Eco Green | Sustainable Agriculture Solutions</title>
+    <meta name="description"
+        content="Learn about QL Eco Green's commitment to sustainable agriculture and innovative soil conditioning solutions.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9f4',
+                            100: '#dcf4e8',
+                            500: '#4c745f',
+                            600: '#3d5f4c',
+                            700: '#2f4a3a',
+                        },
+                        secondary: {
+                            500: '#6b8e23',
+                        },
+                        accent: {
+                            500: '#f4a261',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans text-gray-900">
+    <!-- Header -->
+    <header class="header fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
+        <nav class="py-4">
+            <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-primary-500 rounded-full flex items-center justify-center">
+                        <i class="fas fa-leaf text-white text-lg"></i>
+                    </div>
+                    <span class="text-xl font-bold text-primary-500">QL Eco Green</span>
+                </div>
+
+                <ul class="nav-menu hidden md:flex items-center space-x-8">
+                    <li><a href="index.html"
+                            class="nav-link px-4 py-2 rounded-lg font-medium text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300">Home</a>
+                    </li>
+                    <li><a href="products.html"
+                            class="nav-link px-4 py-2 rounded-lg font-medium text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300">Products</a>
+                    </li>
+
+                    <!-- Company Dropdown -->
+                    <li class="relative group">
+                        <button
+                            class="nav-dropdown-toggle px-4 py-2 rounded-lg font-medium text-white bg-primary-500 hover:bg-primary-600 transition-all duration-300 flex items-center">
+                            Company
+                            <i
+                                class="fas fa-chevron-down ml-1 text-sm group-hover:rotate-180 transition-transform duration-200"></i>
+                        </button>
+                        <div
+                            class="nav-dropdown absolute top-full left-0 w-48 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <a href="about.html"
+                                class="block px-4 py-3 text-primary-500 bg-primary-50 font-medium transition-colors rounded-t-lg">About
+                                Us</a>
+                            <a href="research.html"
+                                class="block px-4 py-3 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-colors">Research</a>
+                            <a href="news.html"
+                                class="block px-4 py-3 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-colors rounded-b-lg">News</a>
+                        </div>
+                    </li>
+
+                    <!-- Resources Dropdown -->
+                    <li class="relative group">
+                        <button
+                            class="nav-dropdown-toggle px-4 py-2 rounded-lg font-medium text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300 flex items-center">
+                            Resources
+                            <i
+                                class="fas fa-chevron-down ml-1 text-sm group-hover:rotate-180 transition-transform duration-200"></i>
+                        </button>
+                        <div
+                            class="nav-dropdown absolute top-full left-0 w-48 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <a href="training.html"
+                                class="block px-4 py-3 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-colors rounded-t-lg">Training</a>
+                            <a href="faq.html"
+                                class="block px-4 py-3 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-colors">FAQ</a>
+                            <a href="download.html"
+                                class="block px-4 py-3 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-colors rounded-b-lg">Downloads</a>
+                        </div>
+                    </li>
+
+                    <li><a href="contact.html"
+                            class="nav-link px-4 py-2 rounded-lg font-medium text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="hamburger md:hidden flex flex-col cursor-pointer space-y-1">
+                    <span class="w-6 h-0.5 bg-primary-500 rounded transition-all duration-300"></span>
+                    <span class="w-6 h-0.5 bg-primary-500 rounded transition-all duration-300"></span>
+                    <span class="w-6 h-0.5 bg-primary-500 rounded transition-all duration-300"></span>
+                </div>
+
+                <!-- Mobile Navigation Menu -->
+                <div class="nav-menu md:hidden">
+                    <a href="index.html"
+                        class="nav-link block px-6 py-4 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300">Home</a>
+                    <a href="products.html"
+                        class="nav-link block px-6 py-4 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300">Products</a>
+
+                    <!-- Company Section -->
+                    <div class="mobile-dropdown">
+                        <button
+                            class="mobile-dropdown-toggle w-full flex justify-between items-center px-6 py-4 text-primary-500 bg-primary-50 transition-all duration-300">
+                            <span>Company</span>
+                            <i class="fas fa-chevron-down transition-transform duration-200"></i>
+                        </button>
+                        <div
+                            class="mobile-dropdown-content max-h-0 overflow-hidden transition-all duration-300 bg-gray-50">
+                            <a href="about.html"
+                                class="block px-10 py-3 text-primary-500 font-medium transition-colors">About Us</a>
+                            <a href="research.html"
+                                class="block px-10 py-3 text-gray-600 hover:text-primary-500 transition-colors">Research</a>
+                            <a href="news.html"
+                                class="block px-10 py-3 text-gray-600 hover:text-primary-500 transition-colors">News</a>
+                        </div>
+                    </div>
+
+                    <!-- Resources Section -->
+                    <div class="mobile-dropdown">
+                        <button
+                            class="mobile-dropdown-toggle w-full flex justify-between items-center px-6 py-4 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300">
+                            <span>Resources</span>
+                            <i class="fas fa-chevron-down transition-transform duration-200"></i>
+                        </button>
+                        <div
+                            class="mobile-dropdown-content max-h-0 overflow-hidden transition-all duration-300 bg-gray-50">
+                            <a href="training.html"
+                                class="block px-10 py-3 text-gray-600 hover:text-primary-500 transition-colors">Training</a>
+                            <a href="faq.html"
+                                class="block px-10 py-3 text-gray-600 hover:text-primary-500 transition-colors">FAQ</a>
+                            <a href="download.html"
+                                class="block px-10 py-3 text-gray-600 hover:text-primary-500 transition-colors">Downloads</a>
+                        </div>
+                    </div>
+
+                    <a href="contact.html"
+                        class="nav-link block px-6 py-4 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-gray-50 to-green-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6">About QL Eco Green</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Pioneering sustainable agriculture solutions for a healthier planet and more productive farming
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div class="space-y-8">
+                    <div>
+                        <h2 class="text-3xl font-bold text-primary-500 mb-4 flex items-center">
+                            <i class="fas fa-bullseye text-4xl mr-4"></i>
+                            Our Mission
+                        </h2>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            To create nourishing products from agro resources and bringing benefits to everyone.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-3xl font-bold text-primary-500 mb-4 flex items-center">
+                            <i class="fas fa-eye text-4xl mr-4"></i>
+                            Our Vision
+                        </h2>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            To be the preferred global agro based enterprise.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="https://www.businesstoday.com.my/wp-content/uploads/2022/06/QL-resources.jpg"
+                        alt="Sustainable Agriculture" class="w-full h-96 object-cover rounded-2xl shadow-xl">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary-500/20 to-transparent rounded-2xl"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Story -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Founded on the principles of innovation and sustainability
+                </p>
+            </div>
+
+            <div class="space-y-16">
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+                    <div class="space-y-6">
+                        <h3 class="text-3xl font-bold text-primary-500">The Beginning (2001)</h3>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            QL Poultry Farms Sdn Bhd (QLPF) was established in 2001 as a subsidiary of QL Resources Bhd
+                            (QL),
+                            a publicly listed company on Bursa Malaysia. Through innovative thinking, cooperative
+                            teamwork, and
+                            continuous improvement, we evolved into a diversified agriculture group with three core
+                            operations:
+                            marine product manufacturing, integrated livestock farming, and oil palm plantations.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Agricultural Research" class="w-full h-80 object-cover rounded-2xl shadow-lg">
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+                    <div class="md:order-2 space-y-6">
+                        <h3 class="text-3xl font-bold text-primary-500">Advanced Technology (2017)</h3>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            Since 2017, we adopted advanced automatic fermentation technology, utilizing mechanized
+                            production
+                            to ensure consistent and high-quality output. Our production process undergoes a rigorous
+                            21-day
+                            high-temperature treatment (60-70°C), effectively eliminating bacteria, mold, and unwanted
+                            weed seeds.
+                            QL Eco Green Organic Fertilizer is 100% fermented using beneficial microorganisms (EM),
+                            ensuring an odor-free product.
+                        </p>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            Today, QL is a leading integrated resource-based agriculture group with over a billion
+                            ringgit
+                            in market capitalization. We have won numerous recognition including the prestigious
+                            "Outstanding
+                            Environmental Friendly Farm" from Malaysian Livestock Industry Awards 2018, demonstrating
+                            our
+                            commitment to sustainable and innovative farming practices.
+                        </p>
+                    </div>
+                    <div class="md:order-1">
+                        <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Modern Farming" class="w-full h-80 object-cover rounded-2xl shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Our Core Values</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    The principles that guide everything we do
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-8 bg-gray-50 rounded-2xl hover:shadow-lg transition-all duration-300">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-leaf text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-500 mb-4">Sustainability</h3>
+                    <p class="text-gray-600">Committed to environmentally responsible practices and long-term ecological
+                        health</p>
+                </div>
+
+                <div class="text-center p-8 bg-gray-50 rounded-2xl hover:shadow-lg transition-all duration-300">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-flask text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-500 mb-4">Innovation</h3>
+                    <p class="text-gray-600">Continuously advancing agricultural science through research and
+                        development</p>
+                </div>
+
+                <div class="text-center p-8 bg-gray-50 rounded-2xl hover:shadow-lg transition-all duration-300">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-award text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-500 mb-4">Quality</h3>
+                    <p class="text-gray-600">Delivering premium products that exceed expectations and industry standards
+                    </p>
+                </div>
+
+                <div class="text-center p-8 bg-gray-50 rounded-2xl hover:shadow-lg transition-all duration-300">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-handshake text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-500 mb-4">Integrity</h3>
+                    <p class="text-gray-600">Committed to honest and transparent business practices in all our
+                        operations</p>
+                </div>
+
+                <div class="text-center p-8 bg-gray-50 rounded-2xl hover:shadow-lg transition-all duration-300">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-users text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-500 mb-4">Win-Win</h3>
+                    <p class="text-gray-600">Creating mutually beneficial relationships with all stakeholders</p>
+                </div>
+
+                <div class="text-center p-8 bg-gray-50 rounded-2xl hover:shadow-lg transition-all duration-300">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-people-group text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-500 mb-4">Teamwork</h3>
+                    <p class="text-gray-600">Collaborative approach to achieving excellence and innovation</p>
+                </div>
+
+                <div class="text-center p-8 bg-gray-50 rounded-2xl hover:shadow-lg transition-all duration-300">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-lightbulb text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-500 mb-4">Innovation</h3>
+                    <p class="text-gray-600">Continuously advancing agricultural science through research and
+                        development</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Our Expert Team</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Meet the agricultural scientists and experts behind our innovations
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div class="text-center bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+                        alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover">
+                    <h3 class="text-xl font-bold text-primary-500 mb-2">Dr. Agricultural Scientist</h3>
+                    <p class="text-gray-600 mb-4">Chief Research Officer</p>
+                    <p class="text-sm text-gray-500">Leading our research initiatives in soil science and sustainable
+                        agriculture</p>
+                </div>
+
+                <div class="text-center bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1494790108755-2616b60c51a4?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+                        alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover">
+                    <h3 class="text-xl font-bold text-primary-500 mb-2">Dr. Environmental Expert</h3>
+                    <p class="text-gray-600 mb-4">Sustainability Director</p>
+                    <p class="text-sm text-gray-500">Ensuring our products meet the highest environmental standards</p>
+                </div>
+
+                <div class="text-center bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+                        alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover">
+                    <h3 class="text-xl font-bold text-primary-500 mb-2">Agricultural Consultant</h3>
+                    <p class="text-gray-600 mb-4">Field Applications Manager</p>
+                    <p class="text-sm text-gray-500">Providing expertise and support to farmers worldwide</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-24 bg-gradient-to-r from-primary-500 to-secondary-500">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-white mb-6">Ready to Transform Your Farm?</h2>
+            <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+                Join thousands of farmers who have already discovered the benefits of QL Eco Green
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="products.html"
+                    class="bg-white text-primary-500 px-8 py-4 rounded-xl font-semibold hover:shadow-lg hover:-translate-y-1 transition-all duration-300 inline-flex items-center justify-center space-x-2">
+                    <i class="fas fa-leaf"></i>
+                    <span>View Products</span>
+                </a>
+                <a href="contact.html"
+                    class="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-primary-500 hover:-translate-y-1 transition-all duration-300 inline-flex items-center justify-center space-x-2">
+                    <i class="fas fa-phone"></i>
+                    <span>Contact Us</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Corporate Information -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Corporate Information</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Professional agricultural solutions with strong corporate governance
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-building text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-500 mb-4 text-center">Company Structure</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><strong>Founded:</strong> 2018</li>
+                        <li><strong>Type:</strong> Private Limited Company</li>
+                        <li><strong>Industry:</strong> Agricultural Solutions</li>
+                        <li><strong>Headquarters:</strong> Kuala Lumpur, Malaysia</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-certificate text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-500 mb-4 text-center">Certifications</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-primary-500 mr-2"></i>ISO 9001:2015</li>
+                        <li><i class="fas fa-check text-primary-500 mr-2"></i>Good Manufacturing Practice</li>
+                        <li><i class="fas fa-check text-primary-500 mr-2"></i>Environmental Compliance</li>
+                        <li><i class="fas fa-check text-primary-500 mr-2"></i>Malaysia Agriculture Department</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-handshake text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-500 mb-4 text-center">Business Focus</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-leaf text-primary-500 mr-2"></i>Soil Conditioning</li>
+                        <li><i class="fas fa-seedling text-primary-500 mr-2"></i>Sustainable Agriculture</li>
+                        <li><i class="fas fa-flask text-primary-500 mr-2"></i>Research & Development</li>
+                        <li><i class="fas fa-users text-primary-500 mr-2"></i>Farmer Support</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-16 bg-gradient-to-br from-primary-50 to-green-50 p-8 rounded-2xl border border-primary-200">
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold text-primary-500 mb-4">Manufacturing Excellence</h3>
+                    <p class="text-gray-600 max-w-3xl mx-auto mb-6">
+                        QL Eco Green operates state-of-the-art manufacturing facilities with strict quality control
+                        processes,
+                        ensuring consistent product quality and meeting international standards for agricultural
+                        solutions.
+                    </p>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary-500">40+</div>
+                            <div class="text-gray-600">Years Combined Experience</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary-500">24/7</div>
+                            <div class="text-gray-600">Quality Monitoring</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary-500">100%</div>
+                            <div class="text-gray-600">Batch Testing</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability Section -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Our Commitment to Sustainability</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Environmental stewardship, social responsibility, and strong governance principles guide everything
+                    we do
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Environmental -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-leaf text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-green-600 mb-6 text-center">Environmental</h3>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-recycle text-green-500 mt-1"></i>
+                            <span>Sustainable manufacturing processes with minimal environmental impact</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-water text-green-500 mt-1"></i>
+                            <span>Water conservation and efficient resource utilization</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-seedling text-green-500 mt-1"></i>
+                            <span>Carbon sequestration through improved soil health</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-shield-alt text-green-500 mt-1"></i>
+                            <span>Reduction of chemical fertilizer dependency</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-users text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-blue-600 mb-6 text-center">Social</h3>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-graduation-cap text-blue-500 mt-1"></i>
+                            <span>Farmer education and training programs</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-handshake text-blue-500 mt-1"></i>
+                            <span>Supporting local farming communities</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-heart text-blue-500 mt-1"></i>
+                            <span>Employee welfare and development</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-balance-scale text-blue-500 mt-1"></i>
+                            <span>Fair trade practices and ethical sourcing</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Governance -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-gavel text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-purple-600 mb-6 text-center">Governance</h3>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-clipboard-check text-purple-500 mt-1"></i>
+                            <span>Transparent business practices and reporting</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-shield text-purple-500 mt-1"></i>
+                            <span>Regulatory compliance and quality assurance</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-microscope text-purple-500 mt-1"></i>
+                            <span>Continuous research and innovation</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-certificate text-purple-500 mt-1"></i>
+                            <span>Industry standards and certifications</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <div class="bg-gradient-to-r from-primary-500 to-secondary-500 p-8 rounded-2xl text-white">
+                    <h3 class="text-3xl font-bold mb-4">Our Sustainability Goals</h3>
+                    <div class="grid md:grid-cols-3 gap-8 mt-8">
+                        <div>
+                            <div class="text-4xl font-bold mb-2">50%</div>
+                            <div class="text-white/90">Reduction in Chemical Fertilizer Use by 2030</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-bold mb-2">100%</div>
+                            <div class="text-white/90">Sustainable Manufacturing Processes</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-bold mb-2">10,000</div>
+                            <div class="text-white/90">Farmers Supported by 2025</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-primary-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-leaf text-white text-lg"></i>
+                        </div>
+                        <span class="text-xl font-bold">QL Eco Green</span>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed max-w-md">Pioneering sustainable agriculture solutions for a
+                        healthier planet and more productive farming.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html"
+                                class="text-gray-300 hover:text-white transition-colors duration-300">Home</a></li>
+                        <li><a href="about.html"
+                                class="text-gray-300 hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="products.html"
+                                class="text-gray-300 hover:text-white transition-colors duration-300">Products</a></li>
+                        <li><a href="faq.html"
+                                class="text-gray-300 hover:text-white transition-colors duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Support</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">Technical
+                                Support</a></li>
+                        <li><a href="download.html"
+                                class="text-gray-300 hover:text-white transition-colors duration-300">Downloads</a></li>
+                        <li><a href="faq.html"
+                                class="text-gray-300 hover:text-white transition-colors duration-300">FAQ</a></li>
+                        <li><a href="contact.html"
+                                class="text-gray-300 hover:text-white transition-colors duration-300">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <p class="text-gray-300">&copy; 2024 QL Eco Green. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">Terms of
+                        Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Floating WhatsApp Button -->
+    <div id="whatsapp-float" class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/60379567399?text=Hello%20QL%20Eco%20Green!%20I'm%20interested%20in%20learning%20more%20about%20your%20sustainable%20agriculture%20solutions."
+            target="_blank"
+            class="whatsapp-btn bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 flex items-center space-x-3 group">
+            <i class="fab fa-whatsapp text-2xl"></i>
+            <span
+                class="whatsapp-text hidden group-hover:block bg-green-600 px-3 py-1 rounded-lg text-sm font-medium absolute right-full mr-3 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all duration-300">
+                Chat with us on WhatsApp
+            </span>
+        </a>
+    </div>
+
+    <style>
+        #whatsapp-float {
+            animation: whatsapp-pulse 2s infinite;
+        }
+
+        @keyframes whatsapp-pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .whatsapp-btn:hover {
+            animation: none;
+        }
+
+        @media (max-width: 768px) {
+            .whatsapp-text {
+                display: none !important;
+            }
+        }
+    </style>
+</body>
+
+</html>

@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research & Science Hub - QL Eco Green | Scientific Validation & Field Studies</title>
+    <meta name="description"
+        content="Explore the scientific research and field studies behind QL Eco Green's organomineral soil conditioning technology. University partnerships, peer-reviewed studies, and proven results.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9f4',
+                            100: '#dcf4e8',
+                            500: '#4c745f',
+                            600: '#3d5f4c',
+                            700: '#2f4a3a',
+                        },
+                        secondary: {
+                            500: '#6b8e23',
+                        },
+                        accent: {
+                            500: '#f4a261',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Research-specific animations */
+        .research-card {
+            transition: all 0.3s ease;
+        }
+
+        .research-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .data-visualization {
+            background: linear-gradient(135deg, #f0f9f4 0%, #dcf4e8 100%);
+        }
+
+        .methodology-step {
+            opacity: 0;
+            transform: translateX(-20px);
+            animation: slideInLeft 0.6s ease forwards;
+        }
+
+        .methodology-step:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .methodology-step:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .methodology-step:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .methodology-step:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        .methodology-step:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+
+        @keyframes slideInLeft {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .chart-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chart-bar {
+            transition: width 1.5s ease;
+        }
+    </style>
+</head>
+
+<body class="font-sans text-gray-900 bg-gray-50">
+    <!-- Header -->
+    <header class="header fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
+        <nav class="py-4">
+            <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-primary-500 rounded-full flex items-center justify-center">
+                        <i class="fas fa-leaf text-white text-lg"></i>
+                    </div>
+                    <span class="text-xl font-bold text-primary-500">QL Eco Green</span>
+                </div>
+
+                <ul class="hidden md:flex items-center space-x-8">
+                    <li><a href="index.html"
+                            class="nav-link px-4 py-2 rounded-lg font-medium text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300">Home</a>
+                    </li>
+                    <li><a href="products.html"
+                            class="nav-link px-4 py-2 rounded-lg font-medium text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300">Products</a>
+                    </li>
+
+                    <!-- Company Dropdown -->
+                    <li class="relative group">
+                        <button
+                            class="nav-dropdown-toggle px-4 py-2 rounded-lg font-medium text-white bg-primary-500 hover:bg-primary-600 transition-all duration-300 flex items-center">
+                            Company
+                            <i
+                                class="fas fa-chevron-down ml-1 text-sm group-hover:rotate-180 transition-transform duration-200"></i>
+                        </button>
+                        <div
+                            class="nav-dropdown absolute top-full left-0 w-48 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <a href="about.html"
+                                class="block px-4 py-3 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-colors rounded-t-lg">About
+                                Us</a>
+                            <a href="research.html"
+                                class="block px-4 py-3 text-primary-500 bg-primary-50 font-medium transition-colors">Research</a>
+                            <a href="news.html"
+                                class="block px-4 py-3 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-colors rounded-b-lg">News</a>
+                        </div>
+                    </li>
+
+                    <!-- Resources Dropdown -->
+                    <li class="relative group">
+                        <button
+                            class="nav-dropdown-toggle px-4 py-2 rounded-lg font-medium text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300 flex items-center">
+                            Resources
+                            <i
+                                class="fas fa-chevron-down ml-1 text-sm group-hover:rotate-180 transition-transform duration-200"></i>
+                        </button>
+                        <div
+                            class="nav-dropdown absolute top-full left-0 w-48 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <a href="training.html"
+                                class="block px-4 py-3 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-colors rounded-t-lg">Training</a>
+                            <a href="faq.html"
+                                class="block px-4 py-3 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-colors">FAQ</a>
+                            <a href="download.html"
+                                class="block px-4 py-3 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-colors rounded-b-lg">Downloads</a>
+                        </div>
+                    </li>
+
+                    <li><a href="contact.html"
+                            class="nav-link px-4 py-2 rounded-lg font-medium text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="hamburger md:hidden flex flex-col cursor-pointer space-y-1">
+                    <span class="w-6 h-0.5 bg-primary-500 rounded transition-all duration-300"></span>
+                    <span class="w-6 h-0.5 bg-primary-500 rounded transition-all duration-300"></span>
+                    <span class="w-6 h-0.5 bg-primary-500 rounded transition-all duration-300"></span>
+                </div>
+
+                <!-- Mobile Navigation Menu -->
+                <div
+                    class="mobile-menu fixed top-full left-0 right-0 bg-white border-b border-gray-200 py-4 px-6 transform -translate-y-full opacity-0 transition-all duration-300 md:hidden">
+                    <ul class="space-y-2">
+                        <li><a href="index.html"
+                                class="block py-2 text-gray-700 hover:text-primary-500 transition-colors">Home</a></li>
+                        <li><a href="about.html"
+                                class="block py-2 text-gray-700 hover:text-primary-500 transition-colors">About</a></li>
+                        <li><a href="products.html"
+                                class="block py-2 text-gray-700 hover:text-primary-500 transition-colors">Products</a>
+                        </li>
+                        <li><a href="research.html" class="block py-2 text-primary-500 font-medium">Research</a></li>
+                        <li><a href="training.html"
+                                class="block py-2 text-gray-700 hover:text-primary-500 transition-colors">Training</a>
+                        </li>
+                        <li><a href="news.html"
+                                class="block py-2 text-gray-700 hover:text-primary-500 transition-colors">News</a></li>
+                        <li><a href="faq.html"
+                                class="block py-2 text-gray-700 hover:text-primary-500 transition-colors">FAQ</a></li>
+                        <li><a href="download.html"
+                                class="block py-2 text-gray-700 hover:text-primary-500 transition-colors">Downloads</a>
+                        </li>
+                        <li><a href="contact.html"
+                                class="block py-2 text-gray-700 hover:text-primary-500 transition-colors">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-primary-500 to-secondary-500 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center">
+                <div class="inline-flex items-center bg-white/10 backdrop-blur rounded-full px-6 py-2 mb-6">
+                    <i class="fas fa-microscope mr-2"></i>
+                    <span class="text-sm font-semibold">Scientific Research & Development</span>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">Science-Backed Solutions</h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-90 max-w-4xl mx-auto">15+ years of rigorous research,
+                    university partnerships, and field trials proving the effectiveness of our organomineral soil
+                    conditioning technology</p>
+
+                <div class="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                    <div class="bg-white/10 backdrop-blur rounded-xl p-6 text-center">
+                        <div class="text-3xl font-bold mb-2">250+</div>
+                        <div class="text-sm opacity-90">Field Trials</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur rounded-xl p-6 text-center">
+                        <div class="text-3xl font-bold mb-2">15+</div>
+                        <div class="text-sm opacity-90">University Partners</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur rounded-xl p-6 text-center">
+                        <div class="text-3xl font-bold mb-2">50+</div>
+                        <div class="text-sm opacity-90">Research Papers</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur rounded-xl p-6 text-center">
+                        <div class="text-3xl font-bold mb-2">8</div>
+                        <div class="text-sm opacity-90">Countries Studied</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scientific Methodology -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Our Research Methodology</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Rigorous scientific approach to validate and optimize
+                    our organomineral soil conditioning technology</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="methodology-step flex items-start space-x-4">
+                        <div
+                            class="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">
+                            1</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Controlled Laboratory Testing</h3>
+                            <p class="text-gray-600">Initial formulation testing under controlled conditions using
+                                standardized soil samples and precise measurement protocols.</p>
+                        </div>
+                    </div>
+
+                    <div class="methodology-step flex items-start space-x-4">
+                        <div
+                            class="w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">
+                            2</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Greenhouse Validation</h3>
+                            <p class="text-gray-600">Multi-crop testing in controlled greenhouse environments with
+                                detailed monitoring of plant growth and soil chemistry changes.</p>
+                        </div>
+                    </div>
+
+                    <div class="methodology-step flex items-start space-x-4">
+                        <div
+                            class="w-12 h-12 bg-purple-500 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">
+                            3</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Small-Scale Field Trials</h3>
+                            <p class="text-gray-600">Replicated field experiments across different soil types and
+                                climatic conditions with statistical analysis.</p>
+                        </div>
+                    </div>
+
+                    <div class="methodology-step flex items-start space-x-4">
+                        <div
+                            class="w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">
+                            4</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Commercial Farm Testing</h3>
+                            <p class="text-gray-600">Large-scale validation on working farms with economic impact
+                                assessment and farmer feedback integration.</p>
+                        </div>
+                    </div>
+
+                    <div class="methodology-step flex items-start space-x-4">
+                        <div
+                            class="w-12 h-12 bg-red-500 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">
+                            5</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Peer Review & Publication</h3>
+                            <p class="text-gray-600">Independent validation through peer-reviewed scientific journals
+                                and international conference presentations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Research Laboratory" class="rounded-2xl shadow-2xl">
+                    <p class="text-sm text-gray-500 mt-4">MARDI Research Laboratory Partnership</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Research Results -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Key Research Findings</h2>
+                <p class="text-xl text-gray-600">Proven results across multiple parameters and crop types</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Yield Improvement Chart -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Yield Improvement by Crop Type</h3>
+                    <div class="space-y-4">
+                        <div class="chart-container">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-700 font-medium">Rice</span>
+                                <span class="text-green-600 font-bold">+38%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="chart-bar bg-gradient-to-r from-green-400 to-green-600 h-3 rounded-full"
+                                    style="width: 0%" data-width="76%"></div>
+                            </div>
+                        </div>
+
+                        <div class="chart-container">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-700 font-medium">Palm Oil</span>
+                                <span class="text-green-600 font-bold">+35%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="chart-bar bg-gradient-to-r from-green-400 to-green-600 h-3 rounded-full"
+                                    style="width: 0%" data-width="70%"></div>
+                            </div>
+                        </div>
+
+                        <div class="chart-container">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-700 font-medium">Vegetables</span>
+                                <span class="text-green-600 font-bold">+42%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="chart-bar bg-gradient-to-r from-green-400 to-green-600 h-3 rounded-full"
+                                    style="width: 0%" data-width="84%"></div>
+                            </div>
+                        </div>
+
+                        <div class="chart-container">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-700 font-medium">Fruits</span>
+                                <span class="text-green-600 font-bold">+32%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="chart-bar bg-gradient-to-r from-green-400 to-green-600 h-3 rounded-full"
+                                    style="width: 0%" data-width="64%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-4 text-center">Average yield increase across 250+ field trials
+                    </p>
+                </div>
+
+                <!-- Soil Health Improvement -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Soil Health Parameters</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="text-center p-4 bg-blue-50 rounded-xl">
+                            <div class="text-3xl font-bold text-blue-600 mb-2">6.8</div>
+                            <div class="text-sm font-medium text-blue-700">Average pH</div>
+                            <div class="text-xs text-gray-500">(from 5.2)</div>
+                        </div>
+                        <div class="text-center p-4 bg-green-50 rounded-xl">
+                            <div class="text-3xl font-bold text-green-600 mb-2">3.2%</div>
+                            <div class="text-sm font-medium text-green-700">Organic Matter</div>
+                            <div class="text-xs text-gray-500">(from 1.8%)</div>
+                        </div>
+                        <div class="text-center p-4 bg-purple-50 rounded-xl">
+                            <div class="text-3xl font-bold text-purple-600 mb-2">85%</div>
+                            <div class="text-sm font-medium text-purple-700">Water Retention</div>
+                            <div class="text-xs text-gray-500">(+25%)</div>
+                        </div>
+                        <div class="text-center p-4 bg-orange-50 rounded-xl">
+                            <div class="text-3xl font-bold text-orange-600 mb-2">2.5x</div>
+                            <div class="text-sm font-medium text-orange-700">Microbial Activity</div>
+                            <div class="text-xs text-gray-500">increased</div>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-4 text-center">Measured after 6 months of application</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- University Partnerships -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">University Partnerships</h2>
+                <p class="text-xl text-gray-600">Collaborating with leading agricultural research institutions</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="research-card bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 text-center">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-university text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-700 mb-4">Universiti Putra Malaysia (UPM)</h3>
+                    <p class="text-gray-600 mb-4">Leading research on organomineral soil conditioning effects on rice
+                        and palm oil cultivation</p>
+                    <div class="text-sm text-blue-600">
+                        <i class="fas fa-calendar mr-2"></i>2018 - Ongoing
+                    </div>
+                </div>
+
+                <div class="research-card bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 text-center">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-seedling text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-green-700 mb-4">Malaysian Agricultural Research and Development
+                        Institute (MARDI)</h3>
+                    <p class="text-gray-600 mb-4">Joint research on sustainable agriculture and soil health improvement
+                        technologies</p>
+                    <div class="text-sm text-green-600">
+                        <i class="fas fa-calendar mr-2"></i>2016 - Ongoing
+                    </div>
+                </div>
+
+                <div class="research-card bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-8 text-center">
+                    <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-flask text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-purple-700 mb-4">Universiti Malaysia Sabah (UMS)</h3>
+                    <p class="text-gray-600 mb-4">Tropical soil research and sustainable farming practices in Borneo
+                        ecosystems</p>
+                    <div class="text-sm text-purple-600">
+                        <i class="fas fa-calendar mr-2"></i>2019 - Ongoing
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Published Research -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Published Research</h2>
+                <p class="text-xl text-gray-600">Peer-reviewed publications and scientific papers</p>
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-start space-x-6">
+                        <div
+                            class="w-16 h-16 bg-blue-500 text-white rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-file-alt text-2xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Effects of Organomineral Soil Conditioners
+                                on Rice Yield and Soil Properties in Tropical Conditions</h3>
+                            <p class="text-gray-600 mb-3">Journal of Tropical Agricultural Science, 2023. A
+                                comprehensive study showing 38% yield improvement in rice cultivation across multiple
+                                soil types.</p>
+                            <div class="flex items-center space-x-4 text-sm text-gray-500">
+                                <span><i class="fas fa-users mr-1"></i>Dr. Ahmad Rahman, Dr. Sarah Lim</span>
+                                <span><i class="fas fa-calendar mr-1"></i>March 2023</span>
+                                <a href="#" class="text-blue-600 hover:text-blue-700"><i
+                                        class="fas fa-external-link-alt mr-1"></i>View Paper</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-start space-x-6">
+                        <div
+                            class="w-16 h-16 bg-green-500 text-white rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-leaf text-2xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Sustainable Soil Management Through
+                                Organomineral Technology in Palm Oil Plantations</h3>
+                            <p class="text-gray-600 mb-3">International Journal of Sustainable Agriculture, 2022.
+                                Long-term study demonstrating improved soil health and plantation productivity.</p>
+                            <div class="flex items-center space-x-4 text-sm text-gray-500">
+                                <span><i class="fas fa-users mr-1"></i>Prof. Maria Santos, Dr. Raj Patel</span>
+                                <span><i class="fas fa-calendar mr-1"></i>September 2022</span>
+                                <a href="#" class="text-blue-600 hover:text-blue-700"><i
+                                        class="fas fa-external-link-alt mr-1"></i>View Paper</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-start space-x-6">
+                        <div
+                            class="w-16 h-16 bg-purple-500 text-white rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-microscope text-2xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Microbial Community Enhancement in Tropical
+                                Soils Using Advanced Organomineral Formulations</h3>
+                            <p class="text-gray-600 mb-3">Soil Biology & Biochemistry, 2021. Research on microbial
+                                diversity improvement and nutrient cycling enhancement.</p>
+                            <div class="flex items-center space-x-4 text-sm text-gray-500">
+                                <span><i class="fas fa-users mr-1"></i>Dr. Jennifer Wong, Dr. Kumar Singh</span>
+                                <span><i class="fas fa-calendar mr-1"></i>December 2021</span>
+                                <a href="#" class="text-blue-600 hover:text-blue-700"><i
+                                        class="fas fa-external-link-alt mr-1"></i>View Paper</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="download.html"
+                    class="bg-primary-500 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary-600 hover:shadow-lg transition-all duration-300 inline-flex items-center space-x-2">
+                    <i class="fas fa-download"></i>
+                    <span>Download All Research Papers</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ongoing Research -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Ongoing Research Projects</h2>
+                <p class="text-xl text-gray-600">Current studies and future innovations</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gradient-to-br from-primary-50 to-green-50 rounded-2xl p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-clock text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Climate Adaptation Study</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">Investigating how organomineral soil conditioning can help crops adapt
+                        to climate change effects including drought stress and extreme weather conditions.</p>
+                    <div class="space-y-3">
+                        <div class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-calendar-alt mr-3 text-yellow-500"></i>
+                            <span>Duration: 2024-2026</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-map-marker-alt mr-3 text-yellow-500"></i>
+                            <span>Location: 5 countries across Southeast Asia</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-users mr-3 text-yellow-500"></i>
+                            <span>Partners: UPM, IRRI, CIAT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-rocket text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Next-Gen Formulation</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">Developing enhanced organomineral formulations with targeted release
+                        mechanisms and crop-specific optimizations for even better performance.</p>
+                    <div class="space-y-3">
+                        <div class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-calendar-alt mr-3 text-blue-500"></i>
+                            <span>Duration: 2023-2025</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-flask mr-3 text-blue-500"></i>
+                            <span>Phase: Laboratory & Greenhouse Testing</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-chart-line mr-3 text-blue-500"></i>
+                            <span>Target: 50%+ yield improvement</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-gradient-to-r from-primary-500 to-secondary-500 text-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-6">Collaborate with Our Research Team</h2>
+            <p class="text-xl mb-8 opacity-90">Join us in advancing agricultural science and sustainable farming
+                practices</p>
+
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <div class="bg-white/10 backdrop-blur rounded-xl p-6">
+                    <i class="fas fa-handshake text-3xl mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">Research Partnerships</h3>
+                    <p class="opacity-90">Collaborate on joint research projects</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur rounded-xl p-6">
+                    <i class="fas fa-vial text-3xl mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">Product Testing</h3>
+                    <p class="opacity-90">Test our products in your trials</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur rounded-xl p-6">
+                    <i class="fas fa-graduation-cap text-3xl mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">Student Projects</h3>
+                    <p class="opacity-90">Thesis and research opportunities</p>
+                </div>
+            </div>
+
+            <a href="contact.html"
+                class="bg-white text-primary-500 px-8 py-4 rounded-xl font-bold text-lg hover:shadow-lg transition-all duration-300 inline-flex items-center space-x-2">
+                <i class="fas fa-envelope"></i>
+                <span>Contact Research Team</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-primary-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-leaf text-white text-lg"></i>
+                        </div>
+                        <span class="text-xl font-bold">QL Eco Green</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">Malaysia's Trusted Soil Health Partner</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i
+                                class="fab fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i
+                                class="fab fa-linkedin text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i
+                                class="fab fa-youtube text-xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Research</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#" class="hover:text-white transition-colors">Methodology</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Publications</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Partnerships</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Ongoing Studies</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="download.html" class="hover:text-white transition-colors">Research Papers</a></li>
+                        <li><a href="download.html" class="hover:text-white transition-colors">Technical Data</a></li>
+                        <li><a href="faq.html" class="hover:text-white transition-colors">FAQ</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-phone mr-2"></i>+603-7956 7399</p>
+                        <p><i class="fas fa-envelope mr-2"></i>research@qlecogreen.com</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>Kuala Lumpur, Malaysia</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 QL Eco Green Sdn Bhd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Animate charts when they come into view
+        function animateCharts() {
+            const chartBars = document.querySelectorAll('.chart-bar');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const bar = entry.target;
+                        const targetWidth = bar.getAttribute('data-width');
+                        setTimeout(() => {
+                            bar.style.width = targetWidth;
+                        }, 200);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            chartBars.forEach(bar => observer.observe(bar));
+        }
+
+        // Initialize animations when page loads
+        document.addEventListener('DOMContentLoaded', function () {
+            animateCharts();
+        });
+    </script>
+
+    <!-- Floating WhatsApp Button -->
+    <div id="whatsapp-float" class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/60379567399?text=Hello%20QL%20Eco%20Green!%20I'm%20interested%20in%20your%20research%20and%20development%20in%20soil%20science."
+            target="_blank"
+            class="whatsapp-btn bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 flex items-center space-x-3 group">
+            <i class="fab fa-whatsapp text-2xl"></i>
+            <span
+                class="whatsapp-text hidden group-hover:block bg-green-600 px-3 py-1 rounded-lg text-sm font-medium absolute right-full mr-3 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all duration-300">
+                Chat with us on WhatsApp
+            </span>
+        </a>
+    </div>
+
+    <style>
+        #whatsapp-float {
+            animation: whatsapp-pulse 2s infinite;
+        }
+
+        @keyframes whatsapp-pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .whatsapp-btn:hover {
+            animation: none;
+        }
+
+        @media (max-width: 768px) {
+            .whatsapp-text {
+                display: none !important;
+            }
+        }
+    </style>
+</body>
+
+</html>

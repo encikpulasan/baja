@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training & Education Center - QL Eco Green | Learn Sustainable Farming</title>
+    <meta name="description"
+        content="Master sustainable farming techniques with QL Eco Green's comprehensive training programs, application guides, and educational resources.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9f4',
+                            100: '#dcf4e8',
+                            500: '#4c745f',
+                            600: '#3d5f4c',
+                            700: '#2f4a3a',
+                        },
+                        secondary: {
+                            500: '#6b8e23',
+                        },
+                        accent: {
+                            500: '#f4a261',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans text-gray-900 bg-gray-50">
+    <!-- Header -->
+    <header class="header fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
+        <nav class="py-4">
+            <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-primary-500 rounded-full flex items-center justify-center">
+                        <i class="fas fa-leaf text-white text-lg"></i>
+                    </div>
+                    <span class="text-xl font-bold text-primary-500">QL Eco Green</span>
+                </div>
+
+                <ul class="nav-menu hidden md:flex items-center space-x-8">
+                    <li><a href="index.html"
+                            class="nav-link px-4 py-2 rounded-lg font-medium text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300">Home</a>
+                    </li>
+                    <li><a href="products.html"
+                            class="nav-link px-4 py-2 rounded-lg font-medium text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300">Products</a>
+                    </li>
+
+                    <!-- Company Dropdown -->
+                    <li class="relative group">
+                        <button
+                            class="nav-dropdown-toggle px-4 py-2 rounded-lg font-medium text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300 flex items-center">
+                            Company
+                            <i
+                                class="fas fa-chevron-down ml-1 text-sm group-hover:rotate-180 transition-transform duration-200"></i>
+                        </button>
+                        <div
+                            class="nav-dropdown absolute top-full left-0 w-48 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <a href="about.html"
+                                class="block px-4 py-3 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-colors rounded-t-lg">About
+                                Us</a>
+                            <a href="research.html"
+                                class="block px-4 py-3 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-colors">Research</a>
+                            <a href="news.html"
+                                class="block px-4 py-3 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-colors rounded-b-lg">News</a>
+                        </div>
+                    </li>
+
+                    <!-- Resources Dropdown -->
+                    <li class="relative group">
+                        <button
+                            class="nav-dropdown-toggle px-4 py-2 rounded-lg font-medium text-white bg-primary-500 hover:bg-primary-600 transition-all duration-300 flex items-center">
+                            Resources
+                            <i
+                                class="fas fa-chevron-down ml-1 text-sm group-hover:rotate-180 transition-transform duration-200"></i>
+                        </button>
+                        <div
+                            class="nav-dropdown absolute top-full left-0 w-48 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <a href="training.html"
+                                class="block px-4 py-3 text-primary-500 bg-primary-50 font-medium transition-colors rounded-t-lg">Training</a>
+                            <a href="faq.html"
+                                class="block px-4 py-3 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-colors">FAQ</a>
+                            <a href="download.html"
+                                class="block px-4 py-3 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-colors rounded-b-lg">Downloads</a>
+                        </div>
+                    </li>
+
+                    <li><a href="contact.html"
+                            class="nav-link px-4 py-2 rounded-lg font-medium text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="hamburger md:hidden flex flex-col cursor-pointer space-y-1">
+                    <span class="w-6 h-0.5 bg-primary-500 rounded transition-all duration-300"></span>
+                    <span class="w-6 h-0.5 bg-primary-500 rounded transition-all duration-300"></span>
+                    <span class="w-6 h-0.5 bg-primary-500 rounded transition-all duration-300"></span>
+                </div>
+
+                <!-- Mobile Navigation Menu -->
+                <div
+                    class="mobile-menu fixed top-full left-0 right-0 bg-white border-b border-gray-200 py-4 px-6 transform -translate-y-full opacity-0 transition-all duration-300 md:hidden">
+                    <ul class="space-y-2">
+                        <li><a href="index.html"
+                                class="block py-2 text-gray-700 hover:text-primary-500 transition-colors">Home</a></li>
+                        <li><a href="about.html"
+                                class="block py-2 text-gray-700 hover:text-primary-500 transition-colors">About</a></li>
+                        <li><a href="products.html"
+                                class="block py-2 text-gray-700 hover:text-primary-500 transition-colors">Products</a>
+                        </li>
+                        <li><a href="research.html"
+                                class="block py-2 text-gray-700 hover:text-primary-500 transition-colors">Research</a>
+                        </li>
+                        <li><a href="training.html" class="block py-2 text-primary-500 font-medium">Training</a></li>
+                        <li><a href="faq.html"
+                                class="block py-2 text-gray-700 hover:text-primary-500 transition-colors">FAQ</a></li>
+                        <li><a href="download.html"
+                                class="block py-2 text-gray-700 hover:text-primary-500 transition-colors">Downloads</a>
+                        </li>
+                        <li><a href="contact.html"
+                                class="block py-2 text-gray-700 hover:text-primary-500 transition-colors">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-primary-500 to-secondary-500 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center">
+                <div class="inline-flex items-center bg-white/10 backdrop-blur rounded-full px-6 py-2 mb-6">
+                    <i class="fas fa-graduation-cap mr-2"></i>
+                    <span class="text-sm font-semibold">Training & Education Center</span>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">Master Sustainable Farming</h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-90 max-w-4xl mx-auto">
+                    Comprehensive training programs, application guides, and best practices for successful soil
+                    conditioning and sustainable agriculture
+                </p>
+
+                <div class="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                    <div class="bg-white/10 backdrop-blur rounded-xl p-6 text-center">
+                        <div class="text-3xl font-bold mb-2">50+</div>
+                        <div class="text-sm opacity-90">Video Tutorials</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur rounded-xl p-6 text-center">
+                        <div class="text-3xl font-bold mb-2">1,000+</div>
+                        <div class="text-sm opacity-90">Farmers Trained</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur rounded-xl p-6 text-center">
+                        <div class="text-3xl font-bold mb-2">15</div>
+                        <div class="text-sm opacity-90">Training Modules</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur rounded-xl p-6 text-center">
+                        <div class="text-3xl font-bold mb-2">95%</div>
+                        <div class="text-sm opacity-90">Success Rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Programs -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Training Programs</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Structured learning paths for farmers at all levels
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div
+                    class="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-seedling text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-green-700 mb-4 text-center">Beginner Level</h3>
+                    <ul class="space-y-3 text-gray-600 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Soil Health Basics
+                        </li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Product
+                            Introduction</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Basic Application
+                        </li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Safety Guidelines
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <div class="text-lg font-bold text-green-700 mb-2">4 Hours</div>
+                        <div class="text-sm text-gray-600">Duration</div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 relative transform scale-105">
+                    <div
+                        class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-500 text-white px-6 py-2 rounded-full font-semibold text-sm">
+                        Most Popular
+                    </div>
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-blue-700 mb-4 text-center">Intermediate Level</h3>
+                    <ul class="space-y-3 text-gray-600 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i>Advanced
+                            Application</li>
+                        <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i>Soil Testing</li>
+                        <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i>Crop Optimization
+                        </li>
+                        <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i>ROI Calculation
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <div class="text-lg font-bold text-blue-700 mb-2">8 Hours</div>
+                        <div class="text-sm text-gray-600">Duration</div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-trophy text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-purple-700 mb-4 text-center">Expert Level</h3>
+                    <ul class="space-y-3 text-gray-600 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-2"></i>Research Methods
+                        </li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-2"></i>Trial Management
+                        </li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-2"></i>Data Analysis
+                        </li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-2"></i>Consultation
+                            Skills</li>
+                    </ul>
+                    <div class="text-center">
+                        <div class="text-lg font-bold text-purple-700 mb-2">12 Hours</div>
+                        <div class="text-sm text-gray-600">Duration</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Tutorials -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Video Tutorials</h2>
+                <p class="text-xl text-gray-600">Step-by-step visual guides for effective application</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Soil Testing" class="w-full h-48 object-cover">
+                        <div
+                            class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                            <i class="fas fa-play text-white text-4xl"></i>
+                        </div>
+                        <div class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded text-sm">12:34
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Soil Testing Basics</h3>
+                        <p class="text-gray-600 text-sm mb-4">Learn how to properly test your soil before application
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-gray-500">Beginner</span>
+                            <span class="text-xs text-gray-500">5,243 views</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Application Methods" class="w-full h-48 object-cover">
+                        <div
+                            class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                            <i class="fas fa-play text-white text-4xl"></i>
+                        </div>
+                        <div class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded text-sm">18:22
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Application Methods</h3>
+                        <p class="text-gray-600 text-sm mb-4">Different techniques for various crop types</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-gray-500">Intermediate</span>
+                            <span class="text-xs text-gray-500">3,891 views</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Monitoring Results" class="w-full h-48 object-cover">
+                        <div
+                            class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                            <i class="fas fa-play text-white text-4xl"></i>
+                        </div>
+                        <div class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded text-sm">15:47
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Monitoring & Results</h3>
+                        <p class="text-gray-600 text-sm mb-4">Track progress and measure success indicators</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-gray-500">Advanced</span>
+                            <span class="text-xs text-gray-500">2,156 views</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#"
+                    class="bg-primary-500 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary-600 hover:shadow-lg transition-all duration-300 inline-flex items-center space-x-2">
+                    <i class="fas fa-play"></i>
+                    <span>View All Tutorials</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Guides -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Application Guides</h2>
+                <p class="text-xl text-gray-600">Detailed guides for different crops and conditions</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-start space-x-4">
+                            <div
+                                class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-seedling text-white"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">Rice Cultivation Guide</h3>
+                                <p class="text-gray-600 mb-4">Complete guide for rice farming with soil conditioning</p>
+                                <div class="flex items-center space-x-4 text-sm text-gray-500">
+                                    <span><i class="fas fa-file-pdf mr-1"></i>PDF Format</span>
+                                    <span><i class="fas fa-download mr-1"></i>2.3k downloads</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-start space-x-4">
+                            <div
+                                class="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-leaf text-white"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">Palm Oil Optimization</h3>
+                                <p class="text-gray-600 mb-4">Maximize palm oil yields with proper soil management</p>
+                                <div class="flex items-center space-x-4 text-sm text-gray-500">
+                                    <span><i class="fas fa-file-pdf mr-1"></i>PDF Format</span>
+                                    <span><i class="fas fa-download mr-1"></i>1.8k downloads</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-start space-x-4">
+                            <div
+                                class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-carrot text-white"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">Vegetable Farming</h3>
+                                <p class="text-gray-600 mb-4">Best practices for various vegetable crops</p>
+                                <div class="flex items-center space-x-4 text-sm text-gray-500">
+                                    <span><i class="fas fa-file-pdf mr-1"></i>PDF Format</span>
+                                    <span><i class="fas fa-download mr-1"></i>3.1k downloads</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="bg-primary-50 rounded-xl p-8 border border-primary-200">
+                        <h3 class="text-2xl font-bold text-primary-500 mb-6">Quick Reference Calculator</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Farm Size (hectares)</label>
+                                <input type="number" id="farmSize" placeholder="Enter farm size"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Crop Type</label>
+                                <select id="cropType"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                                    <option value="">Select crop type</option>
+                                    <option value="rice">Rice</option>
+                                    <option value="palm">Palm Oil</option>
+                                    <option value="vegetables">Vegetables</option>
+                                    <option value="fruits">Fruits</option>
+                                </select>
+                            </div>
+                            <button onclick="calculateApplication()"
+                                class="w-full bg-primary-500 text-white py-3 rounded-lg font-semibold hover:bg-primary-600 transition-colors">
+                                Calculate Application Rate
+                            </button>
+                            <div id="calculationResult"
+                                class="hidden bg-green-50 border border-green-200 rounded-lg p-4">
+                                <p class="text-green-800 font-semibold">Recommended Application:</p>
+                                <p id="resultText" class="text-green-700"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Practices -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Best Practices</h2>
+                <p class="text-xl text-gray-600">Proven techniques for optimal results</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Timing</h3>
+                    <p class="text-gray-600 text-sm">Apply during cooler hours for best absorption</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-tint text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Watering</h3>
+                    <p class="text-gray-600 text-sm">Ensure adequate moisture before and after application</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-microscope text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Testing</h3>
+                    <p class="text-gray-600 text-sm">Regular soil testing for optimal results</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-chart-line text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Monitoring</h3>
+                    <p class="text-gray-600 text-sm">Track progress and adjust as needed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-gradient-to-r from-primary-500 to-secondary-500 text-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready to Start Learning?</h2>
+            <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+                Join our training programs and master sustainable farming techniques
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html"
+                    class="bg-white text-primary-500 px-8 py-4 rounded-xl font-bold hover:shadow-lg transition-all duration-300 inline-flex items-center space-x-2">
+                    <i class="fas fa-calendar"></i>
+                    <span>Schedule Training</span>
+                </a>
+                <a href="download.html"
+                    class="border-2 border-white text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-primary-500 transition-all duration-300 inline-flex items-center space-x-2">
+                    <i class="fas fa-download"></i>
+                    <span>Download Guides</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-primary-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-leaf text-white text-lg"></i>
+                        </div>
+                        <span class="text-xl font-bold">QL Eco Green</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">Malaysia's Trusted Soil Health Partner</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Training</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#" class="hover:text-white transition-colors">Programs</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Video Tutorials</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Application Guides</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Best Practices</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="download.html" class="hover:text-white transition-colors">Downloads</a></li>
+                        <li><a href="research.html" class="hover:text-white transition-colors">Research</a></li>
+                        <li><a href="faq.html" class="hover:text-white transition-colors">FAQ</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-phone mr-2"></i>+603-7956 7399</p>
+                        <p><i class="fas fa-envelope mr-2"></i>training@qlecogreen.com</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>Kuala Lumpur, Malaysia</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 QL Eco Green Sdn Bhd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function calculateApplication() {
+            const farmSize = document.getElementById('farmSize').value;
+            const cropType = document.getElementById('cropType').value;
+            const resultDiv = document.getElementById('calculationResult');
+            const resultText = document.getElementById('resultText');
+
+            if (!farmSize || !cropType) {
+                alert('Please fill in all fields');
+                return;
+            }
+
+            const rates = {
+                rice: { min: 0.5, max: 1.25, unit: 'kg/ha' },
+                palm: { min: 0.75, max: 1.5, unit: 'kg/ha' },
+                vegetables: { min: 1.0, max: 2.0, unit: 'kg/ha' },
+                fruits: { min: 0.5, max: 1.0, unit: 'kg/ha' }
+            };
+
+            const rate = rates[cropType];
+            const minAmount = (farmSize * rate.min).toFixed(1);
+            const maxAmount = (farmSize * rate.max).toFixed(1);
+
+            resultText.innerHTML = `${minAmount} - ${maxAmount} kg total<br>
+                                  <small class="text-green-600">Rate: ${rate.min}-${rate.max} ${rate.unit}</small>`;
+            resultDiv.classList.remove('hidden');
+        }
+    </script>
+
+    <!-- Floating WhatsApp Button -->
+    <div id="whatsapp-float" class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/60379567399?text=Hello%20QL%20Eco%20Green!%20I'm%20interested%20in%20your%20training%20programs%20for%20sustainable%20farming."
+            target="_blank"
+            class="whatsapp-btn bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 flex items-center space-x-3 group">
+            <i class="fab fa-whatsapp text-2xl"></i>
+            <span
+                class="whatsapp-text hidden group-hover:block bg-green-600 px-3 py-1 rounded-lg text-sm font-medium absolute right-full mr-3 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all duration-300">
+                Chat with us on WhatsApp
+            </span>
+        </a>
+    </div>
+
+    <style>
+        #whatsapp-float {
+            animation: whatsapp-pulse 2s infinite;
+        }
+
+        @keyframes whatsapp-pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .whatsapp-btn:hover {
+            animation: none;
+        }
+
+        @media (max-width: 768px) {
+            .whatsapp-text {
+                display: none !important;
+            }
+        }
+    </style>
+</body>
+
+</html>

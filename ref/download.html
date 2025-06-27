@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloads - QL Eco Green | Resources & Documentation</title>
+    <meta name="description"
+        content="Download product catalogs, technical documentation, and agricultural resources from QL Eco Green.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9f4',
+                            100: '#dcf4e8',
+                            500: '#4c745f',
+                            600: '#3d5f4c',
+                            700: '#2f4a3a',
+                        },
+                        secondary: {
+                            500: '#6b8e23',
+                        },
+                        accent: {
+                            500: '#f4a261',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans text-gray-900">
+    <!-- Header -->
+    <header class="header fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
+        <nav class="py-4">
+            <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-primary-500 rounded-full flex items-center justify-center">
+                        <i class="fas fa-leaf text-white text-lg"></i>
+                    </div>
+                    <span class="text-xl font-bold text-primary-500">QL Eco Green</span>
+                </div>
+
+                <ul class="hidden md:flex items-center space-x-8">
+                    <li><a href="index.html"
+                            class="nav-link px-4 py-2 rounded-lg font-medium text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300">Home</a>
+                    </li>
+                    <li><a href="products.html"
+                            class="nav-link px-4 py-2 rounded-lg font-medium text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300">Products</a>
+                    </li>
+
+                    <!-- Company Dropdown -->
+                    <li class="relative group">
+                        <button
+                            class="nav-dropdown-toggle px-4 py-2 rounded-lg font-medium text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300 flex items-center">
+                            Company
+                            <i
+                                class="fas fa-chevron-down ml-1 text-sm group-hover:rotate-180 transition-transform duration-200"></i>
+                        </button>
+                        <div
+                            class="nav-dropdown absolute top-full left-0 w-48 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <a href="about.html"
+                                class="block px-4 py-3 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-colors rounded-t-lg">About
+                                Us</a>
+                            <a href="research.html"
+                                class="block px-4 py-3 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-colors">Research</a>
+                            <a href="news.html"
+                                class="block px-4 py-3 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-colors rounded-b-lg">News</a>
+                        </div>
+                    </li>
+
+                    <!-- Resources Dropdown -->
+                    <li class="relative group">
+                        <button
+                            class="nav-dropdown-toggle px-4 py-2 rounded-lg font-medium text-white bg-primary-500 hover:bg-primary-600 transition-all duration-300 flex items-center">
+                            Resources
+                            <i
+                                class="fas fa-chevron-down ml-1 text-sm group-hover:rotate-180 transition-transform duration-200"></i>
+                        </button>
+                        <div
+                            class="nav-dropdown absolute top-full left-0 w-48 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <a href="training.html"
+                                class="block px-4 py-3 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-colors rounded-t-lg">Training</a>
+                            <a href="faq.html"
+                                class="block px-4 py-3 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-colors">FAQ</a>
+                            <a href="download.html"
+                                class="block px-4 py-3 text-primary-500 bg-primary-50 font-medium transition-colors rounded-b-lg">Downloads</a>
+                        </div>
+                    </li>
+
+                    <li><a href="contact.html"
+                            class="nav-link px-4 py-2 rounded-lg font-medium text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="hamburger md:hidden flex flex-col cursor-pointer space-y-1">
+                    <span class="w-6 h-0.5 bg-primary-500 rounded transition-all duration-300"></span>
+                    <span class="w-6 h-0.5 bg-primary-500 rounded transition-all duration-300"></span>
+                    <span class="w-6 h-0.5 bg-primary-500 rounded transition-all duration-300"></span>
+                </div>
+
+                <!-- Mobile Navigation Menu -->
+                <div class="nav-menu md:hidden">
+                    <a href="index.html"
+                        class="nav-link block px-6 py-4 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300">Home</a>
+                    <a href="about.html"
+                        class="nav-link block px-6 py-4 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300">About
+                        Us</a>
+                    <a href="products.html"
+                        class="nav-link block px-6 py-4 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300">Products</a>
+                    <a href="research.html"
+                        class="nav-link block px-6 py-4 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300">Research</a>
+                    <a href="faq.html"
+                        class="nav-link block px-6 py-4 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300">FAQ</a>
+                    <a href="download.html"
+                        class="nav-link block px-6 py-4 text-primary-500 bg-primary-50 active">Downloads</a>
+                    <a href="contact.html"
+                        class="nav-link block px-6 py-4 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-gray-50 to-green-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6">Download Resources</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Access comprehensive product catalogs, technical documentation, and agricultural guides
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Downloads -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Featured Downloads</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Our most popular resources for farmers and agricultural professionals
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div
+                    class="bg-gradient-to-br from-primary-50 to-primary-100 p-8 rounded-2xl border border-primary-200 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="text-center mb-6">
+                        <div
+                            class="w-20 h-20 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-book text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary-500 mb-2">Complete Product Catalog</h3>
+                        <p class="text-gray-600 text-sm">Comprehensive guide to all QL Eco Green products</p>
+                    </div>
+                    <div class="space-y-3 mb-6 text-sm text-gray-600">
+                        <div class="flex justify-between">
+                            <span>Format:</span>
+                            <span>PDF</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Size:</span>
+                            <span>12.5 MB</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Pages:</span>
+                            <span>48</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Language:</span>
+                            <span>English</span>
+                        </div>
+                    </div>
+                    <button
+                        class="w-full bg-gradient-to-r from-primary-500 to-secondary-500 text-white py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 flex items-center justify-center space-x-2">
+                        <i class="fas fa-download"></i>
+                        <span>Download</span>
+                    </button>
+                </div>
+
+                <div
+                    class="bg-gradient-to-br from-secondary-500/10 to-secondary-500/20 p-8 rounded-2xl border border-secondary-200 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="text-center mb-6">
+                        <div
+                            class="w-20 h-20 bg-gradient-to-r from-secondary-500 to-primary-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-seedling text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary-500 mb-2">Application Guide</h3>
+                        <p class="text-gray-600 text-sm">Step-by-step application instructions and best practices</p>
+                    </div>
+                    <div class="space-y-3 mb-6 text-sm text-gray-600">
+                        <div class="flex justify-between">
+                            <span>Format:</span>
+                            <span>PDF</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Size:</span>
+                            <span>8.2 MB</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Pages:</span>
+                            <span>24</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Language:</span>
+                            <span>English</span>
+                        </div>
+                    </div>
+                    <button
+                        class="w-full bg-gradient-to-r from-secondary-500 to-primary-500 text-white py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 flex items-center justify-center space-x-2">
+                        <i class="fas fa-download"></i>
+                        <span>Download</span>
+                    </button>
+                </div>
+
+                <div
+                    class="bg-gradient-to-br from-accent-500/10 to-accent-500/20 p-8 rounded-2xl border border-accent-200 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="text-center mb-6">
+                        <div
+                            class="w-20 h-20 bg-gradient-to-r from-accent-500 to-primary-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-chart-line text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-accent-500 mb-2">Technical Data Sheets</h3>
+                        <p class="text-gray-600 text-sm">Detailed technical specifications and performance data</p>
+                    </div>
+                    <div class="space-y-3 mb-6 text-sm text-gray-600">
+                        <div class="flex justify-between">
+                            <span>Format:</span>
+                            <span>PDF</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Size:</span>
+                            <span>6.8 MB</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Pages:</span>
+                            <span>16</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Language:</span>
+                            <span>English</span>
+                        </div>
+                    </div>
+                    <button
+                        class="w-full bg-gradient-to-r from-accent-500 to-primary-500 text-white py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 flex items-center justify-center space-x-2">
+                        <i class="fas fa-download"></i>
+                        <span>Download</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resource Categories -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Resource Categories</h2>
+                <p class="text-xl text-gray-600">Browse by category to find specific resources</p>
+            </div>
+
+            <!-- Product Information -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-primary-500 mb-8 flex items-center">
+                    <i class="fas fa-leaf text-4xl mr-4"></i>
+                    Product Information
+                </h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div
+                        class="bg-white p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-primary-500 text-2xl mt-1">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-lg font-semibold text-gray-900 mb-2">Soil Conditioner Brochure</h4>
+                                <p class="text-gray-600 text-sm mb-3">Product overview and key benefits</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs text-gray-500">PDF • 3.2 MB</span>
+                                    <button class="text-primary-500 hover:text-primary-600 transition-colors">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-primary-500 text-2xl mt-1">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-lg font-semibold text-gray-900 mb-2">Nutrient Profile Sheet</h4>
+                                <p class="text-gray-600 text-sm mb-3">Complete nutrient breakdown and analysis</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs text-gray-500">PDF • 1.8 MB</span>
+                                    <button class="text-primary-500 hover:text-primary-600 transition-colors">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-primary-500 text-2xl mt-1">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-lg font-semibold text-gray-900 mb-2">Product Comparison Chart</h4>
+                                <p class="text-gray-600 text-sm mb-3">Compare different product variants</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs text-gray-500">PDF • 2.1 MB</span>
+                                    <button class="text-primary-500 hover:text-primary-600 transition-colors">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Documentation -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-secondary-500 mb-8 flex items-center">
+                    <i class="fas fa-flask text-4xl mr-4"></i>
+                    Technical Documentation
+                </h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div
+                        class="bg-white p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-secondary-500 text-2xl mt-1">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-lg font-semibold text-gray-900 mb-2">Safety Data Sheet (SDS)</h4>
+                                <p class="text-gray-600 text-sm mb-3">Complete safety and handling information</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs text-gray-500">PDF • 1.5 MB</span>
+                                    <button class="text-secondary-500 hover:text-secondary-600 transition-colors">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-secondary-500 text-2xl mt-1">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-lg font-semibold text-gray-900 mb-2">Quality Certifications</h4>
+                                <p class="text-gray-600 text-sm mb-3">ISO certifications and quality standards</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs text-gray-500">PDF • 4.2 MB</span>
+                                    <button class="text-secondary-500 hover:text-secondary-600 transition-colors">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-secondary-500 text-2xl mt-1">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-lg font-semibold text-gray-900 mb-2">Research Studies</h4>
+                                <p class="text-gray-600 text-sm mb-3">Independent research and field trials</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs text-gray-500">PDF • 8.7 MB</span>
+                                    <button class="text-secondary-500 hover:text-secondary-600 transition-colors">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Educational Resources -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-accent-500 mb-8 flex items-center">
+                    <i class="fas fa-graduation-cap text-4xl mr-4"></i>
+                    Educational Resources
+                </h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div
+                        class="bg-white p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-accent-500 text-2xl mt-1">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-lg font-semibold text-gray-900 mb-2">Training Video Series</h4>
+                                <p class="text-gray-600 text-sm mb-3">Step-by-step application tutorials</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs text-gray-500">MP4 • 240 MB</span>
+                                    <button class="text-accent-500 hover:text-accent-600 transition-colors">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-accent-500 text-2xl mt-1">
+                                <i class="fas fa-file-powerpoint"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-lg font-semibold text-gray-900 mb-2">Presentation Templates</h4>
+                                <p class="text-gray-600 text-sm mb-3">Ready-to-use presentation materials</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs text-gray-500">PPTX • 15.3 MB</span>
+                                    <button class="text-accent-500 hover:text-accent-600 transition-colors">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-accent-500 text-2xl mt-1">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-lg font-semibold text-gray-900 mb-2">Sustainable Farming Guide</h4>
+                                <p class="text-gray-600 text-sm mb-3">Best practices for sustainable agriculture</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs text-gray-500">PDF • 6.9 MB</span>
+                                    <button class="text-accent-500 hover:text-accent-600 transition-colors">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Requirements -->
+    <section class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Download Information</h2>
+                <p class="text-xl text-gray-600">Important information about accessing our resources</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold text-primary-500 mb-6 flex items-center">
+                        <i class="fas fa-info-circle text-3xl mr-4"></i>
+                        Download Guidelines
+                    </h3>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-check text-primary-500 mt-1"></i>
+                            <span>All resources are free to download and use</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-check text-primary-500 mt-1"></i>
+                            <span>No registration required for basic resources</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-check text-primary-500 mt-1"></i>
+                            <span>Documents are updated regularly</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-check text-primary-500 mt-1"></i>
+                            <span>Available in multiple formats when applicable</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold text-primary-500 mb-6 flex items-center">
+                        <i class="fas fa-desktop text-3xl mr-4"></i>
+                        System Requirements
+                    </h3>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-check text-primary-500 mt-1"></i>
+                            <span>PDF Reader (Adobe Acrobat or similar)</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-check text-primary-500 mt-1"></i>
+                            <span>Modern web browser for online viewing</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-check text-primary-500 mt-1"></i>
+                            <span>Minimum 50MB free storage space</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-check text-primary-500 mt-1"></i>
+                            <span>Stable internet connection recommended</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-primary-50 border border-primary-200 p-8 rounded-2xl">
+                <div class="flex items-start space-x-4">
+                    <div class="text-primary-500 text-3xl mt-1">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-primary-500 mb-2">Need Custom Resources?</h3>
+                        <p class="text-gray-600 mb-4">
+                            We can create customized documentation, presentations, or training materials specific to
+                            your needs.
+                            Contact our team to discuss your requirements.
+                        </p>
+                        <a href="contact.html"
+                            class="bg-primary-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-600 transition-colors duration-300 inline-flex items-center space-x-2">
+                            <i class="fas fa-phone"></i>
+                            <span>Contact Us</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="py-24 bg-gradient-to-r from-primary-500 to-secondary-500">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-white mb-6">Stay Updated</h2>
+            <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+                Subscribe to receive notifications when new resources and documentation are available
+            </p>
+            <div class="max-w-md mx-auto">
+                <div class="flex">
+                    <input type="email" placeholder="Enter your email address"
+                        class="flex-1 px-6 py-4 rounded-l-xl border-0 focus:outline-none focus:ring-2 focus:ring-white">
+                    <button
+                        class="bg-white text-primary-500 px-8 py-4 rounded-r-xl font-semibold hover:bg-gray-100 transition-colors duration-300">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-primary-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-leaf text-white text-lg"></i>
+                        </div>
+                        <span class="text-xl font-bold">QL Eco Green</span>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed max-w-md">Pioneering sustainable agriculture solutions for a
+                        healthier planet and more productive farming.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html"
+                                class="text-gray-300 hover:text-white transition-colors duration-300">Home</a></li>
+                        <li><a href="about.html"
+                                class="text-gray-300 hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="products.html"
+                                class="text-gray-300 hover:text-white transition-colors duration-300">Products</a></li>
+                        <li><a href="faq.html"
+                                class="text-gray-300 hover:text-white transition-colors duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Support</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">Technical
+                                Support</a></li>
+                        <li><a href="download.html"
+                                class="text-gray-300 hover:text-white transition-colors duration-300">Downloads</a></li>
+                        <li><a href="faq.html"
+                                class="text-gray-300 hover:text-white transition-colors duration-300">FAQ</a></li>
+                        <li><a href="contact.html"
+                                class="text-gray-300 hover:text-white transition-colors duration-300">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <p class="text-gray-300">&copy; 2024 QL Eco Green. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">Terms of
+                        Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Floating WhatsApp Button -->
+    <div id="whatsapp-float" class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/60379567399?text=Hello%20QL%20Eco%20Green!%20I'm%20interested%20in%20your%20resources%20and%20would%20like%20more%20information."
+            target="_blank"
+            class="whatsapp-btn bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 flex items-center space-x-3 group">
+            <i class="fab fa-whatsapp text-2xl"></i>
+            <span
+                class="whatsapp-text hidden group-hover:block bg-green-600 px-3 py-1 rounded-lg text-sm font-medium absolute right-full mr-3 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all duration-300">
+                Chat with us on WhatsApp
+            </span>
+        </a>
+    </div>
+
+    <style>
+        #whatsapp-float {
+            animation: whatsapp-pulse 2s infinite;
+        }
+
+        @keyframes whatsapp-pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .whatsapp-btn:hover {
+            animation: none;
+        }
+
+        @media (max-width: 768px) {
+            .whatsapp-text {
+                display: none !important;
+            }
+        }
+    </style>
+</body>
+
+</html>

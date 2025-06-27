@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Updates - QL Eco Green | Latest Agricultural Insights</title>
+    <meta name="description"
+        content="Stay updated with the latest news, research findings, and industry insights from QL Eco Green. Company announcements and agricultural innovations.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9f4',
+                            100: '#dcf4e8',
+                            500: '#4c745f',
+                            600: '#3d5f4c',
+                            700: '#2f4a3a',
+                        },
+                        secondary: {
+                            500: '#6b8e23',
+                        },
+                        accent: {
+                            500: '#f4a261',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans text-gray-900 bg-gray-50">
+    <!-- Header -->
+    <header class="header fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
+        <nav class="py-4">
+            <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-primary-500 rounded-full flex items-center justify-center">
+                        <i class="fas fa-leaf text-white text-lg"></i>
+                    </div>
+                    <span class="text-xl font-bold text-primary-500">QL Eco Green</span>
+                </div>
+
+                <ul class="hidden md:flex items-center space-x-8">
+                    <li><a href="index.html"
+                            class="nav-link px-4 py-2 rounded-lg font-medium text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300">Home</a>
+                    </li>
+                    <li><a href="products.html"
+                            class="nav-link px-4 py-2 rounded-lg font-medium text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300">Products</a>
+                    </li>
+
+                    <!-- Company Dropdown -->
+                    <li class="relative group">
+                        <button
+                            class="nav-dropdown-toggle px-4 py-2 rounded-lg font-medium text-white bg-primary-500 hover:bg-primary-600 transition-all duration-300 flex items-center">
+                            Company
+                            <i
+                                class="fas fa-chevron-down ml-1 text-sm group-hover:rotate-180 transition-transform duration-200"></i>
+                        </button>
+                        <div
+                            class="nav-dropdown absolute top-full left-0 w-48 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <a href="about.html"
+                                class="block px-4 py-3 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-colors rounded-t-lg">About
+                                Us</a>
+                            <a href="research.html"
+                                class="block px-4 py-3 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-colors">Research</a>
+                            <a href="news.html"
+                                class="block px-4 py-3 text-primary-500 bg-primary-50 font-medium transition-colors rounded-b-lg">News</a>
+                        </div>
+                    </li>
+
+                    <!-- Resources Dropdown -->
+                    <li class="relative group">
+                        <button
+                            class="nav-dropdown-toggle px-4 py-2 rounded-lg font-medium text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300 flex items-center">
+                            Resources
+                            <i
+                                class="fas fa-chevron-down ml-1 text-sm group-hover:rotate-180 transition-transform duration-200"></i>
+                        </button>
+                        <div
+                            class="nav-dropdown absolute top-full left-0 w-48 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <a href="training.html"
+                                class="block px-4 py-3 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-colors rounded-t-lg">Training</a>
+                            <a href="faq.html"
+                                class="block px-4 py-3 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-colors">FAQ</a>
+                            <a href="download.html"
+                                class="block px-4 py-3 text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-colors rounded-b-lg">Downloads</a>
+                        </div>
+                    </li>
+
+                    <li><a href="contact.html"
+                            class="nav-link px-4 py-2 rounded-lg font-medium text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="hamburger md:hidden flex flex-col cursor-pointer space-y-1">
+                    <span class="w-6 h-0.5 bg-primary-500 rounded transition-all duration-300"></span>
+                    <span class="w-6 h-0.5 bg-primary-500 rounded transition-all duration-300"></span>
+                    <span class="w-6 h-0.5 bg-primary-500 rounded transition-all duration-300"></span>
+                </div>
+
+                <!-- Mobile Navigation Menu -->
+                <div
+                    class="mobile-menu fixed top-full left-0 right-0 bg-white border-b border-gray-200 py-4 px-6 transform -translate-y-full opacity-0 transition-all duration-300 md:hidden">
+                    <ul class="space-y-2">
+                        <li><a href="index.html"
+                                class="block py-2 text-gray-700 hover:text-primary-500 transition-colors">Home</a></li>
+                        <li><a href="about.html"
+                                class="block py-2 text-gray-700 hover:text-primary-500 transition-colors">About</a></li>
+                        <li><a href="products.html"
+                                class="block py-2 text-gray-700 hover:text-primary-500 transition-colors">Products</a>
+                        </li>
+                        <li><a href="research.html"
+                                class="block py-2 text-gray-700 hover:text-primary-500 transition-colors">Research</a>
+                        </li>
+                        <li><a href="training.html"
+                                class="block py-2 text-gray-700 hover:text-primary-500 transition-colors">Training</a>
+                        </li>
+                        <li><a href="news.html" class="block py-2 text-primary-500 font-medium">News</a></li>
+                        <li><a href="faq.html"
+                                class="block py-2 text-gray-700 hover:text-primary-500 transition-colors">FAQ</a></li>
+                        <li><a href="download.html"
+                                class="block py-2 text-gray-700 hover:text-primary-500 transition-colors">Downloads</a>
+                        </li>
+                        <li><a href="contact.html"
+                                class="block py-2 text-gray-700 hover:text-primary-500 transition-colors">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-primary-500 to-secondary-500 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center">
+                <div class="inline-flex items-center bg-white/10 backdrop-blur rounded-full px-6 py-2 mb-6">
+                    <i class="fas fa-newspaper mr-2"></i>
+                    <span class="text-sm font-semibold">News & Updates</span>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">Stay Informed</h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-90 max-w-4xl mx-auto">
+                    Latest developments in sustainable agriculture, company announcements, and industry insights from QL
+                    Eco Green
+                </p>
+
+                <div class="flex justify-center space-x-8 mt-8">
+                    <div class="text-center">
+                        <div class="text-2xl font-bold">Weekly</div>
+                        <div class="text-sm opacity-90">Updates</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold">50+</div>
+                        <div class="text-sm opacity-90">Articles</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold">5k+</div>
+                        <div class="text-sm opacity-90">Readers</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Categories -->
+    <section class="py-8 bg-white sticky top-20 z-40 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-center space-x-8 overflow-x-auto">
+                <button onclick="filterNews('all')"
+                    class="news-filter px-4 py-2 rounded-lg font-medium text-primary-500 bg-primary-50 hover:bg-primary-100 transition-all duration-300 whitespace-nowrap">
+                    All News
+                </button>
+                <button onclick="filterNews('company')"
+                    class="news-filter px-4 py-2 rounded-lg font-medium text-gray-600 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300 whitespace-nowrap">
+                    Company News
+                </button>
+                <button onclick="filterNews('research')"
+                    class="news-filter px-4 py-2 rounded-lg font-medium text-gray-600 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300 whitespace-nowrap">
+                    Research Updates
+                </button>
+                <button onclick="filterNews('industry')"
+                    class="news-filter px-4 py-2 rounded-lg font-medium text-gray-600 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300 whitespace-nowrap">
+                    Industry Insights
+                </button>
+                <button onclick="filterNews('events')"
+                    class="news-filter px-4 py-2 rounded-lg font-medium text-gray-600 hover:text-primary-500 hover:bg-primary-50 transition-all duration-300 whitespace-nowrap">
+                    Events
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured News -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Featured News</h2>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8 mb-12">
+                <article
+                    class="news-item company bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="New Research Facility" class="w-full h-64 object-cover">
+                        <div
+                            class="absolute top-4 left-4 bg-primary-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Company News
+                        </div>
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <div class="text-sm opacity-90">January 15, 2024</div>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">QL Eco Green Opens New Research & Development
+                            Facility</h3>
+                        <p class="text-gray-600 mb-6">Our state-of-the-art R&D facility in Shah Alam is now
+                            operational, featuring advanced laboratories and greenhouse facilities for accelerated
+                            product development.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">5 min read</span>
+                            <a href="#" class="text-primary-500 font-semibold hover:text-primary-600">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article
+                    class="news-item research bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Revolutionary Soil Health Study" class="w-full h-64 object-cover">
+                        <div
+                            class="absolute top-4 left-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Research Update
+                        </div>
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <div class="text-sm opacity-90">December 15, 2024</div>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Revolutionary Soil Health Study Shows 40%
+                            Yield Improvement</h3>
+                        <p class="text-gray-600 mb-6">Latest comprehensive field trials demonstrate significant crop
+                            productivity gains using QL Eco Green's advanced organomineral soil conditioning technology
+                            across multiple crop varieties.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">8 min read</span>
+                            <a href="news-article.html"
+                                class="text-primary-500 font-semibold hover:text-primary-600">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent News -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Recent Updates</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article
+                    class="news-item company bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Partnership News" class="w-full h-48 object-cover">
+                        <div
+                            class="absolute top-3 left-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
+                            Partnership
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-sm text-gray-500 mb-2">January 10, 2024</div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">Strategic Partnership with MARDI</h3>
+                        <p class="text-gray-600 text-sm mb-4">Expanding research collaboration for sustainable
+                            agriculture development across Southeast Asia.</p>
+                        <a href="#" class="text-primary-500 font-semibold text-sm hover:text-primary-600">Read More
+                            →</a>
+                    </div>
+                </article>
+
+                <article
+                    class="news-item industry bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Industry Trends" class="w-full h-48 object-cover">
+                        <div
+                            class="absolute top-3 left-3 bg-purple-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
+                            Industry
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-sm text-gray-500 mb-2">January 8, 2024</div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">2024 Sustainable Agriculture Trends</h3>
+                        <p class="text-gray-600 text-sm mb-4">Key trends shaping the future of sustainable farming and
+                            soil health management.</p>
+                        <a href="#" class="text-primary-500 font-semibold text-sm hover:text-primary-600">Read More
+                            →</a>
+                    </div>
+                </article>
+
+                <article
+                    class="news-item events bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Agricultural Conference" class="w-full h-48 object-cover">
+                        <div
+                            class="absolute top-3 left-3 bg-orange-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
+                            Event
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-sm text-gray-500 mb-2">January 5, 2024</div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">AgriTech Asia 2024 Conference</h3>
+                        <p class="text-gray-600 text-sm mb-4">Join us at the premier agricultural technology conference
+                            in Singapore this March.</p>
+                        <a href="#" class="text-primary-500 font-semibold text-sm hover:text-primary-600">Read More
+                            →</a>
+                    </div>
+                </article>
+
+                <article
+                    class="news-item research bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Research Publication" class="w-full h-48 object-cover">
+                        <div
+                            class="absolute top-3 left-3 bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
+                            Research
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-sm text-gray-500 mb-2">December 15, 2024</div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">40% Yield Improvement Study Results</h3>
+                        <p class="text-gray-600 text-sm mb-4">Comprehensive 12-month field study reveals significant
+                            crop productivity gains across multiple agricultural sites.</p>
+                        <a href="news-article.html"
+                            class="text-primary-500 font-semibold text-sm hover:text-primary-600">Read More
+                            →</a>
+                    </div>
+                </article>
+
+                <article
+                    class="news-item company bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1571019613914-85f342c6a11e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Award Recognition" class="w-full h-48 object-cover">
+                        <div
+                            class="absolute top-3 left-3 bg-yellow-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
+                            Award
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-sm text-gray-500 mb-2">December 25, 2023</div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">Innovation Excellence Award 2023</h3>
+                        <p class="text-gray-600 text-sm mb-4">Recognized for outstanding contribution to sustainable
+                            agriculture innovation in Malaysia.</p>
+                        <a href="#" class="text-primary-500 font-semibold text-sm hover:text-primary-600">Read More
+                            →</a>
+                    </div>
+                </article>
+
+                <article
+                    class="news-item industry bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Market Expansion" class="w-full h-48 object-cover">
+                        <div
+                            class="absolute top-3 left-3 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
+                            Expansion
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-sm text-gray-500 mb-2">December 20, 2023</div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">Expanding to Vietnam Market</h3>
+                        <p class="text-gray-600 text-sm mb-4">QL Eco Green products now available to Vietnamese farmers
+                            through local distributors.</p>
+                        <a href="#" class="text-primary-500 font-semibold text-sm hover:text-primary-600">Read More
+                            →</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="text-center mt-12">
+                <button id="loadMoreBtn"
+                    class="bg-primary-500 text-white px-8 py-4 rounded-xl font-bold hover:bg-primary-600 hover:shadow-lg transition-all duration-300">
+                    Load More Articles
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription -->
+    <section class="py-16 bg-gradient-to-r from-primary-500 to-secondary-500 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-6">Stay Updated</h2>
+                <p class="text-xl mb-8 opacity-90">
+                    Subscribe to our newsletter for the latest news, research updates, and agricultural insights
+                </p>
+
+                <div class="bg-white/10 backdrop-blur rounded-2xl p-8">
+                    <form class="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto">
+                        <input type="email" placeholder="Enter your email address"
+                            class="flex-1 px-6 py-4 rounded-xl border-0 text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-white focus:outline-none">
+                        <button type="submit"
+                            class="bg-accent-500 hover:bg-accent-600 text-white px-8 py-4 rounded-xl font-bold transition-colors duration-300">
+                            Subscribe
+                        </button>
+                    </form>
+                    <p class="text-sm opacity-75 mt-4">
+                        Join 5,000+ subscribers. Unsubscribe at any time.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8 mt-12">
+                    <div class="text-center">
+                        <i class="fas fa-newspaper text-3xl mb-4"></i>
+                        <h3 class="text-lg font-semibold mb-2">Weekly Newsletter</h3>
+                        <p class="opacity-90">Curated agricultural news and insights</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-flask text-3xl mb-4"></i>
+                        <h3 class="text-lg font-semibold mb-2">Research Updates</h3>
+                        <p class="opacity-90">Latest research findings and publications</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-bullhorn text-3xl mb-4"></i>
+                        <h3 class="text-lg font-semibold mb-2">Company News</h3>
+                        <p class="opacity-90">Product launches and company updates</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-primary-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-leaf text-white text-lg"></i>
+                        </div>
+                        <span class="text-xl font-bold">QL Eco Green</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">Malaysia's Trusted Soil Health Partner</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">News</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#" class="hover:text-white transition-colors">Company News</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Research Updates</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Industry Insights</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Events</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="download.html" class="hover:text-white transition-colors">Downloads</a></li>
+                        <li><a href="research.html" class="hover:text-white transition-colors">Research</a></li>
+                        <li><a href="training.html" class="hover:text-white transition-colors">Training</a></li>
+                        <li><a href="faq.html" class="hover:text-white transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Connect</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-envelope mr-2"></i>news@qlecogreen.com</p>
+                        <div class="flex space-x-4 mt-4">
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors"><i
+                                    class="fab fa-facebook text-xl"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors"><i
+                                    class="fab fa-linkedin text-xl"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors"><i
+                                    class="fab fa-twitter text-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 QL Eco Green Sdn Bhd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function filterNews(category) {
+            const newsItems = document.querySelectorAll('.news-item');
+            const filters = document.querySelectorAll('.news-filter');
+
+            // Update filter buttons
+            filters.forEach(btn => {
+                btn.classList.remove('text-primary-500', 'bg-primary-50');
+                btn.classList.add('text-gray-600');
+            });
+
+            event.target.classList.add('text-primary-500', 'bg-primary-50');
+            event.target.classList.remove('text-gray-600');
+
+            // Filter news items
+            newsItems.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Load more functionality
+        document.getElementById('loadMoreBtn').addEventListener('click', function () {
+            // In a real implementation, this would load more articles from a backend
+            this.textContent = 'Loading...';
+            setTimeout(() => {
+                this.textContent = 'No more articles';
+                this.disabled = true;
+                this.classList.add('opacity-50', 'cursor-not-allowed');
+            }, 1000);
+        });
+    </script>
+
+    <!-- Floating WhatsApp Button -->
+    <div id="whatsapp-float" class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/60379567399?text=Hello%20QL%20Eco%20Green!%20I%20saw%20your%20latest%20news%20and%20would%20like%20to%20know%20more%20about%20your%20innovations."
+            target="_blank"
+            class="whatsapp-btn bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 flex items-center space-x-3 group">
+            <i class="fab fa-whatsapp text-2xl"></i>
+            <span
+                class="whatsapp-text hidden group-hover:block bg-green-600 px-3 py-1 rounded-lg text-sm font-medium absolute right-full mr-3 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all duration-300">
+                Chat with us on WhatsApp
+            </span>
+        </a>
+    </div>
+
+    <style>
+        #whatsapp-float {
+            animation: whatsapp-pulse 2s infinite;
+        }
+
+        @keyframes whatsapp-pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .whatsapp-btn:hover {
+            animation: none;
+        }
+
+        @media (max-width: 768px) {
+            .whatsapp-text {
+                display: none !important;
+            }
+        }
+    </style>
+</body>
+
+</html>

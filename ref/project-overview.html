@@ -1,0 +1,2269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QL Eco Green Website - Project Presentation by SOFEHAUS PLT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { 50: '#f0f9f4', 100: '#dcf4e8', 500: '#4c745f', 600: '#3d5f4c', 700: '#2f4a3a' },
+                        secondary: { 500: '#6b8e23' },
+                        accent: { 500: '#f4a261' }
+                    },
+                    fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        .slide {
+            transition: all 0.5s ease;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .counter {
+            animation: countUp 2s ease forwards;
+        }
+
+        @keyframes countUp {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Custom grid for Gantt chart */
+        .grid-cols-18 {
+            grid-template-columns: repeat(18, minmax(0, 1fr));
+        }
+    </style>
+</head>
+
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center">
+                        <i class="fas fa-leaf text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-900">QL Eco Green Website</h1>
+                        <p class="text-sm text-gray-600">Complete Digital Solution Presentation</p>
+                    </div>
+                </div>
+                <div class="text-right">
+                    <p class="text-sm font-medium text-gray-900">SOFEHAUS PLT</p>
+                    <p class="text-xs text-gray-600">Professional Website Development</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-primary-500 to-secondary-500 text-white py-20">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="fade-in">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">Complete Digital Platform</h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-90">Professional Website Solution for QL Eco Green Organic
+                    Fertilizer</p>
+                <div class="bg-white/10 backdrop-blur rounded-xl p-8 max-w-4xl mx-auto">
+                    <h2 class="text-2xl font-semibold mb-6">Project Overview - Organic Fertilizer Showcase</h2>
+                    <div class="grid md:grid-cols-4 gap-6">
+                        <div class="counter">
+                            <div class="text-4xl font-bold">8</div>
+                            <div class="text-sm opacity-90">Professional Pages</div>
+                        </div>
+                        <div class="counter">
+                            <div class="text-4xl font-bold">100%</div>
+                            <div class="text-sm opacity-90">Organic Focus</div>
+                        </div>
+                        <div class="counter">
+                            <div class="text-4xl font-bold">3</div>
+                            <div class="text-sm opacity-90">Languages Supported</div>
+                        </div>
+                        <div class="counter">
+                            <div class="text-4xl font-bold">CMS</div>
+                            <div class="text-sm opacity-90">Content Management</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Executive Summary -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Executive Summary</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Comprehensive digital transformation delivering
+                    immediate business value and competitive advantage</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl">
+                    <i class="fas fa-seedling text-blue-600 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-blue-700 mb-4">Product Showcase</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• Comprehensive organic fertilizer catalog</li>
+                        <li>• Product benefits & testimonials</li>
+                        <li>• Before/after case studies</li>
+                        <li>• Scientific data & statistics</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl">
+                    <i class="fas fa-leaf text-green-600 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-green-700 mb-4">100% Organic Focus</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• Organic vs chemical comparison</li>
+                        <li>• Manufacturing quality control</li>
+                        <li>• Tunnel & compost tower technology</li>
+                        <li>• Global organic farming trends</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl">
+                    <i class="fas fa-award text-purple-600 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-purple-700 mb-4">Company Differentiation</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• Why choose QL Eco Green</li>
+                        <li>• Multi-branch presence (Sabah & Sarawak)</li>
+                        <li>• Advanced manufacturing technology</li>
+                        <li>• Consistent quality assurance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Value -->
+    <section class="py-16 bg-gradient-to-br from-primary-50 to-secondary-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Business Value & ROI</h2>
+                <p class="text-xl text-gray-600">Measurable impact on your organic fertilizer business growth</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">2.5x</h3>
+                    <p class="text-gray-600 mb-4">Conversion Rate Increase</p>
+                    <p class="text-sm text-gray-500">Professional presentation increases customer trust and purchase
+                        decisions</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">85%</h3>
+                    <p class="text-gray-600 mb-4">User Engagement Improvement</p>
+                    <p class="text-sm text-gray-500">Interactive features and testimonials keep visitors engaged longer
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-globe text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">3 Languages</h3>
+                    <p class="text-gray-600 mb-4">Market Reach Expansion</p>
+                    <p class="text-sm text-gray-500">Multilingual support opens doors to diverse customer segments</p>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Immediate Business Benefits</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-bold text-gray-900 mb-4 flex items-center space-x-2">
+                            <i class="fas fa-rocket text-primary-500"></i>
+                            <span>Short-term Impact (1-3 months)</span>
+                        </h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>• Professional brand credibility established</li>
+                            <li>• 24/7 product showcase availability</li>
+                            <li>• Automated lead generation through contact forms</li>
+                            <li>• Reduced customer inquiry response time</li>
+                            <li>• WhatsApp integration for instant communication</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 mb-4 flex items-center space-x-2">
+                            <i class="fas fa-chart-bar text-primary-500"></i>
+                            <span>Long-term Growth (6-12 months)</span>
+                        </h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>• Search engine visibility improvement</li>
+                            <li>• Customer education through content marketing</li>
+                            <li>• Data-driven decision making with analytics</li>
+                            <li>• Competitive advantage in organic fertilizer market</li>
+                            <li>• Scalable platform for future business expansion</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivered Solutions -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Complete Organic Fertilizer Website</h2>
+                <p class="text-xl text-gray-600">8 professional pages showcasing organic fertilizer benefits &
+                    technology</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                    <div class="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-home text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-center mb-2">Homepage</h3>
+                    <p class="text-sm text-gray-600 text-center">Organic fertilizer showcase with clear benefits and
+                        testimonials</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                    <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-building text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-center mb-2">About Us</h3>
+                    <p class="text-sm text-gray-600 text-center">Company story, why choose us, branches in Sabah &
+                        Sarawak</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                    <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-seedling text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-center mb-2">Products</h3>
+                    <p class="text-sm text-gray-600 text-center">Organic fertilizer catalog with benefits & testimonials
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                    <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-industry text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-center mb-2">Technology</h3>
+                    <p class="text-sm text-gray-600 text-center">Tunnel technology, compost tower & quality control
+                        process</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                    <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-newspaper text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-center mb-2">News</h3>
+                    <p class="text-sm text-gray-600 text-center">Organic farming trends & global statistics</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                    <div class="w-12 h-12 bg-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-center mb-2">Contact</h3>
+                    <p class="text-sm text-gray-600 text-center">Multiple locations including Sabah & Sarawak branches
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                    <div class="w-12 h-12 bg-indigo-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-question-circle text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-center mb-2">FAQ</h3>
+                    <p class="text-sm text-gray-600 text-center">Organic vs chemical questions & product guidance</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                    <div class="w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-download text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-center mb-2">Downloads</h3>
+                    <p class="text-sm text-gray-600 text-center">Product catalogs, case studies & scientific data</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Website Master List -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Website Master List & Content Overview</h2>
+                <p class="text-xl text-gray-600">Detailed breakdown of each page content and objectives</p>
+            </div>
+
+            <div class="space-y-8">
+                <!-- Homepage -->
+                <div class="bg-gradient-to-r from-primary-50 to-primary-100 p-8 rounded-2xl">
+                    <div class="flex items-start space-x-6">
+                        <div class="w-16 h-16 bg-primary-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-home text-white text-2xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">1. Homepage - Organic Fertilizer Showcase
+                            </h3>
+                            <div class="grid md:grid-cols-3 gap-6">
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Primary Objectives:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Showcase organic fertilizer products</li>
+                                        <li>• Display clear product benefits</li>
+                                        <li>• Feature customer testimonials</li>
+                                        <li>• Highlight 100% organic focus</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Key Content:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Hero section with core products</li>
+                                        <li>• Before/after case studies</li>
+                                        <li>• Meaningful statistics & data</li>
+                                        <li>• Why choose organic section</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Features:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Multi-language support</li>
+                                        <li>• Mobile responsive design</li>
+                                        <li>• WhatsApp integration</li>
+                                        <li>• CTA to product catalog</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Us -->
+                <div class="bg-gradient-to-r from-blue-50 to-blue-100 p-8 rounded-2xl">
+                    <div class="flex items-start space-x-6">
+                        <div class="w-16 h-16 bg-blue-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-building text-white text-2xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">2. About Us - Company Differentiation</h3>
+                            <div class="grid md:grid-cols-3 gap-6">
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Primary Objectives:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Explain why choose QL Eco Green</li>
+                                        <li>• Showcase company expertise</li>
+                                        <li>• Highlight multi-branch presence</li>
+                                        <li>• Build trust & credibility</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Key Content:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Company history & mission</li>
+                                        <li>• Sabah & Sarawak branches</li>
+                                        <li>• Team expertise & certifications</li>
+                                        <li>• Awards & achievements</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Differentiators:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Advanced manufacturing tech</li>
+                                        <li>• Consistent quality control</li>
+                                        <li>• Regional branch network</li>
+                                        <li>• 100% organic commitment</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products -->
+                <div class="bg-gradient-to-r from-green-50 to-green-100 p-8 rounded-2xl">
+                    <div class="flex items-start space-x-6">
+                        <div class="w-16 h-16 bg-green-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-seedling text-white text-2xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">3. Products - Organic Fertilizer Catalog
+                            </h3>
+                            <div class="grid md:grid-cols-3 gap-6">
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Primary Objectives:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Showcase core organic fertilizer</li>
+                                        <li>• Display product benefits clearly</li>
+                                        <li>• Provide technical specifications</li>
+                                        <li>• Include customer testimonials</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Key Content:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Organic fertilizer product line</li>
+                                        <li>• Before/after case studies</li>
+                                        <li>• Application guidelines</li>
+                                        <li>• Scientific test results</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Benefits Focus:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Organic vs chemical comparison</li>
+                                        <li>• Yield improvement data</li>
+                                        <li>• Soil health enhancement</li>
+                                        <li>• Environmental benefits</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technology -->
+                <div class="bg-gradient-to-r from-purple-50 to-purple-100 p-8 rounded-2xl">
+                    <div class="flex items-start space-x-6">
+                        <div class="w-16 h-16 bg-purple-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-industry text-white text-2xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">4. Technology - Manufacturing Excellence
+                            </h3>
+                            <div class="grid md:grid-cols-3 gap-6">
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Primary Objectives:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Showcase tunnel technology</li>
+                                        <li>• Illustrate compost tower process</li>
+                                        <li>• Demonstrate quality control</li>
+                                        <li>• Highlight manufacturing quality</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Key Content:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Tunnel technology explanation</li>
+                                        <li>• Compost tower process flow</li>
+                                        <li>• Quality control procedures</li>
+                                        <li>• Batch consistency measures</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Visual Elements:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Process flow diagrams</li>
+                                        <li>• Manufacturing facility photos</li>
+                                        <li>• Technology illustrations</li>
+                                        <li>• Quality testing images</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News -->
+                <div class="bg-gradient-to-r from-red-50 to-red-100 p-8 rounded-2xl">
+                    <div class="flex items-start space-x-6">
+                        <div class="w-16 h-16 bg-red-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-newspaper text-white text-2xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">5. News - Organic Farming Trends</h3>
+                            <div class="grid md:grid-cols-3 gap-6">
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Primary Objectives:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Share global organic trends</li>
+                                        <li>• Display meaningful statistics</li>
+                                        <li>• Show organic farming benefits</li>
+                                        <li>• Update industry developments</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Key Content:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Country organic adoption stats</li>
+                                        <li>• Chemical to organic transitions</li>
+                                        <li>• Success stories & outcomes</li>
+                                        <li>• Industry research findings</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Data Focus:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Meaningful statistics</li>
+                                        <li>• Trend analysis graphs</li>
+                                        <li>• Comparative data charts</li>
+                                        <li>• Impact measurements</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div class="bg-gradient-to-r from-cyan-50 to-cyan-100 p-8 rounded-2xl">
+                    <div class="flex items-start space-x-6">
+                        <div class="w-16 h-16 bg-cyan-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-phone text-white text-2xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">6. Contact - Multi-Branch Network</h3>
+                            <div class="grid md:grid-cols-3 gap-6">
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Primary Objectives:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Provide multiple contact options</li>
+                                        <li>• Showcase branch locations</li>
+                                        <li>• Enable easy communication</li>
+                                        <li>• Support customer inquiries</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Branch Locations:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Main office contact details</li>
+                                        <li>• Sabah branch information</li>
+                                        <li>• Sarawak branch information</li>
+                                        <li>• Regional coverage map</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Contact Methods:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• WhatsApp integration</li>
+                                        <li>• Contact forms</li>
+                                        <li>• Direct phone numbers</li>
+                                        <li>• Email addresses</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ -->
+                <div class="bg-gradient-to-r from-indigo-50 to-indigo-100 p-8 rounded-2xl">
+                    <div class="flex items-start space-x-6">
+                        <div class="w-16 h-16 bg-indigo-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-question-circle text-white text-2xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">7. FAQ - Organic vs Chemical Guidance</h3>
+                            <div class="grid md:grid-cols-3 gap-6">
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Primary Objectives:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Address common questions</li>
+                                        <li>• Explain organic benefits</li>
+                                        <li>• Provide product guidance</li>
+                                        <li>• Support decision making</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Key Topics:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Organic vs chemical comparison</li>
+                                        <li>• Product application methods</li>
+                                        <li>• Expected results timeline</li>
+                                        <li>• Troubleshooting guide</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Features:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Searchable Q&A system</li>
+                                        <li>• Category filtering</li>
+                                        <li>• Expert answers</li>
+                                        <li>• Related resources</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Downloads -->
+                <div class="bg-gradient-to-r from-teal-50 to-teal-100 p-8 rounded-2xl">
+                    <div class="flex items-start space-x-6">
+                        <div class="w-16 h-16 bg-teal-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-download text-white text-2xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">8. Downloads - Scientific Data & Resources
+                            </h3>
+                            <div class="grid md:grid-cols-3 gap-6">
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Primary Objectives:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Provide scientific data</li>
+                                        <li>• Share case studies</li>
+                                        <li>• Offer product catalogs</li>
+                                        <li>• Support sales process</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Available Resources:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Product specification sheets</li>
+                                        <li>• Scientific test results</li>
+                                        <li>• Case study reports</li>
+                                        <li>• Application guidelines</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Data Types:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Meaningful statistics</li>
+                                        <li>• Before/after comparisons</li>
+                                        <li>• Yield improvement data</li>
+                                        <li>• Quality test certificates</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Summary Box -->
+            <div class="mt-12 bg-gradient-to-r from-green-900 to-green-800 text-white p-8 rounded-2xl">
+                <h3 class="text-2xl font-bold mb-6 text-center">Website Objectives Summary</h3>
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-eye text-white"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">Product Showcase</h4>
+                        <p class="text-sm opacity-90">Display organic fertilizer products with clear benefits</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-leaf text-white"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">100% Organic Focus</h4>
+                        <p class="text-sm opacity-90">Emphasize organic benefits over chemical alternatives</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-award text-white"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">Company Differentiation</h4>
+                        <p class="text-sm opacity-90">Explain why choose QL Eco Green over competitors</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-purple-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-chart-line text-white"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">Meaningful Data</h4>
+                        <p class="text-sm opacity-90">Present statistics and trends that support organic farming</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Advanced Features Delivered</h2>
+                <p class="text-xl text-gray-600">Modern functionality that drives business results</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl">
+                    <i class="fab fa-whatsapp text-green-600 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-green-700 mb-4">WhatsApp Integration</h3>
+                    <p class="text-gray-700 mb-4">Floating WhatsApp button on every page with context-aware messaging
+                        for immediate customer engagement.</p>
+                    <div class="text-sm text-green-600 font-medium">✓ +60379567399 integration</div>
+                </div>
+
+                <div class="bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-2xl">
+                    <i class="fas fa-search text-orange-600 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-orange-700 mb-4">Smart Search</h3>
+                    <p class="text-gray-700 mb-4">Advanced search functionality across FAQ, news, and products for
+                        better user experience.</p>
+                    <div class="text-sm text-orange-600 font-medium">✓ Real-time filtering</div>
+                </div>
+
+                <div class="bg-gradient-to-br from-red-50 to-red-100 p-8 rounded-2xl">
+                    <i class="fas fa-mobile-alt text-red-600 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-red-700 mb-4">Mobile Responsive</h3>
+                    <p class="text-gray-700 mb-4">Perfect experience across all devices with touch-optimized interface
+                        design.</p>
+                    <div class="text-sm text-red-600 font-medium">✓ 100% responsive</div>
+                </div>
+
+                <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 p-8 rounded-2xl">
+                    <i class="fas fa-globe text-indigo-600 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-indigo-700 mb-4">Multilingual Support</h3>
+                    <p class="text-gray-700 mb-4">Complete website available in English, Bahasa Malaysia, and Chinese
+                        (Simplified) with seamless language switching.</p>
+                    <div class="text-sm text-indigo-600 font-medium">✓ 3 languages supported</div>
+                </div>
+
+                <div class="bg-gradient-to-br from-cyan-50 to-cyan-100 p-8 rounded-2xl">
+                    <i class="fas fa-edit text-cyan-600 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-cyan-700 mb-4">Headless CMS</h3>
+                    <p class="text-gray-700 mb-4">Client can easily update content, news, products, and images through
+                        an intuitive content management system.</p>
+                    <div class="text-sm text-cyan-600 font-medium">✓ Self-service content updates</div>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl">
+                    <i class="fas fa-bolt text-purple-600 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-purple-700 mb-4">Performance Optimized</h3>
+                    <p class="text-gray-700 mb-4">Fast loading times with optimized code, modern web technologies, and
+                        SEO best practices.</p>
+                    <div class="text-sm text-purple-600 font-medium">✓ SEO & speed optimized</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Multilingual & CMS Features -->
+    <section class="py-16 bg-gradient-to-br from-blue-50 to-indigo-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Multilingual & Content Management</h2>
+                <p class="text-xl text-gray-600">Advanced features for global reach and easy maintenance</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Multilingual Support -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mr-4">
+                            <i class="fas fa-globe text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">3-Language Support</h3>
+                            <p class="text-gray-600">Complete multilingual website</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4 p-4 bg-blue-50 rounded-lg">
+                            <span class="text-2xl">🇺🇸</span>
+                            <div>
+                                <div class="font-semibold text-gray-900">English</div>
+                                <div class="text-sm text-gray-600">Primary language - fully optimized</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4 p-4 bg-blue-50 rounded-lg">
+                            <span class="text-2xl">🇲🇾</span>
+                            <div>
+                                <div class="font-semibold text-gray-900">Bahasa Malaysia</div>
+                                <div class="text-sm text-gray-600">Complete translation for local market</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4 p-4 bg-blue-50 rounded-lg">
+                            <span class="text-2xl">🇨🇳</span>
+                            <div>
+                                <div class="font-semibold text-gray-900">Chinese (Simplified)</div>
+                                <div class="text-sm text-gray-600">Targeting Chinese-speaking customers</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 p-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-lg">
+                        <div class="flex items-center space-x-2 mb-2">
+                            <i class="fas fa-magic"></i>
+                            <span class="font-semibold">Smart Language Detection</span>
+                        </div>
+                        <p class="text-sm opacity-90">Automatic language switching based on user preferences with
+                            persistent storage</p>
+                    </div>
+                </div>
+
+                <!-- Headless CMS -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-600 rounded-xl flex items-center justify-center mr-4">
+                            <i class="fas fa-edit text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">Headless CMS</h3>
+                            <p class="text-gray-600">Client-managed content system</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                <i class="fas fa-check text-green-600 text-xs"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Easy Content Updates</div>
+                                <div class="text-sm text-gray-600">Update text, images, and products without technical
+                                    knowledge</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                <i class="fas fa-check text-green-600 text-xs"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-gray-900">News & Blog Management</div>
+                                <div class="text-sm text-gray-600">Publish articles and news updates instantly</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                <i class="fas fa-check text-green-600 text-xs"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Product Catalog Control</div>
+                                <div class="text-sm text-gray-600">Add new products, update specifications and pricing
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                <i class="fas fa-check text-green-600 text-xs"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Multi-language Content</div>
+                                <div class="text-sm text-gray-600">Manage content in all 3 languages from one dashboard
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 p-4 bg-gradient-to-r from-green-500 to-teal-600 text-white rounded-lg">
+                        <div class="flex items-center space-x-2 mb-2">
+                            <i class="fas fa-shield-alt"></i>
+                            <span class="font-semibold">Secure & User-Friendly</span>
+                        </div>
+                        <p class="text-sm opacity-90">Intuitive admin panel with role-based access and automatic backups
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefits Row -->
+            <div class="mt-12 grid md:grid-cols-4 gap-6">
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-white"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">Wider Audience</h4>
+                    <p class="text-sm text-gray-600">Reach Malaysian, Chinese, and international customers</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-white"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">Real-time Updates</h4>
+                    <p class="text-sm text-gray-600">Instant content changes across all languages</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-purple-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-dollar-sign text-white"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">Cost Effective</h4>
+                    <p class="text-sm text-gray-600">No developer needed for routine content updates</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-search text-white"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">SEO Optimized</h4>
+                    <p class="text-sm text-gray-600">Each language optimized for local search engines</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Development Timeline with Gantt Chart -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Project Timeline & Gantt Chart</h2>
+                <p class="text-xl text-gray-600">18-Day Complete Development & Deployment Phase</p>
+            </div>
+
+            <!-- Phase Overview -->
+            <div class="grid md:grid-cols-4 gap-6 mb-12">
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-search text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">Data Collection</h3>
+                    <p class="text-sm text-gray-600">Days 1-3</p>
+                    <p class="text-xs text-blue-600 font-medium">Content gathering</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-code text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">Development</h3>
+                    <p class="text-sm text-gray-600">Days 4-14</p>
+                    <p class="text-xs text-green-600 font-medium">Building & features</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-check-double text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">UAT Testing</h3>
+                    <p class="text-sm text-gray-600">Days 15-17</p>
+                    <p class="text-xs text-orange-600 font-medium">Client review</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-rocket text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">Go Live</h3>
+                    <p class="text-sm text-gray-600">Day 18</p>
+                    <p class="text-xs text-purple-600 font-medium">Launch day</p>
+                </div>
+            </div>
+
+            <!-- Gantt Chart -->
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Project Gantt Chart</h3>
+
+                <!-- Days Header -->
+                <div class="mb-6 overflow-x-auto">
+                    <div class="min-w-max">
+                        <!-- Week Headers -->
+                        <div class="flex mb-2">
+                            <div class="w-64 flex-shrink-0"></div>
+                            <div class="flex-1 grid grid-cols-18 text-center font-semibold text-sm text-gray-700">
+                                <div class="col-span-7 border-r border-gray-300 py-1">Week 1</div>
+                                <div class="col-span-7 border-r border-gray-300 py-1">Week 2</div>
+                                <div class="col-span-4 border-r border-gray-300 py-1">Week 3</div>
+                            </div>
+                        </div>
+
+                        <!-- Day Numbers -->
+                        <div class="flex mb-4">
+                            <div class="w-64 flex-shrink-0 font-semibold text-gray-900 p-2">Project Activities (June)
+                            </div>
+                            <div class="flex-1 grid grid-cols-18 text-xs text-gray-600 border border-gray-200">
+                                <div class="text-center border-r border-gray-200 py-2">14</div>
+                                <div class="text-center border-r border-gray-200 py-2">15</div>
+                                <div class="text-center border-r border-gray-200 py-2">16</div>
+                                <div class="text-center border-r border-gray-200 py-2">17</div>
+                                <div class="text-center border-r border-gray-200 py-2">18</div>
+                                <div class="text-center border-r border-gray-200 py-2">19</div>
+                                <div class="text-center border-r border-gray-200 py-2">20</div>
+                                <div class="text-center border-r border-gray-200 py-2">21</div>
+                                <div class="text-center border-r border-gray-200 py-2">22</div>
+                                <div class="text-center border-r border-gray-200 py-2">23</div>
+                                <div class="text-center border-r border-gray-200 py-2">24</div>
+                                <div class="text-center border-r border-gray-200 py-2">25</div>
+                                <div class="text-center border-r border-gray-200 py-2">26</div>
+                                <div class="text-center border-r border-gray-200 py-2">27</div>
+                                <div class="text-center border-r border-gray-200 py-2">28</div>
+                                <div class="text-center border-r border-gray-200 py-2">29</div>
+                                <div class="text-center border-r border-gray-200 py-2">30</div>
+                                <div class="text-center py-2">1</div>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Bars -->
+                        <div class="space-y-4">
+                            <!-- Data Collection Phase -->
+                            <div class="flex items-center">
+                                <div class="w-64 flex-shrink-0 text-sm font-medium text-gray-900 p-2">📊 Requirements &
+                                    Content Collection</div>
+                                <div class="flex-1 grid grid-cols-18 h-8 border border-gray-200">
+                                    <div
+                                        class="bg-blue-500 flex items-center justify-center col-span-3 rounded-l border-r border-blue-600">
+                                        <span class="text-xs text-white font-bold">3d</span>
+                                    </div>
+                                    <div class="bg-gray-100 col-span-15"></div>
+                                </div>
+                            </div>
+
+                            <!-- Design & Planning -->
+                            <div class="flex items-center">
+                                <div class="w-64 flex-shrink-0 text-sm font-medium text-gray-900 p-2">🎨 Design System &
+                                    Architecture</div>
+                                <div class="flex-1 grid grid-cols-18 h-8 border border-gray-200">
+                                    <div class="bg-gray-100 col-span-3"></div>
+                                    <div
+                                        class="bg-green-500 flex items-center justify-center col-span-2 border-r border-green-600">
+                                        <span class="text-xs text-white font-bold">2d</span>
+                                    </div>
+                                    <div class="bg-gray-100 col-span-13"></div>
+                                </div>
+                            </div>
+
+                            <!-- Core Development -->
+                            <div class="flex items-center">
+                                <div class="w-64 flex-shrink-0 text-sm font-medium text-gray-900 p-2">⚡ Core Pages
+                                    Development</div>
+                                <div class="flex-1 grid grid-cols-18 h-8 border border-gray-200">
+                                    <div class="bg-gray-100 col-span-5"></div>
+                                    <div
+                                        class="bg-green-600 flex items-center justify-center col-span-4 border-r border-green-700">
+                                        <span class="text-xs text-white font-bold">4d</span>
+                                    </div>
+                                    <div class="bg-gray-100 col-span-9"></div>
+                                </div>
+                            </div>
+
+                            <!-- Advanced Features -->
+                            <div class="flex items-center">
+                                <div class="w-64 flex-shrink-0 text-sm font-medium text-gray-900 p-2">🔧 Advanced
+                                    Features & CMS</div>
+                                <div class="flex-1 grid grid-cols-18 h-8 border border-gray-200">
+                                    <div class="bg-gray-100 col-span-9"></div>
+                                    <div
+                                        class="bg-green-700 flex items-center justify-center col-span-4 border-r border-green-800">
+                                        <span class="text-xs text-white font-bold">4d</span>
+                                    </div>
+                                    <div class="bg-gray-100 col-span-5"></div>
+                                </div>
+                            </div>
+
+                            <!-- Integration & Testing -->
+                            <div class="flex items-center">
+                                <div class="w-64 flex-shrink-0 text-sm font-medium text-gray-900 p-2">🔗 Integration &
+                                    Internal Testing</div>
+                                <div class="flex-1 grid grid-cols-18 h-8 border border-gray-200">
+                                    <div class="bg-gray-100 col-span-12"></div>
+                                    <div
+                                        class="bg-yellow-500 flex items-center justify-center col-span-2 border-r border-yellow-600">
+                                        <span class="text-xs text-white font-bold">2d</span>
+                                    </div>
+                                    <div class="bg-gray-100 col-span-4"></div>
+                                </div>
+                            </div>
+
+                            <!-- User Acceptance Testing -->
+                            <div class="flex items-center">
+                                <div class="w-64 flex-shrink-0 text-sm font-medium text-gray-900 p-2">✅ User Acceptance
+                                    Testing (UAT)</div>
+                                <div class="flex-1 flex h-8 border border-gray-200">
+                                    <div class="bg-gray-100" style="width: 77.78%"></div>
+                                    <div class="bg-orange-500 flex items-center justify-center border-r border-orange-600"
+                                        style="width: 16.67%">
+                                        <span class="text-xs text-white font-bold">3d</span>
+                                    </div>
+                                    <div class="bg-gray-100" style="width: 5.55%"></div>
+                                </div>
+                            </div>
+
+                            <!-- Go Live -->
+                            <div class="flex items-center">
+                                <div class="w-64 flex-shrink-0 text-sm font-medium text-gray-900 p-2">🚀 Production
+                                    Deployment<br><span class="text-xs text-purple-600 font-semibold">Target:
+                                        July 1st</span></div>
+                                <div class="flex-1 flex h-8 border border-gray-200">
+                                    <div class="bg-gray-100" style="width: 94.44%"></div>
+                                    <div class="bg-purple-500 flex items-center justify-center rounded-r"
+                                        style="width: 5.56%">
+                                        <span class="text-xs text-white font-bold">1</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase Details -->
+                <div class="mt-8 grid md:grid-cols-2 gap-8">
+                    <!-- Left Column -->
+                    <div class="space-y-6">
+                        <!-- Data Collection -->
+                        <div class="bg-blue-50 p-6 rounded-xl">
+                            <h4 class="font-bold text-blue-700 mb-3 flex items-center space-x-2">
+                                <i class="fas fa-database"></i>
+                                <span>Phase 1: Data Collection (Days 1-3)</span>
+                            </h4>
+                            <ul class="text-sm text-gray-700 space-y-2">
+                                <li>• Content audit and requirements gathering</li>
+                                <li>• Product specifications and images collection</li>
+                                <li>• Company information and brand assets</li>
+                                <li>• Technical requirements and hosting setup</li>
+                                <li>• Multilingual content preparation</li>
+                            </ul>
+                        </div>
+
+                        <!-- Development Phase -->
+                        <div class="bg-green-50 p-6 rounded-xl">
+                            <h4 class="font-bold text-green-700 mb-3 flex items-center space-x-2">
+                                <i class="fas fa-code"></i>
+                                <span>Phase 2: Development (Days 4-14)</span>
+                            </h4>
+                            <ul class="text-sm text-gray-700 space-y-2">
+                                <li>• Design system and component library</li>
+                                <li>• Core pages: Homepage, About, Products, Contact</li>
+                                <li>• Advanced pages: News, FAQ, Downloads, Technology</li>
+                                <li>• CMS integration and content management</li>
+                                <li>• WhatsApp integration and interactive features</li>
+                                <li>• Multilingual implementation</li>
+                                <li>• Mobile responsiveness and optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="space-y-6">
+                        <!-- UAT Phase -->
+                        <div class="bg-orange-50 p-6 rounded-xl">
+                            <h4 class="font-bold text-orange-700 mb-3 flex items-center space-x-2">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Phase 3: UAT Testing (Days 15-17)</span>
+                            </h4>
+                            <ul class="text-sm text-gray-700 space-y-2">
+                                <li>• Client review and feedback collection</li>
+                                <li>• Cross-browser and device testing</li>
+                                <li>• Content accuracy verification</li>
+                                <li>• Performance and load testing</li>
+                                <li>• Bug fixes and refinements</li>
+                                <li>• Training and handover preparation</li>
+                            </ul>
+                        </div>
+
+                        <!-- Go Live -->
+                        <div class="bg-purple-50 p-6 rounded-xl">
+                            <h4 class="font-bold text-purple-700 mb-3 flex items-center space-x-2">
+                                <i class="fas fa-rocket"></i>
+                                <span>Phase 4: Go Live (Day 18) - July 1st</span>
+                            </h4>
+                            <ul class="text-sm text-gray-700 space-y-2">
+                                <li>• Production server deployment</li>
+                                <li>• DNS configuration and SSL setup</li>
+                                <li>• Final quality assurance checks</li>
+                                <li>• Monitoring and analytics setup</li>
+                                <li>• Client training and documentation handover</li>
+                                <li>• Post-launch support activation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support and Maintenance -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Support & Maintenance</h2>
+                <p class="text-xl text-gray-600">Comprehensive ongoing support by SOFEHAUS PLT</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl">
+                    <i class="fas fa-tools text-green-600 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-green-700 mb-4">Technical Support & SLA</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-clock text-green-600 text-sm"></i>
+                            <span><strong>Site Down Response:</strong> 2 hours max</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-bell text-green-600 text-sm"></i>
+                            <span><strong>Update Notice:</strong> 3 days advance warning</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-shield-alt text-green-600 text-sm"></i>
+                            <span><strong>Support Buffer:</strong> 24/7 monitoring system</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-phone text-green-600 text-sm"></i>
+                            <span><strong>Emergency Hotline:</strong> Direct escalation</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-600 text-sm"></i>
+                            <span>Bug fixes and troubleshooting</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-600 text-sm"></i>
+                            <span>Performance optimization</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-600 text-sm"></i>
+                            <span>Security updates</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-600 text-sm"></i>
+                            <span>Browser compatibility</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-database text-green-600 text-sm"></i>
+                            <span><strong>Automated Backups:</strong> Daily database & files</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-cloud text-green-600 text-sm"></i>
+                            <span><strong>Backup Storage:</strong> 30-day retention period</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl">
+                    <i class="fas fa-sync-alt text-blue-600 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-blue-700 mb-4">Content Management</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-blue-600 text-sm"></i>
+                            <span>Content updates and edits</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-blue-600 text-sm"></i>
+                            <span>New product additions</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-blue-600 text-sm"></i>
+                            <span>News and article publishing</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-blue-600 text-sm"></i>
+                            <span>Image and media updates</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl">
+                    <i class="fas fa-graduation-cap text-purple-600 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-purple-700 mb-4">Training & Guidance</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-purple-600 text-sm"></i>
+                            <span>Website management training</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-purple-600 text-sm"></i>
+                            <span>Content creation guidelines</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-purple-600 text-sm"></i>
+                            <span>SEO best practices</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-purple-600 text-sm"></i>
+                            <span>Analytics and reporting</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Support Packages -->
+            <div class="bg-gray-50 p-8 rounded-2xl">
+                <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Maintenance Packages</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col">
+                        <div class="text-center mb-6">
+                            <h4 class="text-lg font-bold text-gray-900">Basic Support</h4>
+                            <p class="text-sm text-gray-600 mt-2">Essential maintenance and support</p>
+                        </div>
+                        <ul class="space-y-2 text-sm text-gray-700 mb-6 flex-grow">
+                            <li>• Monthly security updates</li>
+                            <li>• Bug fixes</li>
+                            <li>• Email support</li>
+                            <li>• 2 hours content updates/month</li>
+                            <li>• Weekly automated backups</li>
+                        </ul>
+                        <div class="text-center mt-auto">
+                            <div class="text-2xl font-bold text-primary-500">RM 300</div>
+                            <div class="text-sm text-gray-600">per month</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-2 border-primary-500 relative flex flex-col">
+                        <div
+                            class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary-500 text-white px-4 py-1 rounded-full text-xs font-bold">
+                            RECOMMENDED
+                        </div>
+                        <div class="text-center mb-6">
+                            <h4 class="text-lg font-bold text-gray-900">Standard Support</h4>
+                            <p class="text-sm text-gray-600 mt-2">Comprehensive maintenance package</p>
+                        </div>
+                        <ul class="space-y-2 text-sm text-gray-700 mb-6 flex-grow">
+                            <li>• All Basic features</li>
+                            <li>• Performance optimization</li>
+                            <li>• Priority email + phone support</li>
+                            <li>• 5 hours content updates/month</li>
+                            <li>• Monthly analytics reports</li>
+                            <li>• Daily automated backups + 30-day retention</li>
+                        </ul>
+                        <div class="text-center mt-auto">
+                            <div class="text-2xl font-bold text-primary-500">RM 600</div>
+                            <div class="text-sm text-gray-600">per month</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col">
+                        <div class="text-center mb-6">
+                            <h4 class="text-lg font-bold text-gray-900">Premium Support</h4>
+                            <p class="text-sm text-gray-600 mt-2">Full-service maintenance solution</p>
+                        </div>
+                        <ul class="space-y-2 text-sm text-gray-700 mb-6 flex-grow">
+                            <li>• All Standard features</li>
+                            <li>• Feature enhancements</li>
+                            <li>• 24/7 support hotline</li>
+                            <li>• 10 hours content updates/month</li>
+                            <li>• SEO monitoring & improvement</li>
+                            <li>• Real-time backups + 90-day retention + offsite storage</li>
+                        </ul>
+                        <div class="text-center mt-auto">
+                            <div class="text-2xl font-bold text-primary-500">RM 1600</div>
+                            <div class="text-sm text-gray-600">per month</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backup & Recovery Services -->
+            <div class="mt-12 bg-gradient-to-br from-blue-50 to-indigo-100 p-8 rounded-2xl">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center justify-center space-x-3">
+                        <i class="fas fa-shield-alt text-blue-600"></i>
+                        <span>Comprehensive Backup & Recovery Services</span>
+                    </h3>
+                    <p class="text-gray-600">Your data is protected with enterprise-grade backup solutions</p>
+                </div>
+
+                <!-- What We Backup -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-database text-white"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-3 text-center">Website Files</h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• HTML, CSS, JavaScript files</li>
+                            <li>• Images and media assets</li>
+                            <li>• Configuration files</li>
+                            <li>• Custom scripts and plugins</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-file-alt text-white"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-3 text-center">Content & Data</h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Product information</li>
+                            <li>• News articles and blogs</li>
+                            <li>• User-generated content</li>
+                            <li>• Form submissions</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-cog text-white"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-3 text-center">System Settings</h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Server configurations</li>
+                            <li>• SSL certificates</li>
+                            <li>• Domain settings</li>
+                            <li>• Security configurations</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-chart-line text-white"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-3 text-center">Analytics & Logs</h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Website analytics data</li>
+                            <li>• Server access logs</li>
+                            <li>• Error logs and reports</li>
+                            <li>• Performance metrics</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Backup Process & Schedule -->
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <h4 class="font-bold text-gray-900 mb-4 flex items-center space-x-2">
+                            <i class="fas fa-clock text-blue-600"></i>
+                            <span>Backup Schedule & Frequency</span>
+                        </h4>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                                <div>
+                                    <div class="font-semibold text-gray-800">Basic Package</div>
+                                    <div class="text-sm text-gray-600">Weekly automated backups every Sunday at 3 AM MYT
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-3 h-3 bg-blue-500 rounded-full"></div>
+                                <div>
+                                    <div class="font-semibold text-gray-800">Standard Package</div>
+                                    <div class="text-sm text-gray-600">Daily automated backups at 2 AM MYT with 30-day
+                                        retention</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-3 h-3 bg-purple-500 rounded-full"></div>
+                                <div>
+                                    <div class="font-semibold text-gray-800">Premium Package</div>
+                                    <div class="text-sm text-gray-600">Real-time incremental backups with 90-day
+                                        retention + offsite storage</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <h4 class="font-bold text-gray-900 mb-4 flex items-center space-x-2">
+                            <i class="fas fa-shield-alt text-blue-600"></i>
+                            <span>Backup Security & Storage</span>
+                        </h4>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-center space-x-2">
+                                <i class="fas fa-lock text-blue-600 text-sm"></i>
+                                <span><strong>256-bit AES encryption</strong> for all backup files</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <i class="fas fa-cloud text-blue-600 text-sm"></i>
+                                <span><strong>Multiple storage locations</strong> (local + cloud)</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <i class="fas fa-check-circle text-blue-600 text-sm"></i>
+                                <span><strong>Automated integrity checks</strong> on all backups</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <i class="fas fa-globe text-blue-600 text-sm"></i>
+                                <span><strong>Geographically distributed</strong> backup locations</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Recovery Process -->
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h4 class="font-bold text-gray-900 mb-6 flex items-center space-x-2">
+                        <i class="fas fa-undo text-blue-600"></i>
+                        <span>Recovery Process & Procedures</span>
+                    </h4>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div
+                                class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
+                                    <span class="text-white font-bold text-sm">1</span>
+                                </div>
+                            </div>
+                            <h5 class="font-semibold text-gray-800 mb-2">Issue Detection</h5>
+                            <p class="text-sm text-gray-600">Automated monitoring detects issues or manual recovery
+                                request received</p>
+                        </div>
+                        <div class="text-center">
+                            <div
+                                class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <div class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center">
+                                    <span class="text-white font-bold text-sm">2</span>
+                                </div>
+                            </div>
+                            <h5 class="font-semibold text-gray-800 mb-2">Backup Selection</h5>
+                            <p class="text-sm text-gray-600">Identify appropriate backup point based on issue timeline
+                                and data integrity</p>
+                        </div>
+                        <div class="text-center">
+                            <div
+                                class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                                    <span class="text-white font-bold text-sm">3</span>
+                                </div>
+                            </div>
+                            <h5 class="font-semibold text-gray-800 mb-2">System Restoration</h5>
+                            <p class="text-sm text-gray-600">Execute recovery process with minimal downtime and verify
+                                system functionality</p>
+                        </div>
+                    </div>
+
+                    <!-- Recovery Time Objectives -->
+                    <div class="mt-8 grid md:grid-cols-3 gap-4">
+                        <div class="bg-gray-50 p-4 rounded-lg text-center">
+                            <div class="text-2xl font-bold text-green-600 mb-1">15 min</div>
+                            <div class="text-sm text-gray-600">File Recovery Time</div>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg text-center">
+                            <div class="text-2xl font-bold text-blue-600 mb-1">30 min</div>
+                            <div class="text-sm text-gray-600">Partial Site Recovery</div>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg text-center">
+                            <div class="text-2xl font-bold text-purple-600 mb-1">2 hours</div>
+                            <div class="text-sm text-gray-600">Full Site Recovery</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Level Agreement (SLA) -->
+            <div class="mt-12 bg-white border-2 border-primary-500 rounded-2xl p-8">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Service Level Agreement (SLA)</h3>
+                    <p class="text-gray-600">Guaranteed performance standards and response commitments</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                    <div class="bg-red-50 p-6 rounded-xl text-center">
+                        <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-exclamation-triangle text-white"></i>
+                        </div>
+                        <h4 class="font-bold text-red-700 mb-2">Critical Issues</h4>
+                        <div class="text-2xl font-bold text-red-600 mb-1">2 Hours</div>
+                        <p class="text-sm text-gray-600">Site completely down or security breach</p>
+                    </div>
+
+                    <div class="bg-orange-50 p-6 rounded-xl text-center">
+                        <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-warning text-white"></i>
+                        </div>
+                        <h4 class="font-bold text-orange-700 mb-2">High Priority</h4>
+                        <div class="text-2xl font-bold text-orange-600 mb-1">8 Hours</div>
+                        <p class="text-sm text-gray-600">Major functionality broken or performance issues</p>
+                    </div>
+
+                    <div class="bg-yellow-50 p-6 rounded-xl text-center">
+                        <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-info-circle text-white"></i>
+                        </div>
+                        <h4 class="font-bold text-yellow-700 mb-2">Medium Priority</h4>
+                        <div class="text-2xl font-bold text-yellow-600 mb-1">24 Hours</div>
+                        <p class="text-sm text-gray-600">Minor bugs or content updates</p>
+                    </div>
+
+                    <div class="bg-green-50 p-6 rounded-xl text-center">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-clock text-white"></i>
+                        </div>
+                        <h4 class="font-bold text-green-700 mb-2">Low Priority</h4>
+                        <div class="text-2xl font-bold text-green-600 mb-1">72 Hours</div>
+                        <p class="text-sm text-gray-600">Enhancement requests or general inquiries</p>
+                    </div>
+                </div>
+
+                <!-- Maintenance Window Policy -->
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <h4 class="font-bold text-gray-900 mb-4 flex items-center space-x-2">
+                        <i class="fas fa-server text-primary-500"></i>
+                        <span>Maintenance Window Policy</span>
+                    </h4>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h5 class="font-semibold text-gray-800 mb-2">Scheduled Maintenance</h5>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• <strong>3 days advance notice</strong> minimum</li>
+                                <li>• Email notification to all stakeholders</li>
+                                <li>• Preferred window: Sunday 2-6 AM MYT</li>
+                                <li>• Monthly maintenance window available</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="font-semibold text-gray-800 mb-2">Emergency Updates</h5>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Security patches: Immediate deployment</li>
+                                <li>• Critical bug fixes: 2-hour notice</li>
+                                <li>• Rollback plan always prepared</li>
+                                <li>• 24/7 monitoring during updates</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="font-semibold text-gray-800 mb-2">Communication</h5>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• WhatsApp alerts for critical issues</li>
+                                <li>• Email updates for all maintenance</li>
+                                <li>• Status page with real-time updates</li>
+                                <li>• Post-maintenance summary reports</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact for Support -->
+            <div class="mt-12 bg-primary-500 text-white p-8 rounded-2xl text-center">
+                <h3 class="text-2xl font-bold mb-4">Need Support?</h3>
+                <p class="text-lg mb-6 opacity-90">SOFEHAUS PLT is here to help you succeed</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="mailto:support@sofehaus.com"
+                        class="bg-white text-primary-500 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all inline-flex items-center justify-center space-x-2">
+                        <i class="fas fa-envelope"></i>
+                        <span>support@sofehaus.com</span>
+                    </a>
+                    <a href="tel:+60123456789"
+                        class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-500 transition-all inline-flex items-center justify-center space-x-2">
+                        <i class="fas fa-phone"></i>
+                        <span>+60 12-345 6789</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Technical Excellence</h2>
+                <p class="text-xl text-gray-600">Modern, secure, and maintainable solution</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-2xl">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6">Frontend Technology</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-code text-primary-500"></i>
+                            <span>Modern HTML5 & CSS3</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-mobile text-primary-500"></i>
+                            <span>TailwindCSS Framework</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-cogs text-primary-500"></i>
+                            <span>Vanilla JavaScript</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-font text-primary-500"></i>
+                            <span>FontAwesome Icons</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6">Performance Features</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-tachometer-alt text-green-500"></i>
+                            <span>Fast loading speeds</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-search text-green-500"></i>
+                            <span>SEO optimized</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-shield-alt text-green-500"></i>
+                            <span>Security best practices</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-universal-access text-green-500"></i>
+                            <span>Accessibility compliant</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6">Deployment Ready</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-server text-blue-500"></i>
+                            <span>Web server compatible</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-cloud text-blue-500"></i>
+                            <span>Cloud hosting ready</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-tools text-blue-500"></i>
+                            <span>Easy maintenance</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-chart-bar text-blue-500"></i>
+                            <span>Analytics ready</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analytics & Reporting -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Comprehensive Analytics & Reporting</h2>
+                <p class="text-xl text-gray-600">Data-driven insights for business growth and optimization</p>
+            </div>
+
+            <!-- Analytics Overview -->
+            <div class="grid md:grid-cols-4 gap-6 mb-12">
+                <div class="bg-blue-50 p-6 rounded-xl text-center">
+                    <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-chart-line text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-blue-700 mb-2">Traffic Analytics</h3>
+                    <p class="text-sm text-gray-600">Visitor behavior and traffic patterns</p>
+                </div>
+                <div class="bg-green-50 p-6 rounded-xl text-center">
+                    <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-green-700 mb-2">User Engagement</h3>
+                    <p class="text-sm text-gray-600">Page interactions and engagement metrics</p>
+                </div>
+                <div class="bg-orange-50 p-6 rounded-xl text-center">
+                    <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shopping-cart text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-orange-700 mb-2">Lead Generation</h3>
+                    <p class="text-sm text-gray-600">Inquiry tracking and conversion rates</p>
+                </div>
+                <div class="bg-purple-50 p-6 rounded-xl text-center">
+                    <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-mobile-alt text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-purple-700 mb-2">Device Analytics</h3>
+                    <p class="text-sm text-gray-600">Mobile vs desktop usage patterns</p>
+                </div>
+            </div>
+
+            <!-- Detailed Analytics Features -->
+            <div class="bg-gray-50 rounded-2xl p-8 mb-12">
+                <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Advanced Analytics Implementation</h3>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Google Analytics 4 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center mr-3">
+                                <i class="fab fa-google text-white"></i>
+                            </div>
+                            <h4 class="font-bold text-gray-900">Google Analytics 4</h4>
+                        </div>
+                        <ul class="text-sm text-gray-700 space-y-2">
+                            <li>• Advanced audience segmentation</li>
+                            <li>• E-commerce tracking setup</li>
+                            <li>• Conversion funnel analysis</li>
+                            <li>• Real-time visitor monitoring</li>
+                            <li>• Custom event tracking</li>
+                            <li>• Goal and objective tracking</li>
+                        </ul>
+                    </div>
+
+                    <!-- Search Console -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center mr-3">
+                                <i class="fas fa-search text-white"></i>
+                            </div>
+                            <h4 class="font-bold text-gray-900">Search Console</h4>
+                        </div>
+                        <ul class="text-sm text-gray-700 space-y-2">
+                            <li>• Search ranking performance</li>
+                            <li>• Keyword position tracking</li>
+                            <li>• Click-through rate analysis</li>
+                            <li>• Index coverage reports</li>
+                            <li>• Mobile usability insights</li>
+                            <li>• Core Web Vitals monitoring</li>
+                        </ul>
+                    </div>
+
+                    <!-- Heatmap Analytics -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-red-500 rounded-lg flex items-center justify-center mr-3">
+                                <i class="fas fa-fire text-white"></i>
+                            </div>
+                            <h4 class="font-bold text-gray-900">Heatmap Analytics</h4>
+                        </div>
+                        <ul class="text-sm text-gray-700 space-y-2">
+                            <li>• Click pattern visualization</li>
+                            <li>• Scroll depth tracking</li>
+                            <li>• Form interaction analysis</li>
+                            <li>• User session recordings</li>
+                            <li>• Conversion optimization insights</li>
+                            <li>• A/B testing capabilities</li>
+                        </ul>
+                    </div>
+
+                    <!-- Custom Dashboard -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-purple-500 rounded-lg flex items-center justify-center mr-3">
+                                <i class="fas fa-chart-pie text-white"></i>
+                            </div>
+                            <h4 class="font-bold text-gray-900">Custom Dashboard</h4>
+                        </div>
+                        <ul class="text-sm text-gray-700 space-y-2">
+                            <li>• Real-time metrics overview</li>
+                            <li>• KPI tracking widgets</li>
+                            <li>• Monthly trend analysis</li>
+                            <li>• Performance benchmarking</li>
+                            <li>• Automated alert system</li>
+                            <li>• Export & sharing capabilities</li>
+                        </ul>
+                    </div>
+
+                    <!-- WhatsApp Analytics -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center mr-3">
+                                <i class="fab fa-whatsapp text-white"></i>
+                            </div>
+                            <h4 class="font-bold text-gray-900">WhatsApp Analytics</h4>
+                        </div>
+                        <ul class="text-sm text-gray-700 space-y-2">
+                            <li>• Click-to-WhatsApp tracking</li>
+                            <li>• Lead source attribution</li>
+                            <li>• Message initiation rates</li>
+                            <li>• Page-specific conversion tracking</li>
+                            <li>• Customer journey mapping</li>
+                            <li>• Response time analytics</li>
+                        </ul>
+                    </div>
+
+                    <!-- Performance Monitoring -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-yellow-500 rounded-lg flex items-center justify-center mr-3">
+                                <i class="fas fa-tachometer-alt text-white"></i>
+                            </div>
+                            <h4 class="font-bold text-gray-900">Performance Monitoring</h4>
+                        </div>
+                        <ul class="text-sm text-gray-700 space-y-2">
+                            <li>• Page load speed analysis</li>
+                            <li>• Core Web Vitals tracking</li>
+                            <li>• Server response monitoring</li>
+                            <li>• Error rate tracking</li>
+                            <li>• Uptime monitoring alerts</li>
+                            <li>• Performance optimization recommendations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reporting Schedule -->
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-blue-50 p-8 rounded-2xl">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-calendar-week text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-700">Weekly Reports</h3>
+                    </div>
+                    <ul class="text-sm text-gray-700 space-y-3">
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-check text-blue-500 mt-1"></i>
+                            <span>Traffic overview and trends</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-check text-blue-500 mt-1"></i>
+                            <span>Top performing pages</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-check text-blue-500 mt-1"></i>
+                            <span>User engagement metrics</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-check text-blue-500 mt-1"></i>
+                            <span>WhatsApp conversion tracking</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-check text-blue-500 mt-1"></i>
+                            <span>Search performance updates</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-green-50 p-8 rounded-2xl">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-calendar-alt text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-green-700">Monthly Reports</h3>
+                    </div>
+                    <ul class="text-sm text-gray-700 space-y-3">
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-check text-green-500 mt-1"></i>
+                            <span>Comprehensive traffic analysis</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-check text-green-500 mt-1"></i>
+                            <span>Goal completion tracking</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-check text-green-500 mt-1"></i>
+                            <span>SEO ranking improvements</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-check text-green-500 mt-1"></i>
+                            <span>Conversion funnel analysis</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-check text-green-500 mt-1"></i>
+                            <span>Recommendations for optimization</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-purple-50 p-8 rounded-2xl">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-chart-bar text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-purple-700">Quarterly Reviews</h3>
+                    </div>
+                    <ul class="text-sm text-gray-700 space-y-3">
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-check text-purple-500 mt-1"></i>
+                            <span>Strategic performance assessment</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-check text-purple-500 mt-1"></i>
+                            <span>ROI and business impact analysis</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-check text-purple-500 mt-1"></i>
+                            <span>Competitive analysis insights</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-check text-purple-500 mt-1"></i>
+                            <span>Strategic recommendations</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-check text-purple-500 mt-1"></i>
+                            <span>Future growth planning</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Key Metrics Dashboard -->
+            <div class="bg-gradient-to-r from-gray-900 to-gray-800 text-white rounded-2xl p-8">
+                <h3 class="text-2xl font-bold mb-8 text-center">Key Performance Indicators (KPIs)</h3>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                    <div class="bg-white/10 backdrop-blur p-6 rounded-xl text-center">
+                        <div class="text-3xl font-bold text-blue-400 mb-2">2.5x</div>
+                        <div class="text-sm opacity-90">Average Conversion Increase</div>
+                        <div class="text-xs opacity-70 mt-1">With proper analytics implementation</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur p-6 rounded-xl text-center">
+                        <div class="text-3xl font-bold text-green-400 mb-2">85%</div>
+                        <div class="text-sm opacity-90">User Engagement Improvement</div>
+                        <div class="text-xs opacity-70 mt-1">Through data-driven optimization</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur p-6 rounded-xl text-center">
+                        <div class="text-3xl font-bold text-orange-400 mb-2">40%</div>
+                        <div class="text-sm opacity-90">Faster Decision Making</div>
+                        <div class="text-xs opacity-70 mt-1">With real-time analytics</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur p-6 rounded-xl text-center">
+                        <div class="text-3xl font-bold text-purple-400 mb-2">ROI+</div>
+                        <div class="text-sm opacity-90">Positive Return on Investment</div>
+                        <div class="text-xs opacity-70 mt-1">Measurable business growth</div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <p class="text-lg mb-6 opacity-90">Transform data into actionable insights for sustainable business
+                        growth</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <div class="bg-white/20 backdrop-blur px-6 py-3 rounded-lg">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-shield-check text-blue-400"></i>
+                                <span>GDPR Compliant Analytics</span>
+                            </div>
+                        </div>
+                        <div class="bg-white/20 backdrop-blur px-6 py-3 rounded-lg">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-clock text-green-400"></i>
+                                <span>Real-time Data Processing</span>
+                            </div>
+                        </div>
+                        <div class="bg-white/20 backdrop-blur px-6 py-3 rounded-lg">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-mobile-alt text-orange-400"></i>
+                                <span>Mobile-first Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Variants Feature -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Exclusive: Multiple Design Variants</h2>
+                <p class="text-xl text-gray-600">5 Professional Color Schemes to Choose From</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg p-8 mb-12">
+                <div class="text-center mb-8">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-palette text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Live Color Scheme Picker</h3>
+                    <p class="text-gray-600 mb-6">Click the palette icon in the top-right corner to try different themes
+                        instantly!</p>
+
+                    <!-- Demo Button -->
+                    <button onclick="document.getElementById('colorSchemeToggle').click()"
+                        class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 inline-flex items-center space-x-2">
+                        <i class="fas fa-palette"></i>
+                        <span>Try Design Variants Now</span>
+                    </button>
+                </div>
+
+                <div class="grid md:grid-cols-5 gap-6">
+                    <!-- Classic Green -->
+                    <div class="text-center">
+                        <div class="bg-gray-100 p-4 rounded-xl mb-3">
+                            <div class="flex justify-center space-x-1 mb-2">
+                                <div class="w-6 h-6 rounded-full bg-green-600"></div>
+                                <div class="w-6 h-6 rounded-full bg-green-700"></div>
+                                <div class="w-6 h-6 rounded-full bg-orange-400"></div>
+                            </div>
+                            <div class="text-sm font-semibold text-gray-900">Classic Green</div>
+                        </div>
+                        <p class="text-xs text-gray-600">Traditional earth tones</p>
+                    </div>
+
+                    <!-- Natural Earth -->
+                    <div class="text-center">
+                        <div class="bg-gray-100 p-4 rounded-xl mb-3">
+                            <div class="flex justify-center space-x-1 mb-2">
+                                <div class="w-6 h-6 rounded-full" style="background-color: #8b4513"></div>
+                                <div class="w-6 h-6 rounded-full" style="background-color: #228b22"></div>
+                                <div class="w-6 h-6 rounded-full" style="background-color: #cd853f"></div>
+                            </div>
+                            <div class="text-sm font-semibold text-gray-900">Natural Earth</div>
+                        </div>
+                        <p class="text-xs text-gray-600">Rich browns & forest greens</p>
+                    </div>
+
+                    <!-- Modern Agriculture -->
+                    <div class="text-center">
+                        <div class="bg-gray-100 p-4 rounded-xl mb-3">
+                            <div class="flex justify-center space-x-1 mb-2">
+                                <div class="w-6 h-6 rounded-full bg-blue-600"></div>
+                                <div class="w-6 h-6 rounded-full bg-green-600"></div>
+                                <div class="w-6 h-6 rounded-full bg-yellow-500"></div>
+                            </div>
+                            <div class="text-sm font-semibold text-gray-900">Modern Agri</div>
+                        </div>
+                        <p class="text-xs text-gray-600">Contemporary blues & greens</p>
+                    </div>
+
+                    <!-- Organic Fresh -->
+                    <div class="text-center">
+                        <div class="bg-gray-100 p-4 rounded-xl mb-3">
+                            <div class="flex justify-center space-x-1 mb-2">
+                                <div class="w-6 h-6 rounded-full bg-green-500"></div>
+                                <div class="w-6 h-6 rounded-full bg-lime-500"></div>
+                                <div class="w-6 h-6 rounded-full bg-yellow-400"></div>
+                            </div>
+                            <div class="text-sm font-semibold text-gray-900">Organic Fresh</div>
+                        </div>
+                        <p class="text-xs text-gray-600">Vibrant greens with fresh appeal</p>
+                    </div>
+
+                    <!-- Professional Dark -->
+                    <div class="text-center">
+                        <div class="bg-gray-100 p-4 rounded-xl mb-3">
+                            <div class="flex justify-center space-x-1 mb-2">
+                                <div class="w-6 h-6 rounded-full bg-gray-800"></div>
+                                <div class="w-6 h-6 rounded-full bg-green-500"></div>
+                                <div class="w-6 h-6 rounded-full bg-yellow-500"></div>
+                            </div>
+                            <div class="text-sm font-semibold text-gray-900">Professional Dark</div>
+                        </div>
+                        <p class="text-xs text-gray-600">Sophisticated dark theme</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Client Benefits -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <i class="fas fa-eye text-purple-500 text-3xl mb-4"></i>
+                    <h4 class="text-lg font-bold text-gray-900 mb-3">Visual Flexibility</h4>
+                    <p class="text-gray-600">Client can choose their preferred visual identity to match brand
+                        preferences and aesthetic requirements.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <i class="fas fa-users text-purple-500 text-3xl mb-4"></i>
+                    <h4 class="text-lg font-bold text-gray-900 mb-3">User Personalization</h4>
+                    <p class="text-gray-600">Website visitors can select their preferred color scheme for optimal
+                        viewing experience and accessibility.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <i class="fas fa-save text-purple-500 text-3xl mb-4"></i>
+                    <h4 class="text-lg font-bold text-gray-900 mb-3">Persistent Preferences</h4>
+                    <p class="text-gray-600">Selected themes are automatically saved and remembered for returning
+                        visitors using localStorage technology.</p>
+                </div>
+            </div>
+
+            <!-- Technical Implementation -->
+            <div class="mt-12 bg-gradient-to-r from-purple-500 to-pink-500 text-white p-8 rounded-2xl">
+                <h3 class="text-2xl font-bold mb-6 text-center">Advanced Implementation Features</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Technical Excellence</h4>
+                        <ul class="space-y-2 text-white/90">
+                            <li>• Real-time color scheme switching</li>
+                            <li>• CSS custom properties integration</li>
+                            <li>• LocalStorage persistence</li>
+                            <li>• Smooth transition animations</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Business Value</h4>
+                        <ul class="space-y-2 text-white/90">
+                            <li>• Enhanced user experience</li>
+                            <li>• Brand customization options</li>
+                            <li>• Accessibility improvements</li>
+                            <li>• Modern professional appearance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-r from-primary-500 to-secondary-500 text-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready for Immediate Deployment</h2>
+            <p class="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
+                Complete professional website solution ready to enhance QL Eco Green's digital presence and drive
+                business growth
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white/10 backdrop-blur rounded-xl p-6">
+                    <i class="fas fa-rocket text-4xl mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">Immediate Launch</h3>
+                    <p class="opacity-90">Ready for production deployment</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur rounded-xl p-6">
+                    <i class="fas fa-handshake text-4xl mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">Training Included</h3>
+                    <p class="opacity-90">Content management guidance</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur rounded-xl p-6">
+                    <i class="fas fa-headset text-4xl mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">Ongoing Support</h3>
+                    <p class="opacity-90">Technical assistance available</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="index.html" target="_blank"
+                    class="bg-white text-primary-500 px-8 py-4 rounded-xl font-bold text-lg hover:shadow-lg transition-all duration-300 inline-flex items-center justify-center space-x-2">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>View Live Website</span>
+                </a>
+                <a href="mailto:support@sofehaus.com"
+                    class="border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-primary-500 transition-all duration-300 inline-flex items-center justify-center space-x-2">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact SOFEHAUS PLT</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="mb-8">
+                <h3 class="text-xl font-bold mb-4">Project Delivery Summary</h3>
+                <div class="grid md:grid-cols-5 gap-6">
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-primary-400">8</div>
+                        <div class="text-sm text-gray-400">Pages Delivered</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-green-400">3</div>
+                        <div class="text-sm text-gray-400">Languages</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-blue-400">CMS</div>
+                        <div class="text-sm text-gray-400">Content Management</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-purple-400">15+</div>
+                        <div class="text-sm text-gray-400">Advanced Features</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-orange-400">100%</div>
+                        <div class="text-sm text-gray-400">Mobile Ready</div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8">
+                <p class="text-gray-400">Professional Website Development by SOFEHAUS PLT • Complete Digital Solution
+                    for QL Eco Green
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Simple animation trigger
+        window.addEventListener('scroll', function () {
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
