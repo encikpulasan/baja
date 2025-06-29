@@ -5,11 +5,12 @@ import ContactForm from "../islands/ContactForm.tsx";
 interface ContactData {
   success?: boolean;
   error?: string;
+  url?: URL;
 }
 
 export const handler: Handlers<ContactData> = {
   GET(req, ctx) {
-    return ctx.render({});
+    return ctx.render({ url: new URL(req.url) });
   },
 
   async POST(req, ctx) {
@@ -31,9 +32,12 @@ export const handler: Handlers<ContactData> = {
         message,
       });
 
-      return ctx.render({ success: true });
+      return ctx.render({ success: true, url: new URL(req.url) });
     } catch (error) {
-      return ctx.render({ error: "Failed to send message. Please try again." });
+      return ctx.render({
+        error: "Failed to send message. Please try again.",
+        url: new URL(req.url),
+      });
     }
   },
 };
@@ -100,6 +104,7 @@ export default function Contact({ data }: PageProps<ContactData>) {
     <Layout
       title="Contact Us - QL Eco Green | Get in Touch"
       description="Contact QL Eco Green for organic fertilizer solutions. Multiple locations in Malaysia including Selangor, Sabah, and Sarawak branches."
+      url={data.url}
     >
       {/* Hero Section */}
       <section class="pt-24 pb-16 bg-gradient-to-br from-primary-500 to-secondary-500 text-white">

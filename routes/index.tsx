@@ -1,8 +1,15 @@
+import { Handlers, PageProps } from "$fresh/server.ts";
 import Layout from "../components/Layout.tsx";
 import HeroSection from "../components/HeroSection.tsx";
 import BenefitCard from "../components/BenefitCard.tsx";
 
-export default function Home() {
+export const handler: Handlers = {
+  GET(req, ctx) {
+    return ctx.render({ url: new URL(req.url) });
+  },
+};
+
+export default function Home({ data }: PageProps<{ url: URL }>) {
   const soilBenefits = [
     {
       icon: "fas fa-compress-arrows-alt",
@@ -71,6 +78,7 @@ export default function Home() {
     <Layout
       title="QL Eco Green - Premium Soil Conditioner | Healthy Farming Solutions"
       description="QL Eco Green Organomineral Soil Conditioner - Innovative soil health solutions for sustainable agriculture and optimal plant growth."
+      url={data.url}
     >
       {/* Hero Section */}
       <HeroSection
@@ -346,8 +354,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
-      </div>
-    </div>
+          </div>
+        </div>
       </section>
     </Layout>
   );

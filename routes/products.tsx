@@ -1,7 +1,14 @@
+import { Handlers, PageProps } from "$fresh/server.ts";
 import Layout from "../components/Layout.tsx";
 import ProductCard from "../components/ProductCard.tsx";
 
-export default function Products() {
+export const handler: Handlers = {
+  GET(req, ctx) {
+    return ctx.render({ url: new URL(req.url) });
+  },
+};
+
+export default function Products({ data }: PageProps<{ url: URL }>) {
   const soilConditioners = [
     {
       name: "QL Eco Green Organomineral Soil Conditioner",
@@ -127,6 +134,7 @@ export default function Products() {
     <Layout
       title="Products - QL Eco Green | Agricultural Solutions"
       description="Explore QL Eco Green's comprehensive range of soil conditioners, fertilizers, and agricultural solutions."
+      url={data.url}
     >
       {/* Hero Section */}
       <section class="pt-24 pb-16 bg-gradient-to-br from-gray-50 to-green-50">
