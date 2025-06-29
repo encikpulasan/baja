@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - AgriNova | Frequently Asked Questions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#1e7e34',
+                        'secondary': '#28a745',
+                        'accent': '#ffc107',
+                        'dark': '#2c3e50',
+                        'light': '#f8f9fa',
+                    },
+                    fontFamily: {
+                        'sans': ['Poppins', 'sans-serif'],
+                        'heading': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(30, 126, 52, 0.9) 0%, rgba(40, 167, 69, 0.8) 100%),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><defs><pattern id="farmPattern" patternUnits="userSpaceOnUse" width="40" height="40"><circle cx="20" cy="20" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100%" height="100%" fill="url(%23farmPattern)"/></svg>');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .faq-item {
+            transition: all 0.3s ease;
+        }
+
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-content.active {
+            max-height: 500px;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #1e7e34, #28a745);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+
+<body class="bg-white font-sans">
+    <!-- Top Header Bar -->
+    <div class="bg-dark text-white py-2">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center text-sm">
+                <!-- Mobile: Only phone -->
+                <div class="flex items-center space-x-4 md:hidden">
+                    <span><i class="fas fa-phone mr-1"></i>+606-758 7377</span>
+                </div>
+
+                <!-- Desktop: Full contact info -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <span><i class="fas fa-phone mr-2"></i>+606-758 7377</span>
+                    <span><i class="fas fa-envelope mr-2"></i>qlecogreen@ql.com.my</span>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <!-- Language Selector -->
+                    <div class="relative group">
+                        <button id="languageBtn"
+                            class="flex items-center space-x-2 text-white hover:text-accent font-medium transition-colors">
+                            <i class="fas fa-globe"></i>
+                            <span id="currentLang" class="hidden sm:inline">English</span>
+                            <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div id="languageDropdown"
+                            class="absolute top-full right-0 mt-2 w-48 bg-white shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
+                            <div class="p-2">
+                                <button onclick="changeLanguage('en')"
+                                    class="w-full text-left px-3 py-2 text-gray-700 hover:bg-gray-100 rounded flex items-center space-x-2">
+                                    <span class="fi fi-gb w-4 h-4"></span>
+                                    <span>English (UK)</span>
+                                </button>
+                                <button onclick="changeLanguage('ms')"
+                                    class="w-full text-left px-3 py-2 text-gray-700 hover:bg-gray-100 rounded flex items-center space-x-2">
+                                    <span class="fi fi-my w-4 h-4"></span>
+                                    <span>Bahasa Malaysia</span>
+                                </button>
+                                <button onclick="changeLanguage('zh')"
+                                    class="w-full text-left px-3 py-2 text-gray-700 hover:bg-gray-100 rounded flex items-center space-x-2">
+                                    <span class="fi fi-cn w-4 h-4"></span>
+                                    <span>简体中文</span>
+                                </button>
+                                <button onclick="changeLanguage('ta')"
+                                    class="w-full text-left px-3 py-2 text-gray-700 hover:text-primary rounded flex items-center space-x-2">
+                                    <span class="fi fi-in w-4 h-4"></span>
+                                    <span>தமிழ்</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social media - hidden on small screens -->
+                    <div class="hidden lg:flex items-center space-x-3">
+                        <a href="#" class="hover:text-accent transition-colors"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-accent transition-colors"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-accent transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="hover:text-accent transition-colors"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 mr-8">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-3">
+                                <img src="https://ql.com.my/wp-content/uploads/2020/09/ms-icon-310x310-1.png" alt="">
+                            </div>
+                            <div>
+                                <h1 class="text-2xl font-heading font-bold text-dark">QL Eco-Green</h1>
+                                <p class="text-xs text-gray-500">Healthy Farming. Healthy Living.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary font-medium transition-colors"
+                        data-translate="home">Home</a>
+                    <a href="products.html" class="text-gray-700 hover:text-primary font-medium transition-colors"
+                        data-translate="products">Products</a>
+                    <a href="solutions.html" class="text-gray-700 hover:text-primary font-medium transition-colors"
+                        data-translate="solutions">Solutions</a>
+                    <a href="about.html" class="text-gray-700 hover:text-primary font-medium transition-colors"
+                        data-translate="about">About</a>
+                    <a href="research.html" class="text-gray-700 hover:text-primary font-medium transition-colors"
+                        data-translate="research">Research</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-primary font-medium transition-colors"
+                        data-translate="contact">Contact</a>
+                    <a href="faq.html" class="text-primary font-semibold border-b-2 border-primary pb-1"
+                        data-translate="faq">FAQ</a>
+                </div>
+
+                <div class="hidden lg:flex items-center space-x-4">
+                    <button id="findDealerBtn"
+                        class="bg-primary text-white px-6 py-2 rounded-full font-semibold hover:bg-green-700 transition-colors"
+                        data-translate="findDealer">
+                        Find Dealer
+                    </button>
+                </div>
+
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-white border-t">
+            <div class="px-4 py-6 space-y-4">
+                <a href="index.html" class="block text-gray-700 hover:text-primary font-medium"
+                    data-translate="home">Home</a>
+                <a href="products.html" class="block text-gray-700 hover:text-primary font-medium"
+                    data-translate="products">Products</a>
+                <a href="solutions.html" class="block text-gray-700 hover:text-primary font-medium"
+                    data-translate="solutions">Solutions</a>
+                <a href="about.html" class="block text-gray-700 hover:text-primary font-medium"
+                    data-translate="about">About</a>
+                <a href="research.html" class="block text-gray-700 hover:text-primary font-medium"
+                    data-translate="research">Research</a>
+                <a href="contact.html" class="block text-gray-700 hover:text-primary font-medium"
+                    data-translate="contact">Contact</a>
+                <a href="faq.html" class="block text-primary font-semibold" data-translate="faq">FAQ</a>
+                <div class="pt-4">
+                    <button class="w-full bg-primary text-white py-2 rounded-full font-semibold"
+                        data-translate="findDealer">Find Dealer</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg py-20 relative overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-secondary/80"></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center text-white">
+                <div class="inline-block bg-accent text-dark px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                    FAQ
+                </div>
+
+                <h1 class="text-4xl lg:text-6xl font-heading font-bold leading-tight mb-6">
+                    Frequently Asked <span class="text-accent">Questions</span>
+                </h1>
+
+                <p class="text-xl text-green-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+                    Find answers to common questions about our products, services, and agricultural solutions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Search -->
+    <section class="py-16 bg-light">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl p-8 shadow-lg">
+                <div class="relative">
+                    <i class="fas fa-search absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                    <input type="text" id="faq-search" placeholder="Search frequently asked questions..."
+                        class="w-full pl-12 pr-4 py-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary text-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Categories -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap justify-center mb-12 gap-3">
+                <button
+                    class="faq-filter active bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700 transition-colors"
+                    data-filter="all">
+                    All Questions
+                </button>
+                <button
+                    class="faq-filter bg-gray-100 text-gray-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition-colors"
+                    data-filter="products">
+                    Products
+                </button>
+                <button
+                    class="faq-filter bg-gray-100 text-gray-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition-colors"
+                    data-filter="application">
+                    Application
+                </button>
+                <button
+                    class="faq-filter bg-gray-100 text-gray-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition-colors"
+                    data-filter="support">
+                    Support
+                </button>
+                <button
+                    class="faq-filter bg-gray-100 text-gray-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition-colors"
+                    data-filter="shipping">
+                    Shipping
+                </button>
+            </div>
+
+            <!-- FAQ Items -->
+            <div class="space-y-4">
+                <!-- Products Category -->
+                <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden" data-category="products">
+                    <button class="faq-trigger w-full text-left p-6 hover:bg-gray-50 transition-colors">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-dark">What makes AgriNova fertilizers different from
+                                competitors?</h3>
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content">
+                        <div class="p-6 pt-0 text-gray-600">
+                            <p>AgriNova fertilizers feature our patented Enhanced Efficiency Technology (EET) that
+                                provides superior nutrient release control, reduces environmental impact by up to 40%,
+                                and increases crop yields by an average of 35%. Our products undergo rigorous testing
+                                and are backed by 45 years of agricultural innovation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden" data-category="products">
+                    <button class="faq-trigger w-full text-left p-6 hover:bg-gray-50 transition-colors">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-dark">Are AgriNova products suitable for organic
+                                farming?</h3>
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content">
+                        <div class="p-6 pt-0 text-gray-600">
+                            <p>Yes! We offer a complete line of OMRI-certified organic fertilizers including OrganicGrow
+                                8-4-6 and BioComplete 12-6-12. These products are made from composted organic materials
+                                and approved for use in certified organic operations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Application Category -->
+                <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden" data-category="application">
+                    <button class="faq-trigger w-full text-left p-6 hover:bg-gray-50 transition-colors">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-dark">How do I determine the right application rate
+                                for my crops?</h3>
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content">
+                        <div class="p-6 pt-0 text-gray-600">
+                            <p>Application rates depend on soil conditions, crop type, and yield goals. We recommend
+                                starting with a soil test, then consulting our agronomists for personalized
+                                recommendations. Our technical support team provides free consultations and can create
+                                custom application plans for your farm.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden" data-category="application">
+                    <button class="faq-trigger w-full text-left p-6 hover:bg-gray-50 transition-colors">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-dark">When is the best time to apply fertilizer?</h3>
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content">
+                        <div class="p-6 pt-0 text-gray-600">
+                            <p>Timing varies by crop and fertilizer type. Generally, base applications are made before
+                                planting, with side-dress applications during active growth periods. Our slow-release
+                                formulations provide flexibility in timing while our precision agriculture tools can
+                                optimize application schedules based on weather and crop conditions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Support Category -->
+                <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden" data-category="support">
+                    <button class="faq-trigger w-full text-left p-6 hover:bg-gray-50 transition-colors">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-dark">Do you provide technical support after purchase?
+                            </h3>
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content">
+                        <div class="p-6 pt-0 text-gray-600">
+                            <p>Absolutely! We provide comprehensive technical support including agronomist
+                                consultations, soil test interpretation, application guidance, and troubleshooting. Our
+                                support team is available Monday-Friday 8AM-6PM EST, and we offer 24/7 emergency support
+                                during growing season.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden" data-category="support">
+                    <button class="faq-trigger w-full text-left p-6 hover:bg-gray-50 transition-colors">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-dark">How can I find a local dealer?</h3>
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content">
+                        <div class="p-6 pt-0 text-gray-600">
+                            <p>Use our dealer locator tool on the website or call our customer service team at +1 (555)
+                                123-4567. We have over 2,500 authorized dealers across North America and can help you
+                                find the nearest location with our full product line in stock.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shipping Category -->
+                <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden" data-category="shipping">
+                    <button class="faq-trigger w-full text-left p-6 hover:bg-gray-50 transition-colors">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-dark">What are your shipping options and costs?</h3>
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content">
+                        <div class="p-6 pt-0 text-gray-600">
+                            <p>We offer multiple shipping options including LTL freight, full truckload, and rail
+                                delivery. Shipping costs vary by location and order size. Orders over $5,000 qualify for
+                                free freight within our standard delivery zones. Contact us for a detailed shipping
+                                quote based on your specific needs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden" data-category="shipping">
+                    <button class="faq-trigger w-full text-left p-6 hover:bg-gray-50 transition-colors">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-dark">How long does delivery typically take?</h3>
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content">
+                        <div class="p-6 pt-0 text-gray-600">
+                            <p>Standard delivery times are 5-10 business days within our primary distribution area. Rush
+                                delivery is available for time-sensitive applications. We recommend placing orders 2-3
+                                weeks before your planned application date to ensure timely delivery, especially during
+                                peak season.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Still Have Questions -->
+    <section class="py-20 bg-light">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-heading font-bold text-dark mb-6">
+                Still Have <span class="gradient-text">Questions?</span>
+            </h2>
+            <p class="text-xl text-gray-600 mb-8">
+                Our team of agricultural experts is here to help you find the answers you need.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html"
+                    class="bg-primary text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-green-700 transition-all transform hover:scale-105 inline-block">
+                    <i class="fas fa-phone mr-2"></i>Contact Support
+                </a>
+                <a href="mailto:info@agrinova.com"
+                    class="bg-accent text-dark px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-400 transition-all inline-block">
+                    <i class="fas fa-envelope mr-2"></i>Email Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center mr-3">
+                            <i class="fas fa-leaf text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-heading font-bold">AgriNova</h3>
+                            <p class="text-sm text-gray-400">Agricultural Innovation</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Leading the future of sustainable agriculture with innovative fertilizer solutions
+                        that enhance crop productivity while protecting our planet for future generations.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-lg mb-6">Products</h4>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><a href="products.html#nitrogen" class="hover:text-accent transition-colors">Nitrogen
+                                Solutions</a></li>
+                        <li><a href="products.html#phosphorus" class="hover:text-accent transition-colors">Phosphorus
+                                Line</a></li>
+                        <li><a href="products.html#potassium" class="hover:text-accent transition-colors">Potassium
+                                Plus</a></li>
+                        <li><a href="products.html#organic" class="hover:text-accent transition-colors">Organic
+                                Range</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-lg mb-6">Company</h4>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><a href="about.html" class="hover:text-accent transition-colors">About Us</a></li>
+                        <li><a href="research.html" class="hover:text-accent transition-colors">Research</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Careers</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">News</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-lg mb-6">Support</h4>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><a href="contact.html" class="hover:text-accent transition-colors">Contact Us</a></li>
+                        <li><a href="faq.html" class="hover:text-accent transition-colors">FAQ</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Technical Support</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Find Dealer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm">
+                        © 2024 AgriNova Agricultural Solutions. All rights reserved.
+                    </p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="text-gray-400 hover:text-accent text-sm transition-colors">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-accent text-sm transition-colors">Terms of
+                            Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ functionality
+        document.querySelectorAll('.faq-trigger').forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                const content = trigger.nextElementSibling;
+                const icon = trigger.querySelector('i');
+
+                // Close all other FAQ items
+                document.querySelectorAll('.faq-content').forEach(item => {
+                    if (item !== content) {
+                        item.classList.remove('active');
+                    }
+                });
+
+                document.querySelectorAll('.faq-trigger i').forEach(i => {
+                    if (i !== icon) {
+                        i.style.transform = 'rotate(0deg)';
+                    }
+                });
+
+                // Toggle current item
+                content.classList.toggle('active');
+                icon.style.transform = content.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0deg)';
+            });
+        });
+
+        // FAQ filtering
+        document.querySelectorAll('.faq-filter').forEach(filter => {
+            filter.addEventListener('click', () => {
+                const category = filter.dataset.filter;
+
+                // Update active filter
+                document.querySelectorAll('.faq-filter').forEach(f => {
+                    f.classList.remove('active', 'bg-primary', 'text-white');
+                    f.classList.add('bg-gray-100', 'text-gray-700');
+                });
+
+                filter.classList.add('active', 'bg-primary', 'text-white');
+                filter.classList.remove('bg-gray-100', 'text-gray-700');
+
+                // Filter FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (category === 'all' || item.dataset.category === category) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // FAQ search
+        document.getElementById('faq-search').addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+
+            document.querySelectorAll('.faq-item').forEach(item => {
+                const question = item.querySelector('h3').textContent.toLowerCase();
+                const answer = item.querySelector('.faq-content p').textContent.toLowerCase();
+
+                if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions - QL Eco Green | Sustainable Agricultural Solutions Malaysia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#1e7e34',
+                        'secondary': '#28a745',
+                        'accent': '#ffc107',
+                        'dark': '#2c3e50',
+                        'light': '#f8f9fa',
+                    },
+                    fontFamily: {
+                        'sans': ['Poppins', 'sans-serif'],
+                        'heading': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(30, 126, 52, 0.2) 0%, rgba(40, 167, 69, 0.1) 100%),
+                url('https://scontent.fkul7-2.fna.fbcdn.net/v/t39.30808-6/476162008_934908185479837_6503117984432281711_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=x4vWFra-eFgQ7kNvwFmj7MH&_nc_oc=AdnqEoT-1Yr1fFZCgc7fg7eDEfJcGDShrP6PbFnnzfvy73chbMRQdK22dcnDiof1NAg&_nc_zt=23&_nc_ht=scontent.fkul7-2.fna&_nc_gid=GcOTj9fkG5P6pcvcLJC1Fg&oh=00_AfPC3FXj2mWQ2OIT086wPBX1HBBo7HijLGxuuMWrBkxgUg&oe=6867A3C4');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #1e7e34, #28a745);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+
+<body class="bg-white font-sans">
+    <!-- Top Header Bar -->
+    <div class="bg-dark text-white py-2">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center text-sm">
+                <!-- Mobile: Only phone -->
+                <div class="flex items-center space-x-4 md:hidden">
+                    <span><i class="fas fa-phone mr-1"></i>+606-758 7377</span>
+                </div>
+
+                <!-- Desktop: Full contact info -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <span><i class="fas fa-phone mr-2"></i>+606-758 7377</span>
+                    <span><i class="fas fa-envelope mr-2"></i>qlecogreen@ql.com.my</span>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <!-- Language Selector -->
+                    <div class="relative group">
+                        <button id="languageBtn"
+                            class="flex items-center space-x-2 text-white hover:text-accent font-medium transition-colors">
+                            <i class="fas fa-globe"></i>
+                            <span id="currentLang" class="hidden sm:inline">English</span>
+                            <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div id="languageDropdown"
+                            class="absolute top-full right-0 mt-2 w-48 bg-white shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
+                            <div class="p-2">
+                                <button onclick="changeLanguage('en')"
+                                    class="w-full text-left px-3 py-2 text-gray-700 hover:bg-gray-100 rounded flex items-center space-x-2">
+                                    <span class="fi fi-gb w-4 h-4"></span>
+                                    <span>English (UK)</span>
+                                </button>
+                                <button onclick="changeLanguage('ms')"
+                                    class="w-full text-left px-3 py-2 text-gray-700 hover:bg-gray-100 rounded flex items-center space-x-2">
+                                    <span class="fi fi-my w-4 h-4"></span>
+                                    <span>Bahasa Malaysia</span>
+                                </button>
+                                <button onclick="changeLanguage('zh')"
+                                    class="w-full text-left px-3 py-2 text-gray-700 hover:bg-gray-100 rounded flex items-center space-x-2">
+                                    <span class="fi fi-cn w-4 h-4"></span>
+                                    <span>简体中文</span>
+                                </button>
+                                <button onclick="changeLanguage('ta')"
+                                    class="w-full text-left px-3 py-2 text-gray-700 hover:text-primary rounded flex items-center space-x-2">
+                                    <span class="fi fi-in w-4 h-4"></span>
+                                    <span>தமிழ்</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social media - hidden on small screens -->
+                    <div class="hidden lg:flex items-center space-x-3">
+                        <a href="#" class="hover:text-accent transition-colors"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-accent transition-colors"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-accent transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="hover:text-accent transition-colors"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 mr-8">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-3">
+                                <img src="https://ql.com.my/wp-content/uploads/2020/09/ms-icon-310x310-1.png" alt="">
+                            </div>
+                            <div>
+                                <h1 class="text-2xl font-heading font-bold text-dark">QL Eco-Green</h1>
+                                <p class="text-xs text-gray-500">Healthy Farming. Healthy Living.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary font-medium transition-colors"
+                        data-translate="home">Home</a>
+                    <a href="products.html" class="text-gray-700 hover:text-primary font-medium transition-colors"
+                        data-translate="products">Products</a>
+                    <a href="solutions.html" class="text-primary font-semibold border-b-2 border-primary pb-1"
+                        data-translate="solutions">Solutions</a>
+                    <a href="about.html" class="text-gray-700 hover:text-primary font-medium transition-colors"
+                        data-translate="about">About</a>
+                    <a href="research.html" class="text-gray-700 hover:text-primary font-medium transition-colors"
+                        data-translate="research">Research</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-primary font-medium transition-colors"
+                        data-translate="contact">Contact</a>
+                </div>
+
+                <div class="hidden lg:flex items-center space-x-4">
+                    <button id="findDealerBtn"
+                        class="bg-primary text-white px-6 py-2 rounded-full font-semibold hover:bg-green-700 transition-colors"
+                        data-translate="findDealer">
+                        Find Dealer
+                    </button>
+                </div>
+
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-white border-t">
+            <div class="px-4 py-6 space-y-4">
+                <a href="index.html" class="block text-gray-700 hover:text-primary font-medium"
+                    data-translate="home">Home</a>
+                <a href="products.html" class="block text-gray-700 hover:text-primary font-medium"
+                    data-translate="products">Products</a>
+                <a href="solutions.html" class="block text-primary font-semibold"
+                    data-translate="solutions">Solutions</a>
+                <a href="about.html" class="block text-gray-700 hover:text-primary font-medium"
+                    data-translate="about">About</a>
+                <a href="research.html" class="block text-gray-700 hover:text-primary font-medium"
+                    data-translate="research">Research</a>
+                <a href="contact.html" class="block text-gray-700 hover:text-primary font-medium"
+                    data-translate="contact">Contact</a>
+                <div class="pt-4">
+                    <button class="w-full bg-primary text-white py-2 rounded-full font-semibold"
+                        data-translate="findDealer">Find Dealer</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="bg-light py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center space-x-2 text-sm">
+                <a href="index.html" class="text-gray-600 hover:text-primary">Home</a>
+                <i class="fas fa-chevron-right text-gray-400 text-xs"></i>
+                <span class="text-primary font-semibold">Solutions</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-bg py-20 relative overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-secondary/80"></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center text-white">
+                <div class="inline-block bg-accent text-dark px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                    Organic Solutions
+                </div>
+
+                <h1 class="text-4xl lg:text-6xl font-heading font-bold leading-tight mb-6">
+                    Complete <span class="text-accent">Organic Farming Solutions</span>
+                </h1>
+
+                <p class="text-xl text-green-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+                    From EM fermentation technology to crop-specific programs, discover our comprehensive
+                    range of SIRIM-certified organic solutions for Malaysian agriculture.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button
+                        class="bg-accent text-dark px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-400 transition-all transform hover:scale-105">
+                        <i class="fas fa-leaf mr-2"></i>View Solutions
+                    </button>
+                    <button
+                        class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-primary transition-all">
+                        <i class="fas fa-calendar mr-2"></i>Schedule Consultation
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Categories -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                    Our Solutions
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-heading font-bold text-dark mb-6">
+                    Tailored <span class="gradient-text">Malaysian Agricultural Solutions</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Every farm in Malaysia is unique. That's why we offer customized organic solutions that address
+                    your specific challenges and help you achieve sustainable farming goals.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- EM Technology Solutions -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+                        <i class="fas fa-bacteria text-6xl text-white"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-dark mb-4">EM Technology Programs</h3>
+                        <p class="text-gray-600 mb-6">
+                            Advanced Effective Microorganisms fermentation technology with 21-day heat treatment
+                            for superior soil conditioning and crop nutrition.
+                        </p>
+                        <ul class="space-y-2 mb-6 text-sm">
+                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>100% EM
+                                fermentation process</li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>60-70°C heat
+                                treatment</li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Odor-free
+                                formulation</li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>SIRIM MS 1517
+                                certified</li>
+                        </ul>
+                        <a href="#"
+                            class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors inline-block">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Crop-Specific Programs -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-br from-accent to-yellow-600 flex items-center justify-center">
+                        <i class="fas fa-seedling text-6xl text-white"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-dark mb-4">Malaysian Crop Programs</h3>
+                        <p class="text-gray-600 mb-6">
+                            Specialized organic fertilizer programs designed for Malaysia's major crops
+                            with proven yield improvements and sustainable practices.
+                        </p>
+                        <ul class="space-y-2 mb-6 text-sm">
+                            <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i>Rice: 38% yield
+                                increase</li>
+                            <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i>Palm Oil: 35%
+                                improvement</li>
+                            <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i>Vegetables: 42%
+                                enhancement</li>
+                            <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i>Fruits: 32%
+                                production boost</li>
+                        </ul>
+                        <a href="#"
+                            class="bg-accent text-dark px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-colors inline-block">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Soil Health Solutions -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-br from-secondary to-green-600 flex items-center justify-center">
+                        <i class="fas fa-globe text-6xl text-white"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-dark mb-4">Soil Health Solutions</h3>
+                        <p class="text-gray-600 mb-6">
+                            Comprehensive soil conditioning programs that restore soil health, improve pH balance,
+                            and enhance nutrient retention for long-term productivity.
+                        </p>
+                        <ul class="space-y-2 mb-6 text-sm">
+                            <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i>pH
+                                optimization (7.0-8.2)</li>
+                            <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i>Organic matter
+                                boost (50-65%)</li>
+                            <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i>Soil structure
+                                improvement</li>
+                            <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i>Microbial
+                                diversity enhancement</li>
+                        </ul>
+                        <a href="#"
+                            class="bg-secondary text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors inline-block">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- University Partnership -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center">
+                        <i class="fas fa-university text-6xl text-white"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-dark mb-4">Research-Backed Solutions</h3>
+                        <p class="text-gray-600 mb-6">
+                            Solutions developed through extensive partnerships with Malaysian universities
+                            including UPM, MARDI, and UMS with over 250 field trials.
+                        </p>
+                        <ul class="space-y-2 mb-6 text-sm">
+                            <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i>15+ university
+                                partnerships</li>
+                            <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i>250+ field
+                                trials conducted</li>
+                            <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i>50+ research
+                                papers published</li>
+                            <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i>Scientifically
+                                proven results</li>
+                        </ul>
+                        <a href="#"
+                            class="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors inline-block">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Training & Support -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center">
+                        <i class="fas fa-graduation-cap text-6xl text-white"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-dark mb-4">Training & Education</h3>
+                        <p class="text-gray-600 mb-6">
+                            Comprehensive educational programs on organic farming techniques, proper application
+                            methods, and sustainable agricultural practices for Malaysian farmers.
+                        </p>
+                        <ul class="space-y-2 mb-6 text-sm">
+                            <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-2"></i>On-farm
+                                demonstrations</li>
+                            <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-2"></i>Technical
+                                workshops</li>
+                            <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-2"></i>Application
+                                guidance</li>
+                            <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-2"></i>Best practice
+                                sharing</li>
+                        </ul>
+                        <a href="#"
+                            class="bg-purple-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-600 transition-colors inline-block">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Sustainable Farming -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-br from-indigo-500 to-indigo-700 flex items-center justify-center">
+                        <i class="fas fa-recycle text-6xl text-white"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-dark mb-4">Sustainable Farming</h3>
+                        <p class="text-gray-600 mb-6">
+                            Environmental-friendly solutions that reduce chemical dependency while maintaining
+                            high productivity and supporting Malaysia's sustainability goals.
+                        </p>
+                        <ul class="space-y-2 mb-6 text-sm">
+                            <li class="flex items-center"><i class="fas fa-check text-indigo-500 mr-2"></i>100% organic
+                                certification</li>
+                            <li class="flex items-center"><i class="fas fa-check text-indigo-500 mr-2"></i>Chemical
+                                reduction programs</li>
+                            <li class="flex items-center"><i class="fas fa-check text-indigo-500 mr-2"></i>Biodiversity
+                                enhancement</li>
+                            <li class="flex items-center"><i class="fas fa-check text-indigo-500 mr-2"></i>Environmental
+                                impact reduction</li>
+                        </ul>
+                        <a href="#"
+                            class="bg-indigo-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-600 transition-colors inline-block">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Benefits -->
+    <section class="py-20 bg-gradient-to-br from-green-50 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                    Key Benefits
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-heading font-bold text-dark mb-6">
+                    Why Choose <span class="gradient-text">QL Eco Green</span> Organic Fertilizer?
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Discover the comprehensive advantages of our SIRIM-certified 100% EM organic fertilizer
+                    that makes it superior to chemical alternatives for Malaysian farming.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Cost Benefit -->
+                <div class="bg-white rounded-2xl shadow-lg p-8 card-hover">
+                    <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-dollar-sign text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-4">Cost Effective Solution</h3>
+                    <p class="text-gray-600 mb-4">
+                        Significantly cheaper than chemical fertilizers with superior functionality. Our EM
+                        microorganisms
+                        transform chemical fertilizers into available forms, minimizing nutrient leaching by 50-70%.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Reduces chemical
+                            fertilizer usage</li>
+                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Minimizes nutrient
+                            leaching</li>
+                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Long-term cost
+                            savings</li>
+                    </ul>
+                </div>
+
+                <!-- Soil Conditioning -->
+                <div class="bg-white rounded-2xl shadow-lg p-8 card-hover">
+                    <div class="w-16 h-16 bg-brown-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-seedling text-2xl text-yellow-700"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-4">Superior Soil Conditioning</h3>
+                    <p class="text-gray-600 mb-4">
+                        Transforms soil to become loose and friable, providing excellent tilth that encourages
+                        vigorous root hair growth and deeper, wider root zones for better plant development.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-yellow-700 mr-2"></i>Improves soil
+                            structure</li>
+                        <li class="flex items-center"><i class="fas fa-check text-yellow-700 mr-2"></i>Enhances root
+                            development</li>
+                        <li class="flex items-center"><i class="fas fa-check text-yellow-700 mr-2"></i>Better water
+                            infiltration</li>
+                    </ul>
+                </div>
+
+                <!-- CEC Enhancement -->
+                <div class="bg-white rounded-2xl shadow-lg p-8 card-hover">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-battery-full text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-4">Enhanced CEC Capacity</h3>
+                    <p class="text-gray-600 mb-4">
+                        Increases Cation Exchange Capacity by up to 6 times higher than original levels,
+                        dramatically improving the soil's nutrient binding and water storage capacity.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-blue-600 mr-2"></i>6x CEC improvement
+                        </li>
+                        <li class="flex items-center"><i class="fas fa-check text-blue-600 mr-2"></i>Better nutrient
+                            retention</li>
+                        <li class="flex items-center"><i class="fas fa-check text-blue-600 mr-2"></i>Enhanced water
+                            storage</li>
+                    </ul>
+                </div>
+
+                <!-- Organic Matter -->
+                <div class="bg-white rounded-2xl shadow-lg p-8 card-hover">
+                    <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-leaf text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-4">Builds Organic Matter</h3>
+                    <p class="text-gray-600 mb-4">
+                        Provides natural food source for beneficial soil microorganisms, enhancing their proliferation
+                        and conversion of inorganic elements into easily assimilated organic compounds.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i>50-65% organic
+                            matter</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i>Feeds beneficial
+                            microbes</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i>Accelerates
+                            decomposition</li>
+                    </ul>
+                </div>
+
+                <!-- Nitrogen Fixation -->
+                <div class="bg-white rounded-2xl shadow-lg p-8 card-hover">
+                    <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-atom text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-4">Promotes Nitrogen Fixation</h3>
+                    <p class="text-gray-600 mb-4">
+                        Contains beneficial microbes that fix nitrogen and convert phosphorus, potassium, and other
+                        elements into readily available compounds, reducing dependency on expensive chemical
+                        fertilizers.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-2"></i>Natural N-P-K
+                            conversion</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-2"></i>Reduces chemical
+                            dependency</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-2"></i>Substantial cost
+                            savings</li>
+                    </ul>
+                </div>
+
+                <!-- Natural Enzymes -->
+                <div class="bg-white rounded-2xl shadow-lg p-8 card-hover">
+                    <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-dna text-2xl text-orange-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-4">Natural Enzymes & Probiotics</h3>
+                    <p class="text-gray-600 mb-4">
+                        Beneficial microbes produce natural enzymes and probiotics that encourage growth-promoting
+                        substances and increase plant resistance against physiological diseases.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-orange-600 mr-2"></i>Natural enzyme
+                            production</li>
+                        <li class="flex items-center"><i class="fas fa-check text-orange-600 mr-2"></i>Disease
+                            resistance boost</li>
+                        <li class="flex items-center"><i class="fas fa-check text-orange-600 mr-2"></i>Growth
+                            enhancement</li>
+                    </ul>
+                </div>
+
+                <!-- Organic Acids -->
+                <div class="bg-white rounded-2xl shadow-lg p-8 card-hover">
+                    <div class="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-flask text-2xl text-teal-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-4">Rich in Organic Acids</h3>
+                    <p class="text-gray-600 mb-4">
+                        Excellent source of organic acids that improve the assimilability and absorption of soil
+                        minerals by plants, enhancing overall nutrient uptake efficiency.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-teal-600 mr-2"></i>Improved mineral
+                            absorption</li>
+                        <li class="flex items-center"><i class="fas fa-check text-teal-600 mr-2"></i>Enhanced nutrient
+                            uptake</li>
+                        <li class="flex items-center"><i class="fas fa-check text-teal-600 mr-2"></i>Better plant
+                            nutrition</li>
+                    </ul>
+                </div>
+
+                <!-- Humus Content -->
+                <div class="bg-white rounded-2xl shadow-lg p-8 card-hover">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-water text-2xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-4">High Humus Content</h3>
+                    <p class="text-gray-600 mb-4">
+                        Contains substantial humus that absorbs water up to 3 times its weight, helping soils
+                        retain moisture during droughts and providing beneficial humic acid for plant growth.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-600 mr-2"></i>3x water
+                            absorption</li>
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-600 mr-2"></i>Drought
+                            resistance</li>
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-600 mr-2"></i>Natural humic
+                            acid</li>
+                    </ul>
+                </div>
+
+                <!-- Temperature Regulation -->
+                <div class="bg-white rounded-2xl shadow-lg p-8 card-hover">
+                    <div class="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-thermometer-half text-2xl text-red-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-4">Temperature Regulation</h3>
+                    <p class="text-gray-600 mb-4">
+                        Minimizes sharp soil temperature fluctuations, reducing plant stress caused by wide gaps
+                        between daytime and nighttime temperatures, ensuring optimal growing conditions.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-red-600 mr-2"></i>Reduces temperature
+                            stress</li>
+                        <li class="flex items-center"><i class="fas fa-check text-red-600 mr-2"></i>Stable growing
+                            environment</li>
+                        <li class="flex items-center"><i class="fas fa-check text-red-600 mr-2"></i>Better plant
+                            performance</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center mt-16">
+                <div class="bg-white rounded-2xl shadow-lg p-8 max-w-4xl mx-auto">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-balance-scale text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-dark mb-4">Complete Soil Balance</h3>
+                    <p class="text-xl text-gray-600 mb-6">
+                        Prolonged use leads to balanced soil pH (7.0-8.2) and achieves the ideal soil state:
+                        physically, chemically, and biologically balanced for maximum productivity.
+                    </p>
+                    <div class="grid md:grid-cols-3 gap-6 text-center">
+                        <div>
+                            <div class="text-3xl font-bold text-primary mb-2">Physical</div>
+                            <div class="text-gray-600">Improved structure & drainage</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-secondary mb-2">Chemical</div>
+                            <div class="text-gray-600">Optimal pH & nutrient balance</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-accent mb-2">Biological</div>
+                            <div class="text-gray-600">Enhanced microbial activity</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="py-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div
+                    class="inline-block bg-secondary/10 text-secondary px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                    Our Process
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-heading font-bold text-dark mb-6">
+                    How We <span class="gradient-text">Deliver Results</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Our proven methodology ensures you get the most effective organic solutions for your unique
+                    Malaysian farming challenges.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white font-bold text-xl">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-4">Farm Assessment</h3>
+                    <p class="text-gray-600">
+                        We analyze your soil conditions, crops, and farming practices to understand your specific needs
+                        and challenges.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white font-bold text-xl">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-4">Custom Planning</h3>
+                    <p class="text-gray-600">
+                        Our agronomists develop a tailored organic solution plan based on your crops and soil
+                        requirements.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-dark font-bold text-xl">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-4">Implementation</h3>
+                    <p class="text-gray-600">
+                        We provide SIRIM-certified products, application guidance, and on-farm training for successful
+                        implementation.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white font-bold text-xl">4</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-4">Monitoring</h3>
+                    <p class="text-gray-600">
+                        We continuously monitor results and provide ongoing support to ensure optimal crop performance
+                        and soil health.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-block bg-accent/10 text-accent px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                    Success Stories
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-heading font-bold text-dark mb-6">
+                    Proven <span class="gradient-text">Results</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    See how our organic solutions have helped Malaysian farmers achieve remarkable improvements in
+                    yield, soil health, and profitability.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-palm-tree text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-dark">Mr. Leong</h4>
+                            <p class="text-sm text-gray-600">Estate Manager • Gua Musang, Kelantan</p>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-4">Palm Oil Estate Soil Restoration</h3>
+                    <p class="text-gray-600 mb-6">
+                        "QL Eco Green's organic fertilizer completely transformed our waterlogged plantation.
+                        The soil drainage improved significantly and our palm trees are now healthier than ever."
+                    </p>
+                    <div class="grid grid-cols-3 gap-4 text-center">
+                        <div>
+                            <div class="text-2xl font-bold text-primary">35%</div>
+                            <div class="text-sm text-gray-600">Yield Increase</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-secondary">100%</div>
+                            <div class="text-sm text-gray-600">Soil Recovery</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-accent">80%</div>
+                            <div class="text-sm text-gray-600">Drainage Improved</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-accent/5 to-yellow-100 rounded-2xl p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-apple-alt text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-dark">Mr. Chin</h4>
+                            <p class="text-sm text-gray-600">Banana Farmer • Kluang, Johor</p>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-4">Dead Soil Revival Success</h3>
+                    <p class="text-gray-600 mb-6">
+                        "My soil was completely dead with no earthworms for years. After using QL Eco Green,
+                        earthworms returned and my bananas became sweeter with better market prices."
+                    </p>
+                    <div class="grid grid-cols-3 gap-4 text-center">
+                        <div>
+                            <div class="text-2xl font-bold text-primary">100%</div>
+                            <div class="text-sm text-gray-600">Soil Revival</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-secondary">40%</div>
+                            <div class="text-sm text-gray-600">Quality Improvement</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-accent">25%</div>
+                            <div class="text-sm text-gray-600">Price Premium</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-secondary/5 to-green-100 rounded-2xl p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-flower text-dark"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-dark">Mr. Tan</h4>
+                            <p class="text-sm text-gray-600">Gerbera Export Farm • Ringlet, Cameron Highland</p>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-4">Highland Soil Restoration</h3>
+                    <p class="text-gray-600 mb-6">
+                        "Our exhausted highland soil was restored to life. The gerbera stems grew straighter
+                        and stronger, meeting export quality standards consistently."
+                    </p>
+                    <div class="grid grid-cols-3 gap-4 text-center">
+                        <div>
+                            <div class="text-2xl font-bold text-primary">50%</div>
+                            <div class="text-sm text-gray-600">Stem Quality</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-secondary">90%</div>
+                            <div class="text-sm text-gray-600">Export Grade</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-accent">30%</div>
+                            <div class="text-sm text-gray-600">Revenue Increase</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-2xl p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-indigo-500 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-leaf text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-dark">Mr. Wong</h4>
+                            <p class="text-sm text-gray-600">Lettuce Grower • Brinchang, Cameron Highland</p>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-4">Premium Quality Achievement</h3>
+                    <p class="text-gray-600 mb-6">
+                        "The lettuce quality improved dramatically. Singapore buyers now pay 10% premium
+                        for our consistently high-quality organic lettuce."
+                    </p>
+                    <div class="grid grid-cols-3 gap-4 text-center">
+                        <div>
+                            <div class="text-2xl font-bold text-primary">60%</div>
+                            <div class="text-sm text-gray-600">Quality Score</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-secondary">10%</div>
+                            <div class="text-sm text-gray-600">Price Premium</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-accent">100%</div>
+                            <div class="text-sm text-gray-600">Customer Retention</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0 bg-cover bg-center"
+                style="background-image: url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 1200 600&quot;><defs><pattern id=&quot;growth&quot; patternUnits=&quot;userSpaceOnUse&quot; width=&quot;50&quot; height=&quot;50&quot;><path d=&quot;M25,0 L50,25 L25,50 L0,25 Z&quot; fill=&quot;rgba(255,255,255,0.1)&quot;/></pattern></defs><rect width=&quot;100%&quot; height=&quot;100%&quot; fill=&quot;url(%23growth)&quot;/></svg>')">
+            </div>
+        </div>
+
+        <div class="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl lg:text-5xl font-heading font-bold text-white mb-6">
+                Ready to Transform Your Farm?
+            </h2>
+            <p class="text-xl text-green-100 mb-10">
+                Let our experts create a customized organic solution plan that addresses your unique challenges
+                and helps you achieve sustainable farming success in Malaysia.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html"
+                    class="bg-accent text-dark px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-400 transition-all transform hover:scale-105 inline-block">
+                    <i class="fas fa-calendar mr-2"></i>Schedule Consultation
+                </a>
+                <a href="products.html"
+                    class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-primary transition-all inline-block">
+                    <i class="fas fa-leaf mr-2"></i>Explore Products
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center mr-3">
+                            <i class="fas fa-leaf text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-heading font-bold">QL Eco Green</h3>
+                            <p class="text-sm text-gray-400">Healthy Farming. Healthy Living.</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Leading Malaysia's sustainable agriculture with innovative organic fertilizer solutions
+                        that enhance crop productivity while protecting our environment for future generations.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-gray-800 hover:bg-primary p-3 rounded-lg transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-primary p-3 rounded-lg transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-primary p-3 rounded-lg transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-primary p-3 rounded-lg transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-lg mb-6">Solutions</h4>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><a href="#" class="hover:text-accent transition-colors">EM Technology</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Crop Programs</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Soil Health</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Organic Farming</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Training Support</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-lg mb-6">Company</h4>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><a href="about.html" class="hover:text-accent transition-colors">About Us</a></li>
+                        <li><a href="products.html" class="hover:text-accent transition-colors">Products</a></li>
+                        <li><a href="research.html" class="hover:text-accent transition-colors">Research</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Sustainability</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">News</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-lg mb-6">Support</h4>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><a href="contact.html" class="hover:text-accent transition-colors">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Technical Support</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Find Dealer</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Training</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Documentation</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm">
+                        © 2024 QL Eco Green - A Division of QL Resources Berhad. All rights reserved.
+                    </p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="text-gray-400 hover:text-accent text-sm transition-colors">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-accent text-sm transition-colors">Terms of
+                            Service</a>
+                        <a href="#" class="text-gray-400 hover:text-accent text-sm transition-colors">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Animate cards on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.card-hover').forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = `all 0.6s ease ${index * 0.1}s`;
+            observer.observe(card);
+        });
+    </script>
+</body>
+
+</html>

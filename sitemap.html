@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QL Eco Green - Website Sitemap & Page Structure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-card {
+            transition: all 0.3s ease;
+        }
+        .page-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .section-item {
+            border-left: 3px solid #10b981;
+            padding-left: 12px;
+            margin-bottom: 8px;
+        }
+        .section-item.hero { border-color: #3b82f6; }
+        .section-item.content { border-color: #10b981; }
+        .section-item.features { border-color: #f59e0b; }
+        .section-item.cta { border-color: #ef4444; }
+        
+        .hierarchy-line {
+            position: relative;
+        }
+        .hierarchy-line::before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #e5e7eb;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
+                    <i class="fas fa-leaf text-white text-lg"></i>
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold text-gray-900">QL Eco Green</h1>
+                    <p class="text-sm text-gray-600">Website Sitemap & Page Structure</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <!-- Overview -->
+        <section class="mb-12">
+            <div class="bg-white rounded-xl p-8 shadow-sm">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Website Overview</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="text-center p-6 bg-blue-50 rounded-lg">
+                        <div class="text-3xl font-bold text-blue-600">15</div>
+                        <div class="text-sm text-gray-600">Total Pages</div>
+                    </div>
+                    <div class="text-center p-6 bg-green-50 rounded-lg">
+                        <div class="text-3xl font-bold text-green-600">8</div>
+                        <div class="text-sm text-gray-600">Main Sections</div>
+                    </div>
+                    <div class="text-center p-6 bg-purple-50 rounded-lg">
+                        <div class="text-3xl font-bold text-purple-600">4</div>
+                        <div class="text-sm text-gray-600">Interactive Islands</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Structure -->
+        <section class="mb-12">
+            <div class="bg-white rounded-xl p-8 shadow-sm">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">Navigation Structure</h2>
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-home text-blue-500"></i>
+                        <a href="/" class="text-blue-600 hover:underline font-medium">Home</a>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-seedling text-green-500"></i>
+                        <a href="/products" class="text-blue-600 hover:underline font-medium">Products</a>
+                    </div>
+                    <div class="ml-6">
+                        <div class="text-sm font-semibold text-gray-500 mb-2">COMPANY</div>
+                        <div class="space-y-2 ml-4">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-building text-gray-400"></i>
+                                <a href="/about" class="text-blue-600 hover:underline">About Us</a>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-microscope text-gray-400"></i>
+                                <a href="/research" class="text-blue-600 hover:underline">Research</a>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-newspaper text-gray-400"></i>
+                                <a href="/news" class="text-blue-600 hover:underline">News</a>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-rocket text-gray-400"></i>
+                                <a href="/project-overview" class="text-blue-600 hover:underline">Project Overview</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ml-6">
+                        <div class="text-sm font-semibold text-gray-500 mb-2">RESOURCES</div>
+                        <div class="space-y-2 ml-4">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-graduation-cap text-gray-400"></i>
+                                <a href="/training" class="text-blue-600 hover:underline">Training</a>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-question-circle text-gray-400"></i>
+                                <a href="/faq" class="text-blue-600 hover:underline">FAQ</a>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-download text-gray-400"></i>
+                                <a href="/downloads" class="text-blue-600 hover:underline">Downloads</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-phone text-orange-500"></i>
+                        <a href="/contact" class="text-blue-600 hover:underline font-medium">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page Structure Diagrams -->
+        <section>
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Page Structure Diagrams</h2>
+            
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Home Page -->
+                <div class="page-card bg-white rounded-xl p-6 shadow-sm">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <i class="fas fa-home text-2xl text-blue-500"></i>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900">Home Page</h3>
+                            <p class="text-sm text-gray-600">/ (index.tsx)</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="section-item hero">
+                            <div class="font-semibold text-blue-700">Hero Section</div>
+                            <div class="text-sm text-gray-600">Main banner with CTA buttons</div>
+                        </div>
+                        <div class="section-item content">
+                            <div class="font-semibold text-green-700">Company Tagline</div>
+                            <div class="text-sm text-gray-600">Statistics and achievements</div>
+                        </div>
+                        <div class="section-item features">
+                            <div class="font-semibold text-amber-700">Premium Product</div>
+                            <div class="text-sm text-gray-600">Featured soil conditioner</div>
+                        </div>
+                        <div class="section-item features">
+                            <div class="font-semibold text-amber-700">Benefits Section</div>
+                            <div class="text-sm text-gray-600">Soil & plant benefits cards</div>
+                        </div>
+                        <div class="section-item content">
+                            <div class="font-semibold text-green-700">Manufacturing</div>
+                            <div class="text-sm text-gray-600">Production capabilities</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Page -->
+                <div class="page-card bg-white rounded-xl p-6 shadow-sm">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <i class="fas fa-building text-2xl text-purple-500"></i>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900">About Us</h3>
+                            <p class="text-sm text-gray-600">/about (about.tsx)</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="section-item hero">
+                            <div class="font-semibold text-blue-700">Hero Section</div>
+                            <div class="text-sm text-gray-600">Page introduction</div>
+                        </div>
+                        <div class="section-item content">
+                            <div class="font-semibold text-green-700">Mission & Vision</div>
+                            <div class="text-sm text-gray-600">Company purpose & goals</div>
+                        </div>
+                        <div class="section-item features">
+                            <div class="font-semibold text-amber-700">Company Story</div>
+                            <div class="text-sm text-gray-600">History timeline</div>
+                        </div>
+                        <div class="section-item features">
+                            <div class="font-semibold text-amber-700">Core Values</div>
+                            <div class="text-sm text-gray-600">7 value cards</div>
+                        </div>
+                        <div class="section-item content">
+                            <div class="font-semibold text-green-700">Expert Team</div>
+                            <div class="text-sm text-gray-600">Team member profiles</div>
+                        </div>
+                        <div class="section-item cta">
+                            <div class="font-semibold text-red-700">CTA Section</div>
+                            <div class="text-sm text-gray-600">Transform your farm</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products Page -->
+                <div class="page-card bg-white rounded-xl p-6 shadow-sm">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <i class="fas fa-seedling text-2xl text-green-500"></i>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900">Products</h3>
+                            <p class="text-sm text-gray-600">/products (products.tsx)</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="section-item hero">
+                            <div class="font-semibold text-blue-700">Hero Section</div>
+                            <div class="text-sm text-gray-600">Products overview</div>
+                        </div>
+                        <div class="section-item features">
+                            <div class="font-semibold text-amber-700">Product Navigation</div>
+                            <div class="text-sm text-gray-600">Sticky category links</div>
+                        </div>
+                        <div class="section-item content">
+                            <div class="font-semibold text-green-700">Product Categories</div>
+                            <div class="text-sm text-gray-600">3 main categories</div>
+                        </div>
+                        <div class="section-item features">
+                            <div class="font-semibold text-amber-700">Soil Conditioners</div>
+                            <div class="text-sm text-gray-600">3 product cards</div>
+                        </div>
+                        <div class="section-item features">
+                            <div class="font-semibold text-amber-700">Fertilizers</div>
+                            <div class="text-sm text-gray-600">3 product cards</div>
+                        </div>
+                        <div class="section-item features">
+                            <div class="font-semibold text-amber-700">Hybrid Solutions</div>
+                            <div class="text-sm text-gray-600">2 product cards</div>
+                        </div>
+                        <div class="section-item cta">
+                            <div class="font-semibold text-red-700">CTA Section</div>
+                            <div class="text-sm text-gray-600">Contact experts</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Page -->
+                <div class="page-card bg-white rounded-xl p-6 shadow-sm">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <i class="fas fa-phone text-2xl text-orange-500"></i>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900">Contact</h3>
+                            <p class="text-sm text-gray-600">/contact (contact.tsx)</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="section-item hero">
+                            <div class="font-semibold text-blue-700">Hero Section</div>
+                            <div class="text-sm text-gray-600">Contact introduction</div>
+                        </div>
+                        <div class="section-item features">
+                            <div class="font-semibold text-amber-700">Contact Methods</div>
+                            <div class="text-sm text-gray-600">4 contact options</div>
+                        </div>
+                        <div class="section-item content">
+                            <div class="font-semibold text-green-700">Contact Form</div>
+                            <div class="text-sm text-gray-600">Interactive form + info</div>
+                        </div>
+                        <div class="section-item features">
+                            <div class="font-semibold text-amber-700">Office Locations</div>
+                            <div class="text-sm text-gray-600">3 office cards</div>
+                        </div>
+                        <div class="section-item cta">
+                            <div class="font-semibold text-red-700">Emergency Contact</div>
+                            <div class="text-sm text-gray-600">24/7 support info</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Research Page -->
+                <div class="page-card bg-white rounded-xl p-6 shadow-sm">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <i class="fas fa-microscope text-2xl text-indigo-500"></i>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900">Research</h3>
+                            <p class="text-sm text-gray-600">/research (research.tsx)</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="section-item hero">
+                            <div class="font-semibold text-blue-700">Hero Section</div>
+                            <div class="text-sm text-gray-600">Research overview</div>
+                        </div>
+                        <div class="section-item content">
+                            <div class="font-semibold text-green-700">Methodology</div>
+                            <div class="text-sm text-gray-600">Scientific approach</div>
+                        </div>
+                        <div class="section-item features">
+                            <div class="font-semibold text-amber-700">Research Findings</div>
+                            <div class="text-sm text-gray-600">Key discoveries</div>
+                        </div>
+                        <div class="section-item content">
+                            <div class="font-semibold text-green-700">Partnerships</div>
+                            <div class="text-sm text-gray-600">University collaborations</div>
+                        </div>
+                        <div class="section-item features">
+                            <div class="font-semibold text-amber-700">Publications</div>
+                            <div class="text-sm text-gray-600">Research papers</div>
+                        </div>
+                        <div class="section-item cta">
+                            <div class="font-semibold text-red-700">CTA Section</div>
+                            <div class="text-sm text-gray-600">Join research program</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Training Page -->
+                <div class="page-card bg-white rounded-xl p-6 shadow-sm">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <i class="fas fa-graduation-cap text-2xl text-blue-600"></i>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900">Training</h3>
+                            <p class="text-sm text-gray-600">/training (training.tsx)</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="section-item hero">
+                            <div class="font-semibold text-blue-700">Hero Section</div>
+                            <div class="text-sm text-gray-600">Training introduction</div>
+                        </div>
+                        <div class="section-item features">
+                            <div class="font-semibold text-amber-700">Training Programs</div>
+                            <div class="text-sm text-gray-600">3 skill levels</div>
+                        </div>
+                        <div class="section-item content">
+                            <div class="font-semibold text-green-700">Video Tutorials</div>
+                            <div class="text-sm text-gray-600">Video library</div>
+                        </div>
+                        <div class="section-item features">
+                            <div class="font-semibold text-amber-700">Application Guides</div>
+                            <div class="text-sm text-gray-600">Step-by-step guides</div>
+                        </div>
+                        <div class="section-item cta">
+                            <div class="font-semibold text-red-700">CTA Section</div>
+                            <div class="text-sm text-gray-600">Enroll in training</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Page -->
+                <div class="page-card bg-white rounded-xl p-6 shadow-sm">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <i class="fas fa-newspaper text-2xl text-gray-600"></i>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900">News</h3>
+                            <p class="text-sm text-gray-600">/news (news.tsx)</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="section-item hero">
+                            <div class="font-semibold text-blue-700">Hero Section</div>
+                            <div class="text-sm text-gray-600">News overview</div>
+                        </div>
+                        <div class="section-item features">
+                            <div class="font-semibold text-amber-700">News Filter</div>
+                            <div class="text-sm text-gray-600">Category filtering</div>
+                        </div>
+                        <div class="section-item content">
+                            <div class="font-semibold text-green-700">Featured Articles</div>
+                            <div class="text-sm text-gray-600">Latest news</div>
+                        </div>
+                        <div class="section-item features">
+                            <div class="font-semibold text-amber-700">Recent News</div>
+                            <div class="text-sm text-gray-600">News grid</div>
+                        </div>
+                        <div class="section-item cta">
+                            <div class="font-semibold text-red-700">Newsletter</div>
+                            <div class="text-sm text-gray-600">Subscribe form</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Page -->
+                <div class="page-card bg-white rounded-xl p-6 shadow-sm">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <i class="fas fa-question-circle text-2xl text-teal-500"></i>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900">FAQ</h3>
+                            <p class="text-sm text-gray-600">/faq (faq.tsx)</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="section-item hero">
+                            <div class="font-semibold text-blue-700">Hero Section</div>
+                            <div class="text-sm text-gray-600">FAQ introduction</div>
+                        </div>
+                        <div class="section-item cta">
+                            <div class="font-semibold text-red-700">Quick Help</div>
+                            <div class="text-sm text-gray-600">Contact options</div>
+                        </div>
+                        <div class="section-item features">
+                            <div class="font-semibold text-amber-700">FAQ Section</div>
+                            <div class="text-sm text-gray-600">Interactive accordion</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Downloads Page -->
+                <div class="page-card bg-white rounded-xl p-6 shadow-sm">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <i class="fas fa-download text-2xl text-cyan-500"></i>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900">Downloads</h3>
+                            <p class="text-sm text-gray-600">/downloads (downloads.tsx)</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="section-item hero">
+                            <div class="font-semibold text-blue-700">Hero Section</div>
+                            <div class="text-sm text-gray-600">Downloads overview</div>
+                        </div>
+                        <div class="section-item content">
+                            <div class="font-semibold text-green-700">Resource Categories</div>
+                            <div class="text-sm text-gray-600">Categorized downloads</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Overview Page -->
+                <div class="page-card bg-white rounded-xl p-6 shadow-sm">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <i class="fas fa-rocket text-2xl text-pink-500"></i>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900">Project Overview</h3>
+                            <p class="text-sm text-gray-600">/project-overview (project-overview.tsx)</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="section-item hero">
+                            <div class="font-semibold text-blue-700">Hero Section</div>
+                            <div class="text-sm text-gray-600">Project introduction</div>
+                        </div>
+                        <div class="section-item content">
+                            <div class="font-semibold text-green-700">Project Documentation</div>
+                            <div class="text-sm text-gray-600">Technical details</div>
+                        </div>
+                        <div class="section-item features">
+                            <div class="font-semibold text-amber-700">Business Benefits</div>
+                            <div class="text-sm text-gray-600">Value proposition</div>
+                        </div>
+                        <div class="section-item features">
+                            <div class="font-semibold text-amber-700">Technical Features</div>
+                            <div class="text-sm text-gray-600">Feature highlights</div>
+                        </div>
+                        <div class="section-item content">
+                            <div class="font-semibold text-green-700">Performance Metrics</div>
+                            <div class="text-sm text-gray-600">Key statistics</div>
+                        </div>
+                        <div class="section-item features">
+                            <div class="font-semibold text-amber-700">Implementation</div>
+                            <div class="text-sm text-gray-600">How it works</div>
+                        </div>
+                        <div class="section-item cta">
+                            <div class="font-semibold text-red-700">CTA Section</div>
+                            <div class="text-sm text-gray-600">Start your project</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Article Page -->
+                <div class="page-card bg-white rounded-xl p-6 shadow-sm">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <i class="fas fa-file-alt text-2xl text-slate-500"></i>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900">News Article</h3>
+                            <p class="text-sm text-gray-600">/news/[id] (news/[id].tsx)</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="section-item hero">
+                            <div class="font-semibold text-blue-700">Article Header</div>
+                            <div class="text-sm text-gray-600">Title, date, category</div>
+                        </div>
+                        <div class="section-item content">
+                            <div class="font-semibold text-green-700">Article Content</div>
+                            <div class="text-sm text-gray-600">Full article text</div>
+                        </div>
+                        <div class="section-item features">
+                            <div class="font-semibold text-amber-700">Social Sharing</div>
+                            <div class="text-sm text-gray-600">Share buttons</div>
+                        </div>
+                        <div class="section-item content">
+                            <div class="font-semibold text-green-700">Related Articles</div>
+                            <div class="text-sm text-gray-600">Suggested reading</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 404 Page -->
+                <div class="page-card bg-white rounded-xl p-6 shadow-sm">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <i class="fas fa-exclamation-triangle text-2xl text-red-500"></i>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900">404 Error</h3>
+                            <p class="text-sm text-gray-600">/_404 (_404.tsx)</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="section-item hero">
+                            <div class="font-semibold text-blue-700">Error Message</div>
+                            <div class="text-sm text-gray-600">Page not found</div>
+                        </div>
+                        <div class="section-item cta">
+                            <div class="font-semibold text-red-700">Navigation Links</div>
+                            <div class="text-sm text-gray-600">Return to home</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Components -->
+        <section class="mt-12">
+            <div class="bg-white rounded-xl p-8 shadow-sm">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">Interactive Components (Islands)</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="border border-gray-200 rounded-lg p-6">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <i class="fas fa-mobile-alt text-blue-500"></i>
+                            <h3 class="font-bold text-gray-900">MobileNav</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Mobile navigation menu with hamburger toggle</p>
+                        <div class="text-xs text-gray-500">islands/MobileNav.tsx</div>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-lg p-6">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <i class="fas fa-envelope text-green-500"></i>
+                            <h3 class="font-bold text-gray-900">ContactForm</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Interactive contact form with validation</p>
+                        <div class="text-xs text-gray-500">islands/ContactForm.tsx</div>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-lg p-6">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <i class="fas fa-question text-amber-500"></i>
+                            <h3 class="font-bold text-gray-900">FAQSection</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">FAQ accordion with filtering functionality</p>
+                        <div class="text-xs text-gray-500">islands/FAQSection.tsx</div>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-lg p-6">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <i class="fas fa-calculator text-purple-500"></i>
+                            <h3 class="font-bold text-gray-900">Counter</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Sample counter component (Fresh default)</p>
+                        <div class="text-xs text-gray-500">islands/Counter.tsx</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reusable Components -->
+        <section class="mt-12">
+            <div class="bg-white rounded-xl p-8 shadow-sm">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">Reusable Components</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <h4 class="font-semibold text-gray-900 mb-2">Layout</h4>
+                        <p class="text-xs text-gray-600">Main page wrapper with Header, Footer, WhatsAppFloat</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <h4 class="font-semibold text-gray-900 mb-2">Header</h4>
+                        <p class="text-xs text-gray-600">Navigation with active page highlighting</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <h4 class="font-semibold text-gray-900 mb-2">Footer</h4>
+                        <p class="text-xs text-gray-600">Site footer with links and company info</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <h4 class="font-semibold text-gray-900 mb-2">HeroSection</h4>
+                        <p class="text-xs text-gray-600">Configurable hero banner component</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <h4 class="font-semibold text-gray-900 mb-2">BenefitCard</h4>
+                        <p class="text-xs text-gray-600">Feature/benefit display cards</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <h4 class="font-semibold text-gray-900 mb-2">ProductCard</h4>
+                        <p class="text-xs text-gray-600">Product showcase cards with specs</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <h4 class="font-semibold text-gray-900 mb-2">WhatsAppFloat</h4>
+                        <p class="text-xs text-gray-600">Floating WhatsApp contact button</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <h4 class="font-semibold text-gray-900 mb-2">Button</h4>
+                        <p class="text-xs text-gray-600">Reusable button component</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Details -->
+        <section class="mt-12">
+            <div class="bg-white rounded-xl p-8 shadow-sm">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">Technical Architecture</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="font-bold text-gray-900 mb-4">Framework & Tools</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li class="flex items-center space-x-2">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span>Deno 2.3.3 + Fresh Framework</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span>TypeScript for type safety</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span>Tailwind CSS for styling</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span>Font Awesome icons</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span>Google Fonts (Inter)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900 mb-4">Features</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li class="flex items-center space-x-2">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span>Server-side rendering (SSR)</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span>File-based routing</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span>Interactive islands architecture</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span>Responsive mobile-first design</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span>Active navigation highlighting</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t mt-12">
+        <div class="max-w-7xl mx-auto px-6 py-8">
+            <div class="text-center text-gray-600">
+                <p>&copy; 2024 QL Eco Green. All rights reserved.</p>
+                <p class="text-sm mt-2">Generated: <span id="generated-date"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('generated-date').textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html> 

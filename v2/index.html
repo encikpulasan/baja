@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QL Eco Green - Premium Organic Fertilizer | Healthy Farming Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#4c745f',
+                        'secondary': '#6b8e23',
+                        'accent': '#f4a261',
+                        'dark': '#2c3e50',
+                        'light': '#f8f9fa',
+                    },
+                    fontFamily: {
+                        'sans': ['Poppins', 'sans-serif'],
+                        'heading': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" />
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(76, 116, 95, 0.4) 0%, rgba(107, 142, 35, 0.3) 100%),
+                url('images/crop.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: scroll;
+            position: relative;
+            z-index: 0;
+        }
+
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: inherit;
+            z-index: -1;
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        .section-divider {
+            background: linear-gradient(90deg, transparent, #e5e7eb, transparent);
+            height: 1px;
+            margin: 4rem 0;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #4c745f, #6b8e23);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #20ba5a;
+            transform: scale(1.1);
+            box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .whatsapp-float i {
+            margin-top: 2px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-white font-sans">
+    <!-- Top Header Bar -->
+    <div class="bg-dark text-white py-2">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center text-sm">
+                <!-- Mobile: Only phone -->
+                <div class="flex items-center space-x-4 md:hidden">
+                    <span><i class="fas fa-phone mr-1"></i>+606-758 7377</span>
+                </div>
+
+                <!-- Desktop: Full contact info -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <span><i class="fas fa-phone mr-2"></i>+606-758 7377</span>
+                    <span><i class="fas fa-envelope mr-2"></i>qlecogreen@ql.com.my</span>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <!-- Language Selector -->
+                    <div class="relative group">
+                        <button id="languageBtn"
+                            class="flex items-center space-x-2 text-white hover:text-accent font-medium transition-colors">
+                            <i class="fas fa-globe"></i>
+                            <span id="currentLang" class="hidden sm:inline">English</span>
+                            <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div id="languageDropdown"
+                            class="absolute top-full right-0 mt-2 w-48 bg-white shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
+                            <div class="p-2">
+                                <button onclick="changeLanguage('en')"
+                                    class="w-full text-left px-3 py-2 text-gray-700 hover:bg-gray-100 rounded flex items-center space-x-2">
+                                    <span class="fi fi-gb w-4 h-4"></span>
+                                    <span>English (UK)</span>
+                                </button>
+                                <button onclick="changeLanguage('ms')"
+                                    class="w-full text-left px-3 py-2 text-gray-700 hover:bg-gray-100 rounded flex items-center space-x-2">
+                                    <span class="fi fi-my w-4 h-4"></span>
+                                    <span>Bahasa Malaysia</span>
+                                </button>
+                                <button onclick="changeLanguage('zh')"
+                                    class="w-full text-left px-3 py-2 text-gray-700 hover:bg-gray-100 rounded flex items-center space-x-2">
+                                    <span class="fi fi-cn w-4 h-4"></span>
+                                    <span>简体中文</span>
+                                </button>
+                                <button onclick="changeLanguage('ta')"
+                                    class="w-full text-left px-3 py-2 text-gray-700 hover:bg-gray-100 rounded flex items-center space-x-2">
+                                    <span class="fi fi-in w-4 h-4"></span>
+                                    <span>தமிழ்</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social media - hidden on small screens -->
+                    <div class="hidden lg:flex items-center space-x-3">
+                        <a href="#" class="hover:text-accent transition-colors"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-accent transition-colors"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-accent transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="hover:text-accent transition-colors"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 mr-8">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-3">
+                                <img src="https://ql.com.my/wp-content/uploads/2020/09/ms-icon-310x310-1.png" alt="">
+                            </div>
+                            <div>
+                                <h1 class="text-2xl font-heading font-bold text-dark">QL Eco-Green</h1>
+                                <p class="text-xs text-gray-500">Healthy Farming. Healthy Living.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-primary font-medium transition-colors"
+                        data-translate="home">Home</a>
+                    <a href="products.html" class="text-gray-700 hover:text-primary font-medium transition-colors"
+                        data-translate="products">Products</a>
+                    <a href="solutions.html" class="text-gray-700 hover:text-primary font-medium transition-colors"
+                        data-translate="solutions">Solutions</a>
+                    <a href="about.html" class="text-gray-700 hover:text-primary font-medium transition-colors"
+                        data-translate="about">About</a>
+                    <a href="research.html" class="text-gray-700 hover:text-primary font-medium transition-colors"
+                        data-translate="research">Research</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-primary font-medium transition-colors"
+                        data-translate="contact">Contact</a>
+                </div>
+
+                <div class="hidden lg:flex items-center space-x-4">
+                    <button id="findDealerBtn"
+                        class="bg-primary text-white px-6 py-2 rounded-full font-semibold hover:bg-green-700 transition-colors"
+                        data-translate="findDealer">
+                        Find Dealer
+                    </button>
+                </div>
+
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-white border-t">
+            <div class="px-4 py-6 space-y-4">
+                <a href="#home" class="block text-gray-700 hover:text-primary font-medium"
+                    data-translate="home">Home</a>
+                <a href="products.html" class="block text-gray-700 hover:text-primary font-medium"
+                    data-translate="products">Products</a>
+                <a href="solutions.html" class="block text-gray-700 hover:text-primary font-medium"
+                    data-translate="solutions">Solutions</a>
+                <a href="about.html" class="block text-gray-700 hover:text-primary font-medium"
+                    data-translate="about">About</a>
+                <a href="research.html" class="block text-gray-700 hover:text-primary font-medium"
+                    data-translate="research">Research</a>
+                <a href="contact.html" class="block text-gray-700 hover:text-primary font-medium"
+                    data-translate="contact">Contact</a>
+                <div class="pt-4">
+                    <button class="w-full bg-primary text-white py-2 rounded-full font-semibold"
+                        data-translate="findDealer">Find Dealer</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg min-h-screen flex items-center relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/15"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="text-white">
+                    <div class="inline-block bg-accent text-dark px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                        Malaysia's Trusted Soil Health Partner
+                    </div>
+
+                    <h1 class="text-5xl lg:text-7xl font-heading font-bold leading-tight mb-6">
+                        <span data-translate="healthyFarming">Healthy Farming.</span>
+                        <span class="block text-accent" data-translate="healthyLiving">Healthy Living.</span>
+                    </h1>
+
+                    <p class="text-xl text-green-100 mb-8 leading-relaxed" data-translate="heroSubtitle">
+                        100% EM organic fertilizer using advanced fermentation technology to transform your soil health
+                        and maximize
+                        crop productivity with sustainable farming practices.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                        <button
+                            class="bg-accent text-dark px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-400 transition-all transform hover:scale-105 flex items-center justify-center">
+                            <i class="fas fa-leaf mr-2"></i><span data-translate="exploreProducts">Explore
+                                Products</span>
+                        </button>
+                        <button
+                            class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-primary transition-all flex items-center justify-center">
+                            <i class="fas fa-phone mr-2"></i><span data-translate="contactUs">Contact Us</span>
+                        </button>
+                    </div>
+
+                    <!-- Statistics -->
+                    <div class="grid grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="text-4xl font-bold text-accent mb-2" id="years-experience">2001</div>
+                            <div class="text-sm text-green-100" data-translate="established">Established</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold text-accent mb-2" id="farmers">1000+</div>
+                            <div class="text-sm text-green-100" data-translate="satisfiedFarmers">Satisfied Farmers
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold text-accent mb-2" id="partners">15+</div>
+                            <div class="text-sm text-green-100" data-translate="universityPartners">University Partners
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <!-- Floating Cards -->
+                    <div class="relative z-10 hidden lg:block">
+                        <div class="glass-effect rounded-2xl p-8 mb-6">
+                            <h3 class="text-white text-2xl font-bold mb-4" data-translate="soilHealthAdvisor">Soil
+                                Health Advisor</h3>
+                            <p class="text-green-100 mb-6" data-translate="soilHealthDesc">Get personalized organic
+                                fertilizer
+                                recommendations based on
+                                your crop, soil, and climate conditions.</p>
+
+                            <div class="grid grid-cols-2 gap-4">
+                                <button
+                                    class="crop-selector glass-effect hover:bg-white/20 text-white p-4 rounded-xl transition-all transform hover:scale-105"
+                                    data-crop="rice">
+                                    <i class="fas fa-seedling text-3xl mb-3 text-accent"></i>
+                                    <div class="font-semibold">Rice</div>
+                                    <div class="text-xs text-green-200">Click for tips</div>
+                                </button>
+                                <button
+                                    class="crop-selector glass-effect hover:bg-white/20 text-white p-4 rounded-xl transition-all transform hover:scale-105"
+                                    data-crop="palm">
+                                    <i class="fas fa-tree text-3xl mb-3 text-accent"></i>
+                                    <div class="font-semibold">Palm Oil</div>
+                                    <div class="text-xs text-green-200">Click for tips</div>
+                                </button>
+                                <button
+                                    class="crop-selector glass-effect hover:bg-white/20 text-white p-4 rounded-xl transition-all transform hover:scale-105"
+                                    data-crop="vegetables">
+                                    <i class="fas fa-carrot text-3xl mb-3 text-accent"></i>
+                                    <div class="font-semibold">Vegetables</div>
+                                    <div class="text-xs text-green-200">Click for tips</div>
+                                </button>
+                                <button
+                                    class="crop-selector glass-effect hover:bg-white/20 text-white p-4 rounded-xl transition-all transform hover:scale-105"
+                                    data-crop="fruits">
+                                    <i class="fas fa-apple-alt text-3xl mb-3 text-accent"></i>
+                                    <div class="font-semibold">Fruits</div>
+                                    <div class="text-xs text-green-200">Click for tips</div>
+                                </button>
+                            </div>
+
+                            <div id="crop-recommendation" class="mt-6 p-4 glass-effect rounded-xl hidden">
+                                <div class="text-white font-semibold mb-2 flex items-center">
+                                    <i class="fas fa-lightbulb text-accent mr-2"></i>
+                                    Recommended for <span id="selected-crop" class="text-accent mx-1"></span>:
+                                </div>
+                                <div id="recommendation-content" class="text-green-100 text-sm leading-relaxed"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <section class="bg-light py-16 relative z-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-heading font-bold text-dark mb-4">Trusted by Malaysian Agricultural Leaders
+                </h2>
+                <p class="text-gray-600">Join thousands of successful farms that rely on our proven organic
+                    solutions</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
+                <div class="text-center">
+                    <div class="bg-white rounded-xl p-6 shadow-lg card-hover">
+                        <i class="fas fa-award text-3xl text-primary mb-3"></i>
+                        <div class="font-bold text-dark">Farm Award</div>
+                        <div class="text-xs text-gray-500">2018 Winner</div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white rounded-xl pt-3 p-6 shadow-lg card-hover">
+                        <img src="https://prism.sirim.my/resource/1681725539000/sirim_logo" alt="SIRIM Certified"
+                            class="w-16 h-16 mx-auto mb-0 object-contain">
+                        <div class="font-bold text-dark">Sirim</div>
+                        <div class="text-xs text-gray-500">Certified</div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white rounded-xl p-6 shadow-lg card-hover">
+                        <i class="fas fa-leaf text-3xl text-secondary mb-3"></i>
+                        <div class="font-bold text-dark">100% Organic</div>
+                        <div class="text-xs text-gray-500">EM Fermented</div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white rounded-xl p-6 shadow-lg card-hover">
+                        <i class="fas fa-university text-3xl text-primary mb-3"></i>
+                        <div class="font-bold text-dark">UPM Partner</div>
+                        <div class="text-xs text-gray-500">Research Verified</div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white rounded-xl p-6 shadow-lg card-hover">
+                        <i class="fas fa-microscope text-3xl text-secondary mb-3"></i>
+                        <div class="font-bold text-dark">250+ Trials</div>
+                        <div class="text-xs text-gray-500">Field Tested</div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white rounded-xl p-6 shadow-lg card-hover">
+                        <i class="fas fa-clock text-3xl text-accent mb-3"></i>
+                        <div class="font-bold text-dark">21 Days</div>
+                        <div class="text-xs text-gray-500">Fermentation</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                    Premium Product Line
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-heading font-bold text-dark mb-6">
+                    Science-Backed <span class="gradient-text">Solutions</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Advanced EM fermentation technology using 100% organic matter for
+                    substantial agricultural benefits and enhanced crop nutrition.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-12 mb-16">
+                <!-- QL Eco Green Organic Fertilizer - Powder -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 card-hover border border-gray-100">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">Best Seller
+                        </div>
+                        <div class="text-primary text-2xl font-bold">RM65</div>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="w-full h-48 bg-white rounded-xl mb-4 flex items-center justify-center p-4">
+                            <img src="https://qlecogreen.com/wp-content/uploads/2019/01/25kg_QLpowder_3D_web.png"
+                                alt="QL Eco Green Organic Fertilizer Powder"
+                                class="max-w-full max-h-full object-contain">
+                        </div>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-dark mb-4">QL Eco Green Organic Fertilizer - Powder</h3>
+                    <p class="text-gray-600 mb-6">100% EM fermented organic fertilizer designed for optimal soil health
+                        and crop productivity. SIRIM MS 1517:2012 certified.</p>
+
+                    <div class="space-y-3 mb-6">
+                        <div class="flex justify-between">
+                            <span class="text-gray-500">Weight:</span>
+                            <span class="font-semibold">25kg</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-500">NPK:</span>
+                            <span class="font-semibold">1.5-3.5-4%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-500">Organic Matter:</span>
+                            <span class="font-semibold">65%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-500">pH Level:</span>
+                            <span class="font-semibold">7.0-8.2</span>
+                        </div>
+                    </div>
+
+                    <button
+                        class="w-full bg-gradient-to-r from-primary to-secondary text-white py-3 rounded-xl font-semibold hover:shadow-lg transition-all">
+                        Learn More
+                    </button>
+                </div>
+
+                <!-- QL Eco Green Organic Fertilizer - Pellet -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 card-hover border border-gray-100">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="bg-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">Farm Scale
+                        </div>
+                        <div class="text-secondary text-2xl font-bold">RM95</div>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="w-full h-48 bg-white rounded-xl mb-4 flex items-center justify-center p-4">
+                            <img src="https://qlecogreen.com/wp-content/uploads/2019/01/40kg_QLpallet_web.png"
+                                alt="QL Eco Green Organic Fertilizer Pellet"
+                                class="max-w-full max-h-full object-contain">
+                        </div>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-dark mb-4">QL Eco Green Organic Fertilizer - Pellet</h3>
+                    <p class="text-gray-600 mb-6">Premium pelletized organic fertilizer for easy application and
+                        controlled release. Perfect for large-scale farming operations.</p>
+
+                    <div class="space-y-3 mb-6">
+                        <div class="flex justify-between">
+                            <span class="text-gray-500">Weight:</span>
+                            <span class="font-semibold">40kg</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-500">NPK:</span>
+                            <span class="font-semibold">1.5-3.5-3%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-500">Application:</span>
+                            <span class="font-semibold">Broadcasting</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-500">Coverage:</span>
+                            <span class="font-semibold">1-2 acres</span>
+                        </div>
+                    </div>
+
+                    <button
+                        class="w-full bg-gradient-to-r from-secondary to-primary text-white py-3 rounded-xl font-semibold hover:shadow-lg transition-all">
+                        Learn More
+                    </button>
+                </div>
+
+                <!-- QL Eco Green Organic Hybrid Fertilizer -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 card-hover border border-gray-100">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="bg-accent text-dark px-3 py-1 rounded-full text-sm font-semibold">Hybrid Tech</div>
+                        <div class="text-accent text-2xl font-bold">RM85</div>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="w-full h-48 bg-white rounded-xl mb-4 flex items-center justify-center p-4">
+                            <img src="https://qlecogreen.com/wp-content/uploads/2019/01/QL_hybrid_40kg_pellet2_s-2.png"
+                                alt="QL Eco Green Hybrid Fertilizer" class="max-w-full max-h-full object-contain">
+                        </div>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-dark mb-4">QL Eco Green Organic Hybrid Fertilizer</h3>
+                    <p class="text-gray-600 mb-6">Advanced hybrid technology combining organic and mineral nutrients for
+                        maximum efficiency and faster results.</p>
+
+                    <div class="space-y-3 mb-6">
+                        <div class="flex justify-between">
+                            <span class="text-gray-500">Weight:</span>
+                            <span class="font-semibold">25kg</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-500">Technology:</span>
+                            <span class="font-semibold">Hybrid Formula</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-500">Release:</span>
+                            <span class="font-semibold">Quick & Slow</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-500">Best For:</span>
+                            <span class="font-semibold">All Crops</span>
+                        </div>
+                    </div>
+
+                    <button
+                        class="w-full bg-gradient-to-r from-accent to-yellow-400 text-dark py-3 rounded-xl font-semibold hover:shadow-lg transition-all">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="products.html"
+                    class="inline-flex items-center bg-primary text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-green-700 transition-all">
+                    <i class="fas fa-seedling mr-2"></i>
+                    View All Products
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="py-20 bg-gradient-to-br from-primary/5 to-secondary/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div
+                    class="inline-block bg-secondary/10 text-secondary px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                    Real Results
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-heading font-bold text-dark mb-6">
+                    Farmers <span class="gradient-text">Success Stories</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Discover how our innovative solutions are transforming agriculture and delivering
+                    exceptional results for farmers around the globe.
+                </p>
+            </div>
+
+            <!-- Success Stories Carousel -->
+            <div class="relative max-w-5xl mx-auto">
+                <!-- Navigation Arrows -->
+                <button id="prev-btn"
+                    class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-16 bg-white shadow-lg rounded-full p-3 hover:bg-gray-50 transition-all hover:shadow-xl z-10 hidden lg:flex items-center justify-center">
+                    <i class="fas fa-chevron-left text-gray-600 text-lg"></i>
+                </button>
+                <button id="next-btn"
+                    class="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-16 bg-white shadow-lg rounded-full p-3 hover:bg-gray-50 transition-all hover:shadow-xl z-10 hidden lg:flex items-center justify-center">
+                    <i class="fas fa-chevron-right text-gray-600 text-lg"></i>
+                </button>
+
+                <!-- Carousel Container -->
+                <div id="success-carousel" class="overflow-hidden">
+                    <div class="flex transition-transform duration-500 ease-in-out" id="carousel-track">
+                        <!-- Stories will be loaded by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Carousel Indicators -->
+                <div class="flex justify-center mt-8 space-x-2" id="carousel-indicators">
+                    <!-- Indicators will be generated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <div
+                        class="inline-block bg-accent/10 text-accent px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                        About QL Eco Green
+                    </div>
+                    <h2 class="text-4xl lg:text-5xl font-heading font-bold text-dark mb-6">
+                        20 Years of Agricultural <span class="gradient-text">Innovation</span>
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Since 2001, QL Eco Green has been at the forefront of agricultural technology, developing
+                        sustainable fertilizer solutions that enhance crop productivity while protecting our
+                        environment.
+                        Our commitment to research and innovation has made us a trusted partner for farmers worldwide.
+                    </p>
+
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 rounded-lg p-3 mr-4">
+                                <i class="fas fa-microscope text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark mb-2">Research & Development</h4>
+                                <p class="text-gray-600">State-of-the-art R&D facilities developing next-generation
+                                    fertilizer technologies.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-secondary/10 rounded-lg p-3 mr-4">
+                                <i class="fas fa-leaf text-secondary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark mb-2">Sustainability Focus</h4>
+                                <p class="text-gray-600">Committed to environmental stewardship and sustainable farming
+                                    practices.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-accent/10 rounded-lg p-3 mr-4">
+                                <i class="fas fa-users text-accent text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark mb-2">Expert Support</h4>
+                                <p class="text-gray-600">Dedicated agronomists providing personalized guidance and
+                                    support.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button
+                        class="bg-primary text-white px-8 py-4 rounded-full font-semibold hover:bg-green-700 transition-colors">
+                        Learn More About Us
+                    </button>
+                </div>
+
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-primary to-secondary rounded-2xl p-8 text-white">
+                        <h3 class="text-2xl font-bold mb-6">Our Impact</h3>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-accent mb-2">2.5M+</div>
+                                <div class="text-sm">Acres Enhanced</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-accent mb-2">35%</div>
+                                <div class="text-sm">Avg Yield Increase</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-accent mb-2">15M</div>
+                                <div class="text-sm">Tons CO₂ Reduced</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-accent mb-2">120</div>
+                                <div class="text-sm">Countries Served</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0 bg-cover bg-center"
+                style="background-image: url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 1200 600&quot;><defs><pattern id=&quot;growth&quot; patternUnits=&quot;userSpaceOnUse&quot; width=&quot;50&quot; height=&quot;50&quot;><path d=&quot;M25,0 L50,25 L25,50 L0,25 Z&quot; fill=&quot;rgba(255,255,255,0.1)&quot;/></pattern></defs><rect width=&quot;100%&quot; height=&quot;100%&quot; fill=&quot;url(%23growth)&quot;/></svg>')">
+            </div>
+        </div>
+
+        <div class="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl lg:text-5xl font-heading font-bold text-white mb-6" data-translate="readyToTransform">
+                Ready to Transform Your Farm?
+            </h2>
+            <p class="text-xl text-green-100 mb-10" data-translate="joinFarmers">
+                Join thousands of farmers who've discovered the QL Eco Green advantage.
+                Get personalized recommendations and start your journey to higher yields today.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <button
+                    class="bg-accent text-dark px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-400 transition-all transform hover:scale-105">
+                    <i class="fas fa-calculator mr-2"></i><span data-translate="getFreeAnalysis">Get Free
+                        Analysis</span>
+                </button>
+                <button
+                    class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-primary transition-all">
+                    <i class="fas fa-phone mr-2"></i><span data-translate="speakToExpert">Speak to Expert</span>
+                </button>
+            </div>
+
+            <div class="flex justify-center items-center space-x-8 text-green-100">
+                <div class="flex items-center">
+                    <i class="fas fa-check-circle mr-2 text-accent"></i>
+                    <span data-translate="freeConsultation">Free Consultation</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-check-circle mr-2 text-accent"></i>
+                    <span data-translate="customSolutions">Custom Solutions</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-check-circle mr-2 text-accent"></i>
+                    <span data-translate="expertSupport">Expert Support</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center mr-3">
+                            <i class="fas fa-leaf text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-heading font-bold">QL Eco Green</h3>
+                            <p class="text-sm text-gray-400">Healthy Farming. Healthy Living.</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Leading the future of sustainable agriculture with innovative fertilizer solutions
+                        that enhance crop productivity while protecting our planet for future generations.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-gray-800 hover:bg-primary p-3 rounded-lg transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-primary p-3 rounded-lg transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-primary p-3 rounded-lg transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-primary p-3 rounded-lg transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-lg mb-6">Products</h4>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><a href="products.html" class="hover:text-accent transition-colors">All Organic
+                                Fertilizers</a></li>
+                        <li><a href="products.html" class="hover:text-accent transition-colors">Powder Form</a></li>
+                        <li><a href="products.html" class="hover:text-accent transition-colors">Pellet Form</a></li>
+                        <li><a href="products.html" class="hover:text-accent transition-colors">Hybrid Technology</a>
+                        </li>
+                        <li><a href="products.html" class="hover:text-accent transition-colors">Home Garden Packs</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-lg mb-6">Support</h4>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><a href="#" class="hover:text-accent transition-colors">Technical Support</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Application Guide</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Dealer Locator</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Training Programs</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Documentation</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-lg mb-6">Company</h4>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><a href="#" class="hover:text-accent transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Research</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Sustainability</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Careers</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">News</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm">
+                        © 2024 QL Eco Green. All rights reserved.
+                    </p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="text-gray-400 hover:text-accent text-sm transition-colors">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-accent text-sm transition-colors">Terms of
+                            Service</a>
+                        <a href="#" class="text-gray-400 hover:text-accent text-sm transition-colors">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/60675877377?text=Hello! I'm interested in QL Eco Green organic fertilizer products. Could you please provide more information?"
+        target="_blank" class="whatsapp-float" title="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Multilanguage Support
+        const translations = {
+            en: {
+                currentLang: 'English',
+                findDealer: 'Find Dealer',
+                home: 'Home',
+                products: 'Products',
+                solutions: 'Solutions',
+                about: 'About',
+                research: 'Research',
+                contact: 'Contact',
+                languageLabel: 'Language / Bahasa',
+                healthyFarming: 'Healthy Farming.',
+                healthyLiving: 'Healthy Living.',
+                heroSubtitle: '100% EM organic fertilizer using advanced fermentation technology to transform your soil health and maximize crop productivity with sustainable farming practices.',
+                exploreProducts: 'Explore Products',
+                contactUs: 'Contact Us',
+                established: 'Established',
+                satisfiedFarmers: 'Satisfied Farmers',
+                universityPartners: 'University Partners',
+                soilHealthAdvisor: 'Soil Health Advisor',
+                soilHealthDesc: 'Get personalized organic fertilizer recommendations based on your crop, soil, and climate conditions.',
+                cropType: 'Crop Type',
+                soilType: 'Soil Type',
+                getAnalysis: 'Get Analysis',
+                readyToTransform: 'Ready to Transform Your Farm?',
+                joinFarmers: 'Join thousands of farmers who\'ve discovered the QL Eco Green advantage. Get personalized recommendations and start your journey to higher yields today.',
+                getFreeAnalysis: 'Get Free Analysis',
+                speakToExpert: 'Speak to Expert',
+                freeConsultation: 'Free Consultation',
+                customSolutions: 'Custom Solutions',
+                expertSupport: 'Expert Support'
+            },
+            ms: {
+                currentLang: 'Bahasa',
+                findDealer: 'Cari Pengedar',
+                home: 'Utama',
+                products: 'Produk',
+                solutions: 'Penyelesaian',
+                about: 'Mengenai',
+                research: 'Penyelidikan',
+                contact: 'Hubungi',
+                languageLabel: 'Bahasa / Language',
+                healthyFarming: 'Pertanian Sihat.',
+                healthyLiving: 'Kehidupan Sihat.',
+                heroSubtitle: 'Baja organik 100% EM menggunakan teknologi fermentasi canggih untuk mengubah kesihatan tanah anda dan memaksimumkan produktiviti tanaman dengan amalan pertanian lestari.',
+                exploreProducts: 'Terokai Produk',
+                contactUs: 'Hubungi Kami',
+                established: 'Ditubuhkan',
+                satisfiedFarmers: 'Petani Berpuas Hati',
+                universityPartners: 'Rakan Kongsi Universiti',
+                soilHealthAdvisor: 'Penasihat Kesihatan Tanah',
+                soilHealthDesc: 'Dapatkan cadangan baja organik yang diperibadikan berdasarkan jenis tanaman, tanah, dan keadaan iklim anda.',
+                cropType: 'Jenis Tanaman',
+                soilType: 'Jenis Tanah',
+                getAnalysis: 'Dapatkan Analisis',
+                readyToTransform: 'Bersedia untuk Mengubah Ladang Anda?',
+                joinFarmers: 'Sertai ribuan petani yang telah menemui kelebihan QL Eco Green. Dapatkan cadangan peribadi dan mulakan perjalanan anda ke hasil yang lebih tinggi hari ini.',
+                getFreeAnalysis: 'Dapatkan Analisis Percuma',
+                speakToExpert: 'Berbicara dengan Pakar',
+                freeConsultation: 'Perundingan Percuma',
+                customSolutions: 'Penyelesaian Tersuai',
+                expertSupport: 'Sokongan Pakar'
+            },
+            zh: {
+                currentLang: '中文',
+                findDealer: '寻找经销商',
+                home: '首页',
+                products: '产品',
+                solutions: '解决方案',
+                about: '关于我们',
+                research: '研究',
+                contact: '联系',
+                languageLabel: '语言 / Bahasa',
+                healthyFarming: '健康农业。',
+                healthyLiving: '健康生活。',
+                heroSubtitle: '100% EM有机肥料，采用先进发酵技术，通过可持续农业实践改善土壤健康并最大化作物生产力。',
+                exploreProducts: '探索产品',
+                contactUs: '联系我们',
+                established: '成立于',
+                satisfiedFarmers: '满意的农民',
+                universityPartners: '大学合作伙伴',
+                soilHealthAdvisor: '土壤健康顾问',
+                soilHealthDesc: '根据您的作物、土壤和气候条件获得个性化的有机肥料建议。',
+                cropType: '作物类型',
+                soilType: '土壤类型',
+                getAnalysis: '获取分析',
+                readyToTransform: '准备改造您的农场吗？',
+                joinFarmers: '加入数千名发现QL Eco Green优势的农民。获得个性化建议，今天就开始您的高产量之旅。',
+                getFreeAnalysis: '获取免费分析',
+                speakToExpert: '与专家交谈',
+                freeConsultation: '免费咨询',
+                customSolutions: '定制解决方案',
+                expertSupport: '专家支持'
+            },
+            ta: {
+                currentLang: 'தமிழ்',
+                findDealer: 'விற்பனையாளரைக் கண்டறிய',
+                home: 'முகப்பு',
+                products: 'பொருட்கள்',
+                solutions: 'தீர்வுகள்',
+                about: 'எங்களைப் பற்றி',
+                research: 'ஆராய்ச்சி',
+                contact: 'தொடர்பு',
+                languageLabel: 'மொழி / Bahasa',
+                healthyFarming: 'ஆரோக்கியமான விவசாயம்.',
+                healthyLiving: 'ஆரோக்கியமான வாழ்க்கை.',
+                heroSubtitle: 'நிலையான விவசாய நடைமுறைகள் மூலம் உங்கள் மண் ஆரோக்கியத்தை மாற்றவும் பயிர் உற்பத்தித் திறனை அதிகப்படுத்தவும் மேம்பட்ட நொதித்தல் தொழில்நுட்பத்தைப் பயன்படுத்தும் 100% EM ஆர்கானிக் உரம்.',
+                exploreProducts: 'பொருட்களை ஆராயுங்கள்',
+                contactUs: 'எங்களைத் தொடர்பு கொள்ளுங்கள்',
+                established: 'நிறுவப்பட்டது',
+                satisfiedFarmers: 'திருப்தியான விவசாயிகள்',
+                universityPartners: 'பல்கலைக்கழக கூட்டாளர்கள்',
+                soilHealthAdvisor: 'மண் ஆரோக்கிய ஆலோசகர்',
+                soilHealthDesc: 'உங்கள் பயிர், மண் மற்றும் காலநிலை நிலைமைகளின் அடிப்படையில் தனிப்பயனாக்கப்பட்ட ஆர்கானிக் உர பரிந்துரைகளைப் பெறுங்கள்.',
+                cropType: 'பயிர் வகை',
+                soilType: 'மண் வகை',
+                getAnalysis: 'பகுப்பாய்வு பெறுங்கள்',
+                readyToTransform: 'உங்கள் பண்ணையை மாற்ற தயாரா?',
+                joinFarmers: 'QL Eco Green நன்மையைக் கண்டறிந்த ஆயிரக்கணக்கான விவசாயிகளுடன் சேருங்கள். தனிப்பயனாக்கப்பட்ட பரிந்துரைகளைப் பெறுங்கள் மற்றும் இன்றே உங்கள் அதிக மகசூலுக்கான பயணத்தைத் தொடங்குங்கள்.',
+                getFreeAnalysis: 'இலவச பகுப்பாய்வு பெறுங்கள்',
+                speakToExpert: 'நிபுணருடன் பேசுங்கள்',
+                freeConsultation: 'இலவச ஆலோசனை',
+                customSolutions: 'தனிப்பயன் தீர்வுகள்',
+                expertSupport: 'நிபுணர் ஆதரவு'
+            }
+        };
+
+        let currentLanguage = 'en';
+
+        function changeLanguage(lang) {
+            currentLanguage = lang;
+            document.getElementById('currentLang').textContent = translations[lang].currentLang;
+
+            // Update all translatable elements
+            const translatableElements = document.querySelectorAll('[data-translate]');
+            translatableElements.forEach(element => {
+                const key = element.getAttribute('data-translate');
+                if (translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+
+            // Store language preference
+            localStorage.setItem('preferredLanguage', lang);
+        }
+
+        // Load saved language preference on page load
+        document.addEventListener('DOMContentLoaded', function () {
+            const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+            changeLanguage(savedLang);
+        });
+
+        // Find Dealer button functionality
+        document.getElementById('findDealerBtn').addEventListener('click', function () {
+            window.location.href = 'dealers.html';
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

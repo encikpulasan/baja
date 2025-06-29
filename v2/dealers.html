@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Dealers - QL Eco Green | Authorized Dealers Malaysia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#1e7e34',
+                        'secondary': '#28a745',
+                        'accent': '#ffc107',
+                        'dark': '#2c3e50',
+                        'light': '#f8f9fa',
+                    },
+                    fontFamily: {
+                        'sans': ['Poppins', 'sans-serif'],
+                        'heading': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(30, 126, 52, 0.9) 0%, rgba(40, 167, 69, 0.8) 100%),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><defs><pattern id="farmPattern" patternUnits="userSpaceOnUse" width="40" height="40"><circle cx="20" cy="20" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100%" height="100%" fill="url(%23farmPattern)"/></svg>');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #1e7e34, #28a745);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .dealer-card {
+            border-left: 4px solid #1e7e34;
+        }
+
+        .state-section {
+            scroll-margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body class="bg-white font-sans">
+    <!-- Top Header Bar -->
+    <div class="bg-dark text-white py-2">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center text-sm">
+                <!-- Mobile: Only phone -->
+                <div class="flex items-center space-x-4 md:hidden">
+                    <span><i class="fas fa-phone mr-1"></i>+606-758 7377</span>
+                </div>
+
+                <!-- Desktop: Full contact info -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <span><i class="fas fa-phone mr-2"></i>+606-758 7377</span>
+                    <span><i class="fas fa-envelope mr-2"></i>qlecogreen@ql.com.my</span>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <!-- Language Selector -->
+                    <div class="relative group">
+                        <button id="languageBtn"
+                            class="flex items-center space-x-2 text-white hover:text-accent font-medium transition-colors">
+                            <i class="fas fa-globe"></i>
+                            <span id="currentLang" class="hidden sm:inline">English</span>
+                            <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div id="languageDropdown"
+                            class="absolute top-full right-0 mt-2 w-48 bg-white shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
+                            <div class="p-2">
+                                <button onclick="changeLanguage('en')"
+                                    class="w-full text-left px-3 py-2 text-gray-700 hover:bg-gray-100 rounded flex items-center space-x-2">
+                                    <span class="fi fi-gb w-4 h-4"></span>
+                                    <span>English (UK)</span>
+                                </button>
+                                <button onclick="changeLanguage('ms')"
+                                    class="w-full text-left px-3 py-2 text-gray-700 hover:bg-gray-100 rounded flex items-center space-x-2">
+                                    <span class="fi fi-my w-4 h-4"></span>
+                                    <span>Bahasa Malaysia</span>
+                                </button>
+                                <button onclick="changeLanguage('zh')"
+                                    class="w-full text-left px-3 py-2 text-gray-700 hover:bg-gray-100 rounded flex items-center space-x-2">
+                                    <span class="fi fi-cn w-4 h-4"></span>
+                                    <span>简体中文</span>
+                                </button>
+                                <button onclick="changeLanguage('ta')"
+                                    class="w-full text-left px-3 py-2 text-gray-700 hover:text-primary rounded flex items-center space-x-2">
+                                    <span class="fi fi-in w-4 h-4"></span>
+                                    <span>தமிழ்</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social media - hidden on small screens -->
+                    <div class="hidden lg:flex items-center space-x-3">
+                        <a href="#" class="hover:text-accent transition-colors"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-accent transition-colors"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-accent transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="hover:text-accent transition-colors"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 mr-8">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-3">
+                                <img src="https://ql.com.my/wp-content/uploads/2020/09/ms-icon-310x310-1.png" alt="">
+                            </div>
+                            <div>
+                                <h1 class="text-2xl font-heading font-bold text-dark">QL Eco-Green</h1>
+                                <p class="text-xs text-gray-500">Healthy Farming. Healthy Living.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary font-medium transition-colors"
+                        data-translate="home">Home</a>
+                    <a href="products.html" class="text-gray-700 hover:text-primary font-medium transition-colors"
+                        data-translate="products">Products</a>
+                    <a href="solutions.html" class="text-gray-700 hover:text-primary font-medium transition-colors"
+                        data-translate="solutions">Solutions</a>
+                    <a href="about.html" class="text-gray-700 hover:text-primary font-medium transition-colors"
+                        data-translate="about">About</a>
+                    <a href="research.html" class="text-gray-700 hover:text-primary font-medium transition-colors"
+                        data-translate="research">Research</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-primary font-medium transition-colors"
+                        data-translate="contact">Contact</a>
+                </div>
+
+                <div class="hidden lg:flex items-center space-x-4">
+                    <button id="findDealerBtn"
+                        class="bg-accent text-white px-6 py-2 rounded-full font-semibold hover:bg-accent-700 transition-colors"
+                        data-translate="findDealer">
+                        Find Dealer
+                    </button>
+                </div>
+
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-white border-t">
+            <div class="px-4 py-6 space-y-4">
+                <a href="index.html" class="block text-gray-700 hover:text-primary font-medium"
+                    data-translate="home">Home</a>
+                <a href="products.html" class="block text-gray-700 hover:text-primary font-medium"
+                    data-translate="products">Products</a>
+                <a href="solutions.html" class="block text-gray-700 hover:text-primary font-medium"
+                    data-translate="solutions">Solutions</a>
+                <a href="about.html" class="block text-gray-700 hover:text-primary font-medium"
+                    data-translate="about">About</a>
+                <a href="research.html" class="block text-gray-700 hover:text-primary font-medium"
+                    data-translate="research">Research</a>
+                <a href="contact.html" class="block text-gray-700 hover:text-primary font-medium"
+                    data-translate="contact">Contact</a>
+                <div class="pt-4">
+                    <button class="w-full bg-accent text-white py-2 rounded-full font-semibold"
+                        data-translate="findDealer">Find Dealer</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="bg-light py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center space-x-2 text-sm">
+                <a href="index.html" class="text-gray-600 hover:text-primary">Home</a>
+                <i class="fas fa-chevron-right text-gray-400 text-xs"></i>
+                <span class="text-primary font-semibold">Find Dealers</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-bg py-20 relative overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-secondary/80"></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center text-white">
+                <div class="inline-block bg-accent text-dark px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                    Authorized Dealers
+                </div>
+
+                <h1 class="text-4xl lg:text-6xl font-heading font-bold leading-tight mb-6">
+                    Find QL Eco Green <span class="text-accent">Dealers Near You</span>
+                </h1>
+
+                <p class="text-xl text-green-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+                    Locate authorized QL Eco Green dealers across Malaysia for genuine organic fertilizer products,
+                    expert advice, and local support for your farming needs.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button
+                        class="bg-accent text-dark px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-400 transition-all transform hover:scale-105">
+                        <i class="fas fa-map-marker-alt mr-2"></i>Find Dealers
+                    </button>
+                    <button
+                        class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-primary transition-all">
+                        <i class="fas fa-handshake mr-2"></i>Become a Dealer
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dealer Search -->
+    <section class="py-16 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-heading font-bold text-dark mb-6">
+                    Search <span class="gradient-text">Dealers by Location</span>
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Enter your location to find the nearest authorized QL Eco Green dealer in your area.
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-2xl shadow-lg p-8">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">State</label>
+                            <select id="stateSelect"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                                <option value="">Select State</option>
+                                <option value="selangor">Selangor</option>
+                                <option value="johor">Johor</option>
+                                <option value="perak">Perak</option>
+                                <option value="penang">Penang</option>
+                                <option value="pahang">Pahang</option>
+                                <option value="kedah">Kedah</option>
+                                <option value="kelantan">Kelantan</option>
+                                <option value="terengganu">Terengganu</option>
+                                <option value="negeri-sembilan">Negeri Sembilan</option>
+                                <option value="melaka">Melaka</option>
+                                <option value="perlis">Perlis</option>
+                                <option value="sabah">Sabah</option>
+                                <option value="sarawak">Sarawak</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">City/Area</label>
+                            <input type="text" id="cityInput" placeholder="Enter city or area"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+
+                        <div class="flex items-end">
+                            <button id="searchBtn"
+                                class="w-full bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors">
+                                <i class="fas fa-search mr-2"></i>Search Dealers
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 flex flex-wrap gap-2">
+                        <span class="text-sm text-gray-600">Quick Search:</span>
+                        <button class="text-sm text-primary hover:text-secondary font-medium">Kuala Lumpur</button>
+                        <span class="text-gray-300">•</span>
+                        <button class="text-sm text-primary hover:text-secondary font-medium">Johor Bahru</button>
+                        <span class="text-gray-300">•</span>
+                        <button class="text-sm text-primary hover:text-secondary font-medium">Penang</button>
+                        <span class="text-gray-300">•</span>
+                        <button class="text-sm text-primary hover:text-secondary font-medium">Ipoh</button>
+                        <span class="text-gray-300">•</span>
+                        <button class="text-sm text-primary hover:text-secondary font-medium">Kota Kinabalu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Dealers -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-heading font-bold text-dark mb-6">
+                    Featured <span class="gradient-text">Authorized Dealers</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Our top-performing dealers across Malaysia, providing excellent service and genuine QL Eco Green
+                    products.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Selangor Dealer -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 dealer-card card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-store text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-dark">Agro Supply Centre</h4>
+                            <div class="flex items-center text-accent text-sm">
+                                <i class="fas fa-star mr-1"></i>
+                                <span class="font-semibold">4.8</span>
+                                <span class="text-gray-500 ml-1">(156 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-primary mt-1 mr-3"></i>
+                            <div>
+                                <p class="text-gray-700 text-sm">Lot 45, Jalan Industri 2/8, Kawasan Perindustrian
+                                    Bandar Sultan Suleiman, 42000 Port Klang, Selangor</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-secondary mr-3"></i>
+                            <span class="text-gray-700">+603-3167 2588</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-clock text-accent mr-3"></i>
+                            <span class="text-gray-700">Mon-Sat: 8:00 AM - 6:00 PM</span>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2 mb-4">
+                        <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-semibold">Bulk
+                            Orders</span>
+                        <span
+                            class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-xs font-semibold">Delivery</span>
+                        <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Expert
+                            Advice</span>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <button
+                            class="flex-1 bg-primary text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-green-700 transition-colors">
+                            <i class="fas fa-phone mr-1"></i>Call Now
+                        </button>
+                        <button
+                            class="flex-1 bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-gray-200 transition-colors">
+                            <i class="fas fa-directions mr-1"></i>Get Directions
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Johor Dealer -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 dealer-card card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-seedling text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-dark">Southern Agro Mart</h4>
+                            <div class="flex items-center text-accent text-sm">
+                                <i class="fas fa-star mr-1"></i>
+                                <span class="font-semibold">4.9</span>
+                                <span class="text-gray-500 ml-1">(203 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-primary mt-1 mr-3"></i>
+                            <div>
+                                <p class="text-gray-700 text-sm">No. 123, Jalan Skudai, Taman Universiti, 81300 Skudai,
+                                    Johor</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-secondary mr-3"></i>
+                            <span class="text-gray-700">+607-521 3456</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-clock text-accent mr-3"></i>
+                            <span class="text-gray-700">Mon-Sat: 7:30 AM - 7:00 PM</span>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2 mb-4">
+                        <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-semibold">Palm Oil
+                            Specialist</span>
+                        <span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-xs font-semibold">Fast
+                            Delivery</span>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <button
+                            class="flex-1 bg-primary text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-green-700 transition-colors">
+                            <i class="fas fa-phone mr-1"></i>Call Now
+                        </button>
+                        <button
+                            class="flex-1 bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-gray-200 transition-colors">
+                            <i class="fas fa-directions mr-1"></i>Get Directions
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Penang Dealer -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 dealer-card card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-tractor text-dark text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-dark">Northern Farm Supply</h4>
+                            <div class="flex items-center text-accent text-sm">
+                                <i class="fas fa-star mr-1"></i>
+                                <span class="font-semibold">4.7</span>
+                                <span class="text-gray-500 ml-1">(89 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-primary mt-1 mr-3"></i>
+                            <div>
+                                <p class="text-gray-700 text-sm">456 Jalan Perai Jaya, Bandar Perai Jaya, 13600 Perai,
+                                    Penang</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-secondary mr-3"></i>
+                            <span class="text-gray-700">+604-390 7789</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-clock text-accent mr-3"></i>
+                            <span class="text-gray-700">Mon-Sat: 8:00 AM - 6:30 PM</span>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2 mb-4">
+                        <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-semibold">Vegetable
+                            Crops</span>
+                        <span
+                            class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-xs font-semibold">Technical
+                            Support</span>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <button
+                            class="flex-1 bg-primary text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-green-700 transition-colors">
+                            <i class="fas fa-phone mr-1"></i>Call Now
+                        </button>
+                        <button
+                            class="flex-1 bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-gray-200 transition-colors">
+                            <i class="fas fa-directions mr-1"></i>Get Directions
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <button
+                    class="bg-secondary text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors">
+                    <i class="fas fa-map mr-2"></i>View All Dealers on Map
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dealer Network Stats -->
+    <section class="py-16 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-store text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-dark mb-2">150+</h3>
+                    <p class="text-gray-600">Authorized Dealers</p>
+                </div>
+
+                <div class="text-center">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-accent to-yellow-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marked-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-dark mb-2">13</h3>
+                    <p class="text-gray-600">States Covered</p>
+                </div>
+
+                <div class="text-center">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-secondary to-green-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-dark mb-2">1000+</h3>
+                    <p class="text-gray-600">Farmers Served Daily</p>
+                </div>
+
+                <div class="text-center">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-truck text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-dark mb-2">24/7</h3>
+                    <p class="text-gray-600">Support Available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Become a Dealer -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div
+                        class="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                        Partnership Opportunity
+                    </div>
+                    <h2 class="text-4xl lg:text-5xl font-heading font-bold text-dark mb-6">
+                        Become a <span class="gradient-text">QL Eco Green Dealer</span>
+                    </h2>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        Join Malaysia's leading organic fertilizer network and grow your agribusiness with
+                        our proven products and comprehensive support system.
+                    </p>
+
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark mb-1">Exclusive Territory Rights</h4>
+                                <p class="text-gray-600">Protected market area with growth potential</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-secondary rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark mb-1">Marketing Support</h4>
+                                <p class="text-gray-600">Professional marketing materials and campaigns</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-check text-dark text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark mb-1">Technical Training</h4>
+                                <p class="text-gray-600">Comprehensive product and application training</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark mb-1">Attractive Margins</h4>
+                                <p class="text-gray-600">Competitive pricing with volume incentives</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button
+                            class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors">
+                            <i class="fas fa-handshake mr-2"></i>Apply Now
+                        </button>
+                        <button
+                            class="bg-transparent border-2 border-primary text-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition-colors">
+                            <i class="fas fa-download mr-2"></i>Download Brochure
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8">
+                    <h3 class="text-2xl font-bold text-dark mb-6">Dealer Requirements</h3>
+
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-semibold text-dark mb-2">Business Experience</h4>
+                            <p class="text-gray-600 text-sm">Minimum 2 years in agricultural supplies or related field
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold text-dark mb-2">Financial Capacity</h4>
+                            <p class="text-gray-600 text-sm">Adequate working capital for initial inventory investment
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold text-dark mb-2">Storage Facilities</h4>
+                            <p class="text-gray-600 text-sm">Proper storage space for fertilizer products</p>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold text-dark mb-2">Market Knowledge</h4>
+                            <p class="text-gray-600 text-sm">Understanding of local agricultural market and customer
+                                base</p>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold text-dark mb-2">Commitment</h4>
+                            <p class="text-gray-600 text-sm">Dedication to promoting QL Eco Green products and values
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 p-4 bg-accent/10 rounded-lg">
+                        <p class="text-sm text-dark">
+                            <i class="fas fa-info-circle text-accent mr-2"></i>
+                            <strong>Investment Range:</strong> RM 50,000 - RM 200,000 depending on territory size
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0 bg-cover bg-center"
+                style="background-image: url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 1200 600&quot;><defs><pattern id=&quot;growth&quot; patternUnits=&quot;userSpaceOnUse&quot; width=&quot;50&quot; height=&quot;50&quot;><path d=&quot;M25,0 L50,25 L25,50 L0,25 Z&quot; fill=&quot;rgba(255,255,255,0.1)&quot;/></pattern></defs><rect width=&quot;100%&quot; height=&quot;100%&quot; fill=&quot;url(%23growth)&quot;/></svg>')">
+            </div>
+        </div>
+
+        <div class="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl lg:text-5xl font-heading font-bold text-white mb-6">
+                Need Help Finding a Dealer?
+            </h2>
+            <p class="text-xl text-green-100 mb-10">
+                Our dealer support team is ready to help you find the right QL Eco Green dealer
+                for your specific agricultural needs and location.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html"
+                    class="bg-accent text-dark px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-400 transition-all transform hover:scale-105 inline-block">
+                    <i class="fas fa-phone mr-2"></i>Contact Support
+                </a>
+                <a href="mailto:dealers@qlecogreen.com.my"
+                    class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-primary transition-all inline-block">
+                    <i class="fas fa-envelope mr-2"></i>Email Dealer Team
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center mr-3">
+                            <i class="fas fa-leaf text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-heading font-bold">QL Eco Green</h3>
+                            <p class="text-sm text-gray-400">Healthy Farming. Healthy Living.</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Leading Malaysia's sustainable agriculture with innovative organic fertilizer solutions
+                        that enhance crop productivity while protecting our environment for future generations.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-gray-800 hover:bg-primary p-3 rounded-lg transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-primary p-3 rounded-lg transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-primary p-3 rounded-lg transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-primary p-3 rounded-lg transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-lg mb-6">Dealers</h4>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><a href="#" class="hover:text-accent transition-colors">Find Dealers</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Become a Dealer</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Dealer Support</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Training Programs</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Marketing Materials</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-lg mb-6">Company</h4>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><a href="about.html" class="hover:text-accent transition-colors">About Us</a></li>
+                        <li><a href="products.html" class="hover:text-accent transition-colors">Products</a></li>
+                        <li><a href="research.html" class="hover:text-accent transition-colors">Research</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Sustainability</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">News</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-lg mb-6">Support</h4>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><a href="contact.html" class="hover:text-accent transition-colors">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Technical Support</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Application Guide</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Training</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Documentation</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm">
+                        © 2024 QL Eco Green - A Division of QL Resources Berhad. All rights reserved.
+                    </p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="text-gray-400 hover:text-accent text-sm transition-colors">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-accent text-sm transition-colors">Terms of
+                            Service</a>
+                        <a href="#" class="text-gray-400 hover:text-accent text-sm transition-colors">Dealer
+                            Agreement</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Dealer search functionality
+        document.getElementById('searchBtn').addEventListener('click', function () {
+            const state = document.getElementById('stateSelect').value;
+            const city = document.getElementById('cityInput').value;
+
+            // Simple search feedback
+            if (state || city) {
+                alert(`Searching for dealers in ${city ? city + ', ' : ''}${state || 'all states'}...`);
+            } else {
+                alert('Please select a state or enter a city to search.');
+            }
+        });
+
+        // Quick search buttons
+        document.querySelectorAll('.text-primary').forEach(button => {
+            button.addEventListener('click', function () {
+                if (this.textContent.trim() !== 'Quick Search:') {
+                    document.getElementById('cityInput').value = this.textContent.trim();
+                    document.getElementById('searchBtn').click();
+                }
+            });
+        });
+
+        // Animate cards on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.card-hover').forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = `all 0.6s ease ${index * 0.1}s`;
+            observer.observe(card);
+        });
+    </script>
+</body>
+
+</html>

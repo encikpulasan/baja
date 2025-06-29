@@ -16,6 +16,7 @@ import * as $news_id_ from "./routes/news/[id].tsx";
 import * as $products from "./routes/products.tsx";
 import * as $project_overview from "./routes/project-overview.tsx";
 import * as $research from "./routes/research.tsx";
+import * as $sitemap from "./routes/sitemap.tsx";
 import * as $training from "./routes/training.tsx";
 import * as $ContactForm from "./islands/ContactForm.tsx";
 import * as $Counter from "./islands/Counter.tsx";
@@ -39,6 +40,7 @@ const manifest = {
     "./routes/products.tsx": $products,
     "./routes/project-overview.tsx": $project_overview,
     "./routes/research.tsx": $research,
+    "./routes/sitemap.tsx": $sitemap,
     "./routes/training.tsx": $training,
   },
   islands: {
