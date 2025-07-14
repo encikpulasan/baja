@@ -116,7 +116,7 @@ const products = [
     name: "QL Eco Green Organic Fertilizer - Retail Pack (1kg)",
     category: "retail",
     type: "Home Gardening",
-    image: "images/product-hero.png",
+    image: "images/retail-pack-2.png",
     price: "RM2.40",
     originalPrice: "RM3.50",
     rating: 4.9,
@@ -352,13 +352,13 @@ function createProductCard(product) {
                 <div class="w-full h-48 bg-white flex items-center justify-center p-4 transition-transform duration-300 hover:scale-110">
                         <img src="${product.image}" alt="${product.name}" class="max-w-full max-h-full object-contain">
                     </div>
-                <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+               <!-- <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
                     <div class="absolute bottom-4 left-4 right-4">
                         <button class="w-full bg-white text-primary py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                             View Details
                         </button>
                     </div>
-                </div>
+                </div> -->
             </div>
             
             <div class="p-6">
@@ -608,14 +608,14 @@ function createModalContent(product) {
                     </div>
                     
                     <div class="flex gap-4">
-                        <button class="flex-1 bg-primary text-white py-4 rounded-xl font-semibold text-lg hover:bg-green-700 transition-colors ${
+                        <a class="flex-1 bg-primary text-center text-white py-4 rounded-xl font-semibold text-lg hover:bg-green-700 transition-colors ${
     !product.inStock ? "opacity-50 cursor-not-allowed" : ""
-  }" ${!product.inStock ? "disabled" : ""}>
-                            <i class="fas fa-shopping-cart mr-2"></i>Add to Cart
-                        </button>
-                        <button class="bg-accent text-dark px-6 py-4 rounded-xl font-semibold hover:bg-yellow-400 transition-colors">
+  }" ${!product.inStock ? "disabled" : ""} href="dealers.html">
+                            <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                        </a>
+                        <a class="bg-accent text-dark px-6 py-4 rounded-xl font-semibold hover:bg-yellow-400 transition-colors" href="contact.html">
                             <i class="fas fa-phone mr-2"></i>Contact Sales
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

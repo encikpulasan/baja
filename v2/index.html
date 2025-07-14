@@ -210,14 +210,47 @@
                         data-translate="products">Products</a>
                     <a href="solutions.html" class="text-gray-700 hover:text-primary font-medium transition-colors"
                         data-translate="solutions">Solutions</a>
-                    <a href="about.html" class="text-gray-700 hover:text-primary font-medium transition-colors"
-                        data-translate="about">About</a>
-                    <a href="research.html" class="text-gray-700 hover:text-primary font-medium transition-colors"
-                        data-translate="research">Research</a>
-                    <a href="contact.html" class="text-gray-700 hover:text-primary font-medium transition-colors"
-                        data-translate="contact">Contact</a>
-                    <a href="faq.html" class="text-gray-700 hover:text-primary font-medium transition-colors"
-                        data-translate="faq">FAQ</a>
+
+                    <!-- Company Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-primary font-medium transition-colors flex items-center"
+                            data-translate="company">
+                            Company
+                            <i
+                                class="fas fa-chevron-down ml-1 text-xs group-hover:rotate-180 transition-transform duration-200"></i>
+                        </button>
+                        <div
+                            class="absolute top-full left-0 w-48 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <a href="about.html"
+                                class="block px-4 py-3 text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors rounded-t-lg"
+                                data-translate="about">About Us</a>
+                            <a href="research.html"
+                                class="block px-4 py-3 text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors"
+                                data-translate="research">Research</a>
+                            <a href="contact.html"
+                                class="block px-4 py-3 text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors rounded-b-lg"
+                                data-translate="contact">Contact</a>
+                        </div>
+                    </div>
+
+                    <!-- Resources Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-primary font-medium transition-colors flex items-center"
+                            data-translate="resources">
+                            Resources
+                            <i
+                                class="fas fa-chevron-down ml-1 text-xs group-hover:rotate-180 transition-transform duration-200"></i>
+                        </button>
+                        <div
+                            class="absolute top-full left-0 w-48 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <a href="download.html"
+                                class="block px-4 py-3 text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors rounded-t-lg"
+                                data-translate="downloads">Downloads</a>
+                            <a href="faq.html"
+                                class="block px-4 py-3 text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors rounded-b-lg"
+                                data-translate="faq">FAQ</a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="hidden lg:flex items-center space-x-4">
@@ -243,17 +276,35 @@
                     data-translate="products">Products</a>
                 <a href="solutions.html" class="block text-gray-700 hover:text-primary font-medium"
                     data-translate="solutions">Solutions</a>
-                <a href="about.html" class="block text-gray-700 hover:text-primary font-medium"
-                    data-translate="about">About</a>
-                <a href="research.html" class="block text-gray-700 hover:text-primary font-medium"
-                    data-translate="research">Research</a>
-                <a href="contact.html" class="block text-gray-700 hover:text-primary font-medium"
-                    data-translate="contact">Contact</a>
-                <a href="faq.html" class="block text-gray-700 hover:text-primary font-medium"
-                    data-translate="faq">FAQ</a>
+
+                <!-- Company Section -->
+                <div class="border-t pt-4">
+                    <div class="text-sm font-semibold text-gray-500 mb-2" data-translate="company">Company</div>
+                    <div class="pl-4 space-y-2">
+                        <a href="about.html" class="block text-gray-700 hover:text-primary font-medium"
+                            data-translate="about">About Us</a>
+                        <a href="research.html" class="block text-gray-700 hover:text-primary font-medium"
+                            data-translate="research">Research</a>
+                        <a href="contact.html" class="block text-gray-700 hover:text-primary font-medium"
+                            data-translate="contact">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Resources Section -->
+                <div class="border-t pt-4">
+                    <div class="text-sm font-semibold text-gray-500 mb-2" data-translate="resources">Resources</div>
+                    <div class="pl-4 space-y-2">
+                        <a href="download.html" class="block text-gray-700 hover:text-primary font-medium"
+                            data-translate="downloads">Downloads</a>
+                        <a href="faq.html" class="block text-gray-700 hover:text-primary font-medium"
+                            data-translate="faq">FAQ</a>
+                    </div>
+                </div>
+
                 <div class="pt-4">
-                    <button class="w-full bg-primary text-white py-2 rounded-full font-semibold"
-                        data-translate="findDealer">Find Dealer</button>
+                    <a href="dealers.html"
+                        class="w-full bg-primary text-white py-2 rounded-full font-semibold block text-center"
+                        data-translate="findDealer">Find Dealer</a>
                 </div>
             </div>
         </div>
@@ -284,15 +335,20 @@
                     </p>
 
                     <div class="flex flex-col sm:flex-row gap-4 mb-12">
-                        <button
+                        <a href="products.html"
                             class="bg-accent text-dark px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-400 transition-all transform hover:scale-105 flex items-center justify-center">
                             <i class="fas fa-leaf mr-2"></i><span data-translate="exploreProducts">Explore
                                 Products</span>
-                        </button>
-                        <button
+                        </a>
+                        <a href="download.html"
+                            class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-primary transition-all flex items-center justify-center">
+                            <i class="fas fa-download mr-2"></i><span data-translate="downloadResources">Download
+                                Resources</span>
+                        </a>
+                        <a href="contact.html"
                             class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-primary transition-all flex items-center justify-center">
                             <i class="fas fa-phone mr-2"></i><span data-translate="contactUs">Contact Us</span>
-                        </button>
+                        </a>
                     </div>
 
                     <!-- Statistics -->
@@ -450,7 +506,7 @@
                     <div class="flex items-center justify-between mb-6">
                         <div class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">Best Seller
                         </div>
-                        <div class="text-primary text-2xl font-bold">RM65</div>
+                        <div class="text-primary text-2xl font-bold"></div>
                     </div>
 
                     <div class="mb-6">
@@ -494,7 +550,7 @@
                     <div class="flex items-center justify-between mb-6">
                         <div class="bg-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">Farm Scale
                         </div>
-                        <div class="text-secondary text-2xl font-bold">RM95</div>
+                        <div class="text-secondary text-2xl font-bold"></div>
                     </div>
 
                     <div class="mb-6">
@@ -537,7 +593,7 @@
                 <div class="bg-white rounded-2xl shadow-xl p-8 card-hover border border-gray-100">
                     <div class="flex items-center justify-between mb-6">
                         <div class="bg-accent text-dark px-3 py-1 rounded-full text-sm font-semibold">Hybrid Tech</div>
-                        <div class="text-accent text-2xl font-bold">RM85</div>
+                        <div class="text-accent text-2xl font-bold"></div>
                     </div>
 
                     <div class="mb-6">
@@ -685,10 +741,10 @@
                         </div>
                     </div>
 
-                    <button
+                    <a href="about.html"
                         class="bg-primary text-white px-8 py-4 rounded-full font-semibold hover:bg-green-700 transition-colors">
                         Learn More About Us
-                    </button>
+                    </a>
                 </div>
 
                 <div class="relative">
@@ -875,7 +931,12 @@
                 healthyLiving: 'Healthy Living.',
                 heroSubtitle: '100% EM organic fertilizer using advanced fermentation technology to transform your soil health and maximize crop productivity with sustainable farming practices.',
                 exploreProducts: 'Explore Products',
+                downloadResources: 'Download Resources',
                 contactUs: 'Contact Us',
+                company: 'Company',
+                resources: 'Resources',
+                downloads: 'Downloads',
+                faq: 'FAQ',
                 established: 'Established',
                 satisfiedFarmers: 'Satisfied Farmers',
                 universityPartners: 'University Partners',
@@ -906,7 +967,12 @@
                 healthyLiving: 'Kehidupan Sihat.',
                 heroSubtitle: 'Baja organik 100% EM menggunakan teknologi fermentasi canggih untuk mengubah kesihatan tanah anda dan memaksimumkan produktiviti tanaman dengan amalan pertanian lestari.',
                 exploreProducts: 'Terokai Produk',
+                downloadResources: 'Muat Turun Sumber',
                 contactUs: 'Hubungi Kami',
+                company: 'Syarikat',
+                resources: 'Sumber',
+                downloads: 'Muat Turun',
+                faq: 'Soalan Lazim',
                 established: 'Ditubuhkan',
                 satisfiedFarmers: 'Petani Berpuas Hati',
                 universityPartners: 'Rakan Kongsi Universiti',
@@ -937,7 +1003,12 @@
                 healthyLiving: '健康生活。',
                 heroSubtitle: '100% EM有机肥料，采用先进发酵技术，通过可持续农业实践改善土壤健康并最大化作物生产力。',
                 exploreProducts: '探索产品',
+                downloadResources: '下载资源',
                 contactUs: '联系我们',
+                company: '公司',
+                resources: '资源',
+                downloads: '下载',
+                faq: '常见问题',
                 established: '成立于',
                 satisfiedFarmers: '满意的农民',
                 universityPartners: '大学合作伙伴',
@@ -968,7 +1039,12 @@
                 healthyLiving: 'ஆரோக்கியமான வாழ்க்கை.',
                 heroSubtitle: 'நிலையான விவசாய நடைமுறைகள் மூலம் உங்கள் மண் ஆரோக்கியத்தை மாற்றவும் பயிர் உற்பத்தித் திறனை அதிகப்படுத்தவும் மேம்பட்ட நொதித்தல் தொழில்நுட்பத்தைப் பயன்படுத்தும் 100% EM ஆர்கானிக் உரம்.',
                 exploreProducts: 'பொருட்களை ஆராயுங்கள்',
+                downloadResources: 'ஆதாரங்களைப் பதிவிறக்கவும்',
                 contactUs: 'எங்களைத் தொடர்பு கொள்ளுங்கள்',
+                company: 'நிறுவனம்',
+                resources: 'ஆதாரங்கள்',
+                downloads: 'பதிவிறக்கங்கள்',
+                faq: 'அடிக்கடி கேட்கப்படும் கேள்விகள்',
                 established: 'நிறுவப்பட்டது',
                 satisfiedFarmers: 'திருப்தியான விவசாயிகள்',
                 universityPartners: 'பல்கலைக்கழக கூட்டாளர்கள்',
